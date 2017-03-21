@@ -1,0 +1,12 @@
+int main(int argc, char* argv[])
+{
+    int i = 0;
+    int * p = (int*)&i;
+    *p = 9999;
+    __asm__ ("":::"memory");
+    if (*p==9999)
+    {
+        return 2;
+    }
+    return 0;
+}

@@ -1,0 +1,35 @@
+#include "Markup.h"
+#include <stdio.h>
+#include <string>
+#include <cstring>
+
+using namespace std;
+void genxml();
+
+int main()
+{
+	printf( "hello world" );
+	string mys;
+	printf( mys.c_str() );
+	genxml();
+	return 0;
+}
+
+
+void genxml()
+{
+	CMarkup xml;
+	//xml.AddElem( "ORDER" );
+	//string str = xml.GetDoc();
+	//printf( "%s", str.c_str() );
+#if 1 
+	xml.AddElem( "ORDER" );
+	xml.AddChildElem( "ITEM" );
+	xml.IntoElem();
+	xml.AddChildElem( "SN", "132487A-J" );
+	xml.AddChildElem( "NAME", "crank casing" );
+	xml.AddChildElem( "QTY", "1" );
+	string csXML = xml.GetDoc();
+	printf( "%s", csXML.c_str() );
+#endif
+}

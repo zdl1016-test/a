@@ -1,0 +1,7769 @@
+<?xml version="1.0" encoding="GB2312" ?>
+
+<APP_CONFIG>
+	<api_list>
+	       <!---rebuild_internal 表示动态权重重建周期--->
+	       <qos rebuild_internal=20 rebuild_max=100 need_max_queue_protect = 0 weight_by_avg_time = 1> </qos>  	       
+	       <!---weight_by_avg_time 为1表示根据平均响应时间建立api server的动态权重。为0表示根据调用错误率计算api server的动态权重。--->
+	       <taskserver  server_num=19 > </taskserver>
+
+		<api>
+			<id>1</id>
+			<name>mqzone_xy.php</name>
+			<desc>third_app_fangl</desc>
+
+			<server_list>
+<server>
+<ip>172.27.202.184</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.187</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.202</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.203</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+			<api>
+		       <!--支持多个api 以#分割，合并成一个条目。
+		         适用于同一类API分布在同系列机器上的情况，可以使配置更简明。blog-->
+			<id>1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#31#32#33#34#35#36#37#38#39#40#41#42#43#44#45#46#47#48#49#50#51#52</id>
+			<name>mblog_add#mblog_add_category#mblog_add_withtime#mblog_addanswer#mblog_batchmodflag_whitecollar#mblog_categorylist#mblog_commentlist.fcg#mblog_commentlist_for_campus.fcg#mblog_del#mblog_del_replycomment#mblog_delanswer#mblog_get_all_blogconent_byuin.fcg#mblog_get_content.fcg#mblog_get_countlist.fcg#mblog_get_data.fcg#mblog_get_latest.fcg#mblog_get_onecomment.fcg#mblog_get_readerlist#mblog_get_readzone_3g#mblog_getbloglist.fcg#mblog_getbloglistbyblogid.fcg#mblog_modify#mblog_modify_category#mblog_modify_commend#mblog_msg_static_get#mblog_quote#mblog_quote_by_blogid#mblog_reply_comment#mblog_rss.fcg#mblog_setcount#mblog_static_page#mblog_top#mblog_updatelist.fcg#mdraft_del_auto_data#mdraft_del_manual_data#mdraft_get_auto_data#mdraft_get_manual_data#mdraft_get_manual_list#mdraft_set_auto_data#mdraft_set_manual_data#mprivateblog_add#mprivateblog_del_comment#mprivateblog_del_data#mprivateblog_get_count#mprivateblog_get_data#mprivateblog_get_titlelist#mprivateblog_modify#mprivateblog_prv2pub#mprivateblog_pub2prv#simpleblog_get_data#mblog_get_replylist#mblog_get_readzonefriend</name>
+        <desc>blog</desc>
+        
+        <server_list>
+<server>
+<ip>172.23.128.100</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.101</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.102</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.103</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.91</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.92</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.93</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.94</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.95</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.96</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.97</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.98</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.99</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.0.184</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.0.185</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.0.186</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.12</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.13</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.21</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.22</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.198.141</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.198.142</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.58</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>		
+
+    <api>
+           <!--支持多个api 以#分割，合并成一个条目。
+             适用于同一类API分布在同系列机器上的情况，可以使配置更简明。msg-->
+        <id>1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16</id>
+        <name>mmsgb_addanswer.cgi#mmsgb_comment_answer.cgi#mmsgb_delanswer.cgi#mmsgb_get_one_answer.cgi#mmsgb_getcount.cgi#mmsgb_getregard.cgi#mmsgb_page.cgi#mmsgb_show.cgi#msgb_addanswer_for_campus#mmsgb_addanswer.cgi#mmsgb_delanswer.cgi#mmsgb_page.cgi#mmsgb_getregard.cgi#mmsgb_comment_answer.cgi#mmsgb_get_one_answer.cgi#mmsgb_show.cgi</name>
+        <desc>msg</desc>
+    
+        <server_list>
+<server>
+<ip>172.23.130.207</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.209</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.210</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.220</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.243</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.244</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+    <api>
+           <!--支持多个api 以#分割，合并成一个条目。
+             适用于同一类API分布在同系列机器上的情况，可以使配置更简明。user-->
+        <id>1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#31#32#33</id>
+        <name>cgi_blog_compete_userinfo.fcg#cgi_emotion_list.fcg#cgi_get_flower#cgi_mblog_active_space#cgi_mfriend_add.cgi#cgi_mfriend_auth.cgi#cgi_mfriend_del.cgi#cgi_mqzone_addcarefriend#cgi_mqzone_auth#cgi_mqzone_black_action#cgi_mqzone_get_friendbirthday_pttc#cgi_mqzone_getavatar#cgi_mqzone_getcarefriend#cgi_mqzone_getnicklist.fcg#cgi_mqzone_getportrait.fcg#cgi_mqzone_isactive#cgi_mqzone_isfriend.fcg#cgi_mqzone_online#cgi_mqzone_questionauth#cgi_mqzone_rightcheck_batch#cgi_mqzone_rightcheck_new.fcg#cgi_mqzone_set_entryright#cgi_mqzone_set_revertright#cgi_mqzone_show_qqfriends#cgi_mqzone_updateuserinfo#cgi_mqzone_userinfo.fcg#cgi_mqzone_userprop2.fcg#cgi_mqzone_visit_to_userinfo#cgi_mqzone_visitor#cgi_mqzone_visitor.fcg#cgi_qzone_tips#cgi_qzone_tips_ex#friendshow_get_city_nb</name>
+        <desc>user</desc>
+        
+        <server_list>
+<server>
+<ip>10.128.11.187</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.128.13.138</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.128.13.139</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.128.13.140</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.128.13.142</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.128.13.143</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.128.13.195</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.0.58</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.23</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.24</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.193.211</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.120</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.122</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.124</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.157</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.158</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.159</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.16</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.18</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.20</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.22</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.71</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.72</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.197.86</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.153</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.156</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.157</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.159</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.160</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.161</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.163</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.164</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.192</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.193</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.217</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.4.16</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.4.17</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.0.183</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.223</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.26</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.27</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.168</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>		
+
+    <api>
+           <!--支持多个api 以#分割，合并成一个条目。
+             适用于同一类API分布在同系列机器上的情况，可以使配置更简明。parker-->
+        <id>1#2#3#4#5#6#7#8#9</id>
+        <name>parker_user_action_mqzone#parker_user_friendpark_mqzone#parker_user_front_mqzone#parker_user_info_mqzone#parker_user_login_mqzone#parker_user_pin_mqzone#parker_user_register_mqzone#parker_user_report_history_mqzone#parker_user_report_mqzone</name>
+        <desc>parker</desc>
+        
+        <server_list>
+<server>
+<ip>10.130.2.180</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.158</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.159</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.252</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.29.65</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.29.71</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.29.72</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.29.73</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.29.74</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.29.75</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.0.18</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.0.38</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.0.45</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.244</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.198.160</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.199.233</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.199.234</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.199.237</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.199.238</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.199.241</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.199.26</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.93</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.94</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.95</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.96</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.97</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.38</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.39</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.45</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.46</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.47</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.48</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.49</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.55</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.56</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.57</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.4.232</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+    <api>
+           <!--支持多个api 以#分割，合并成一个条目。
+             适用于同一类API分布在同系列机器上的情况，可以使配置更简明。friendsale -->
+        <id>1#2#3#4#5#6#7#8#9#10</id>
+        <name>friendeffect_cgi_issetup#mqzone_cgi_action#mqzone_cgi_action_w#mqzone_cgi_buy#mqzone_cgi_buyfriendlist#mqzone_cgi_card#mqzone_cgi_friendsort#mqzone_cgi_getUserFeeds#mqzone_cgi_init#mqzone_cgi_space</name>
+        <desc>friendsale</desc>
+        
+        <server_list>
+<server>
+<ip>10.130.1.40</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.1.41</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.1.42</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.165</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.166</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.167</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.168</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.169</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.170</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.171</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.172</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.173</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.174</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.175</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.178</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.179</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.180</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.181</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.182</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.183</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.184</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.185</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.186</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.187</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.27.188</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.0.207</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.186</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.2.104</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.2.156</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.0.172</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.0.173</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.0.174</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.242</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.243</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.198.140</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.103</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.168</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.169</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.172</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.173</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.81</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.83</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.44</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+    <api>
+           <!--支持多个api 以#分割，合并成一个条目。
+             适用于同一类API分布在同系列机器上的情况，可以使配置更简明。app-->
+        <id>1#2#3#4#5#6#7#8#9#10#11#12</id>
+        <name>cgi_mapp_getopenidbyuin.cgi#cgi_mapp_isadd_uins_apps.cgi#cgi_mapp_isaddok_level.cgi#cgi_mapp_isaddok_level_num.cgi#cgi_mapp_isaddok_num.cgi#cgi_mapp_isopenspeapp.cgi#cgi_mapp_issetupapp.cgi#cgi_mapp_isuinsaddapp.cgi#cgi_mapp_setupapp.cgi#cgi_mapp_xyGetAppIsOpenInfo.cgi#cgi_mapp_isaddok_levelandnum.cgi#cgi_mapp_install_filt.cgi</name>
+        <desc>app</desc>
+        
+        <server_list>
+<server>
+<ip>10.130.1.43</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.1.44</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.1.45</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.98</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.99</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>	
+
+    <api>
+           <!-- photo 的对外接口，具体web server自己维护，只是通过api gateway接入 mphoto-->
+        <id>1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21</id>
+        <name>mcgi_add_album#mcgi_add_piccomment#mcgi_add_reply#mcgi_del_album#mcgi_del_pic#mcgi_del_piccomment#mcgi_get_albuminfo#mcgi_get_photoinfo#mcgi_get_userinfo#mcgi_list_album#mcgi_list_photo#mcgi_modify_album#mcgi_modify_pic#mcgi_move_pic#mcgi_pcomment_xml#mcgi_recent_picture#mcgi_recent_update#mcgi_upload_pic#mcgi_view_album#mcgi_del_picmark#mcgi_list_friendphoto</name>
+        <desc>mphoto</desc>
+        
+        <server_list>
+<server>
+<ip>172.23.0.50</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.1.68</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.23</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.128.24</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.131.108</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.131.80</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.131.81</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.131.94</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.18.108</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.33.182</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.181</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.190</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+    <api>
+           <!-- 牧场 的对外接口，具体web server自己维护，只是通过api gateway接入 牧场-->
+        <id>1</id>
+        <name>mqzone_pasture_register</name>
+        <desc>pasture</desc>
+        
+        <server_list>
+<server>
+<ip>10.130.2.160</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+    
+
+    <api>
+        <id>1</id>
+        <name>cgi_apigw_test.cgi</name>
+        <desc>test</desc>
+        
+        <server_list>
+<server>
+<ip>10.1.41.202</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.1.41.208</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.16.198.18</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.16.217.222</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.16.217.224</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.16.217.225</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.129.124</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.23.130.209</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.194</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.222</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.19</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.59</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.60</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>		
+    <api>
+        <id>1</id>
+        <name>happy_farm_callback.php</name>
+        <desc>开心农场安装确认接口</desc>
+                    
+        <server_list>
+<server>
+<ip>10.130.2.116</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.2.117</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.2.118</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+    <api>
+        <id>1#2</id>
+        <name>cgi_farm_isinstallable_mqzone_v2#mqzone_farmland_isinstallable</name>
+        <desc>开心农场安装确认接口cgi</desc>
+                    
+        <server_list>
+<server>
+<ip>10.130.134.90</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.134.91</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.134.92</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.33</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.34</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.35</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.36</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.37</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.38</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.39</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.40</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.41</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.135.42</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+    
+    <api>
+        <id>1</id>
+        <name>mcampus.php</name>
+        <desc>手机校友接口</desc>
+                    
+        <server_list>
+<server>
+<ip>172.27.202.184</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.187</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.202</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.203</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+    <api>
+        <id>1</id>
+        <name>card_user_register</name>
+        <desc>魔法卡片应用安装确认接口</desc>
+                    
+        <server_list>
+<server>
+<ip>172.27.200.106</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.107</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.108</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.109</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.110</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.111</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.136</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.200.137</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+<api>
+        <id>1</id>
+        <name>check</name>
+        <desc>Q宠大乐斗应用安装确认接口</desc>
+                    
+        <server_list>
+<server>
+<ip>10.161.2.162</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.24.12.160</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+
+<api>
+<id>1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28</id>
+<name>cgi_memotion_addcomment#cgi_memotion_addreply#cgi_memotion_delcomment#cgi_memotion_delete#cgi_memotion_delreply#cgi_memotion_firstgbk#cgi_memotion_forward#cgi_memotion_getbatchfirst#cgi_memotion_getcommentdetail#cgi_memotion_getmixlist#cgi_memotion_getmsgbytagid#cgi_memotion_getmsgdetail#cgi_memotion_getmymsg#cgi_memotion_multireplies#cgi_memotion_publish#cgi_memotion_signget#cgi_memotion_update#cgi_mtaotao_batchfirst#cgi_mtaotao_delete#cgi_mtaotao_getmymsg#cgi_mtaotao_getreplies#cgi_mtaotao_gettdbversion#cgi_mtaotao_publish#cgi_mtaotao_reply#cgi_mtaotao_update#xyoapp_get_emotion.cgi#cgi_memotion_signset#cgi_memotion_censor</name>
+<desc>taotao</desc>
+<server_list>
+<server>
+<ip>172.27.0.171</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.194</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.213</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.214</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.220</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.222</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.43</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.1.44</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.155</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.2.158</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.19</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.59</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.3.60</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.4.10</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.4.20</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.4.88</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.4.89</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+<api>
+<id>1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25</id>
+<name>cgi_mic_bailing_default_xml_active.cgi#cgi_mic_brief_feeds_ic_cgi.cgi#cgi_mic_getcampusfilter.cgi#cgi_mic_getmybailingfriendfeeds.cgi#cgi_mic_getmybailingfriends_xml_active.cgi#cgi_mic_getmybailingfriends_xml_activemore.cgi#cgi_mic_getmybailingfriends_xml_passive.cgi#cgi_mic_getmyfeeds.cgi#cgi_mic_getmyfeeds_xml.cgi#cgi_mic_getmyfriendfeeds.cgi#cgi_mic_getmyfriendfeeds_xml.cgi#cgi_mic_getmyfriendfeeds_xml_page.cgi#cgi_mic_getmyschoolfriendfeeds.cgi#cgi_mic_getmyschoolfriends_xml_active.cgi#cgi_mic_getmyschoolfriends_xml_passive.cgi#cgi_mic_getqz_feeds.cgi#cgi_mic_getuserfeeds.cgi#cgi_mic_getuserfeeds_xml.cgi#cgi_mic_getusermorefeeds_xml.cgi#cgi_mic_setcampusfilter.cgi#mapi_add_feed#mapi_delete_feed#mapi_oss_del_feed#mapi_update_feed#cgi_mic_school_recent.cgi</name>
+<desc>mic</desc>
+<server_list>
+<server>
+<ip>10.130.11.15</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.16</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.17</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.18</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.19</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.20</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.21</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.22</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.23</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.24</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.25</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.26</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.27</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.28</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.29</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.30</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.31</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.11.32</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.61</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.68</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.69</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.73</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.74</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.75</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.76</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.77</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.78</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.79</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.80</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.82</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.84</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.202.85</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.239</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.24</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.240</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.241</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.242</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+<api>
+<id>1#2#3#4#5#6#7#8#9#10#11#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#31#32#33#34</id>
+<name>cgi_qzshare_unifiedadd#cgi_qzshare_unifiedadd_comm#cgi_qzshare_unifiedadd_share#cgi_qzshare_unifiedadd_xiaoyou#cgi_qzshare_unifieddel#cgi_qzshare_unifieddel_comm#cgi_qzshare_unifiedget_comm#cgi_qzshare_unifiedget_detail#cgi_qzshare_unifiedget_info#cgi_qzshare_unifiedget_mylist#cgi_qzshare_unifiedget_urlinfo#frame_blogstatic#mmsg_del_usermsg#mmsg_get_msgboxinfo#mmsg_get_usermsg#mmsg_read_usermsg#mmsg_send_usermsg#mmsg_del_usermsg#mmsg_get_msgboxinfo#mmsg_get_usermsg#mmsg_send_usermsg#mmsg_read_usermsg#frame_blogstatic#cgi_qzshare_unifiedadd#cgi_qzshare_unifiedadd_comm#cgi_qzshare_unifieddel_comm#cgi_qzshare_unifiedget_comm#cgi_qzshare_unifiedget_urlinfo#cgi_qzshare_unifiedget_info#cgi_qzshare_unifiedget_mylist#cgi_qzshare_unifiedadd_xiaoyou#cgi_qzshare_unifieddel#cgi_qzshare_unifiedget_detail#cgi_qzshare_unifiedadd_share</name>
+<desc>other</desc>
+<server_list>
+<server>
+<ip>172.27.203.33</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.34</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>172.27.203.35</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.195</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.2.108</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.2.120</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+<api>
+<id>1</id>
+<name>white_list</name>
+<desc>qqlive</desc>
+<server_list>
+<server>
+<ip>172.23.131.107</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+<api>
+<id>1</id>
+<name>register_uin.php</name>
+<desc>吃喝玩乐回调接口</desc>
+<server_list>
+<server>
+<ip>10.130.24.43</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+<server>
+<ip>10.130.24.44</ip>
+<weight>100</weight>
+<max_queue_req>400</max_queue_req>
+</server>
+</server_list>
+</api>
+</api_list>
+
+	<role_list>
+		<role>
+			<id>1</id>
+			<name>发博文</name>
+			<desc> </desc>
+			
+			<api_list>
+				<api> 
+				<name>mblog_add</name>
+				</api>
+			</api_list>
+		</role>
+		<role>
+			<id>200</id>
+			<name>QQ相册客服</name>
+			<desc> </desc>			
+			<api_list>
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>
+			</api_list>
+		</role>
+		<role>
+			<id>201</id>
+			<name>mall</name>
+			<desc> 商城</desc>			
+			<api_list>
+				<api> 
+				<name>mblog_add</name>
+				</api>				
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_userprop2.fcg</name>
+				</api>				
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>				
+				<api> 
+				<name>cgi_mqzone_getavatar</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_getnicklist.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_getportrait.fcg</name>
+				</api>				
+			<api>
+<name>mapi_add_feed</name>
+</api>
+<api>
+<name>mapi_delete_feed</name>
+</api>
+<api>
+<name>mblog_modify_commend</name>
+</api>
+</api_list>
+		</role>
+
+
+		<role>
+			<id>203</id>
+			<name>qqmail</name>
+			<desc> QQ邮箱</desc>		
+			<api_list>
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>					
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_rightcheck_batch</name>
+				</api>
+				<api>
+				<name>cgi_mqzone_questionauth</name>
+				</api>
+
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>					
+				<api> 
+				<name>mblog_get_readerlist</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_online</name>
+				</api>
+				
+				<api> 
+				<name>mblog_add</name>
+				</api>					
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+				<api>
+				<name>mblog_get_latest.fcg</name>
+				</api>
+				<api>
+				<name>mblog_reply_comment</name>
+				</api>
+				<api>
+				<name>mblog_delanswer</name>
+				</api>
+				<api>
+				<name>mblog_del_replycomment</name>
+				</api>
+				
+				<api>
+				<name>mcgi_recent_picture</name>
+				</api>
+
+			<api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+</api>
+</api_list>
+		</role>
+
+		<role>
+			<id>204</id>
+			<name>QQ飞车</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_add</name>
+				</api>					
+			</api_list>
+		</role>
+
+		<role>
+			<id>205</id>
+			<name>wenwen问问</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>				
+			<api>
+<name>mblog_add</name>
+</api>
+</api_list>
+		</role>
+
+		<role>
+			<id>206</id>
+			<name>寻仙</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_add</name>
+				</api>					
+			</api_list>
+		</role>				
+
+		<role>
+			<id>207</id>
+			<name>语音日志</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>cgi_mqzone_isactive</name>
+				</api>	
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				</api>
+				<api>
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>
+			</api_list>
+		</role>
+
+		<role>
+			<id>208</id>
+			<name>Web QQ</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_updatelist.fcg</name>
+				</api>
+				
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>
+
+			</api_list>
+		</role>
+
+		<role>
+			<id>209</id>
+			<name>名博</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>
+				<api>
+				<name>mblog_modify_commend</name>
+				</api>
+			<api>
+<name>frame_blogstatic</name>
+</api>
+</api_list>
+		</role>		
+
+		<role>
+			<id>210</id>
+			<name>qzoneact</name>
+			<desc> 广告活动</desc>		
+			<api_list>
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				</api>	
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>	
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>				
+				<api> 
+				<name>cgi_mqzone_isfriend.fcg</name>
+				</api>	
+
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				</api>
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>
+				<api> 
+				<name>mblog_modify</name>
+				</api>
+				<api> 
+				<name>mblog_top</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_visitor</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_updateuserinfo</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>
+
+				<api> 
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_getnicklist.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mtaotao_publish</name>
+				</api>
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>
+				
+				<api> 
+				<name>cgi_mqzone_rightcheck_batch</name>
+				</api>
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>
+				
+				<api> 
+				<name>cgi_get_flower</name>
+				</api>	
+				<api> 
+				<name>mblog_get_onecomment.fcg</name>
+				</api>	
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_isfriend.fcg</name>
+				</api>				
+				<api> 
+				<name>mblog_get_latest.fcg</name>
+				</api>	
+				<api> 
+				<name>mmsgb_addanswer.cgi</name>
+				</api>
+				<api>
+				<name>cgi_mqzone_addcarefriend</name>
+				</api>
+				
+				<api>
+				<name>cgi_mqzone_getportrait.fcg</name>
+				</api>
+
+			<api>
+<name>cgi_mfriend_add.cgi</name>
+</api>
+<api>
+<name>mcgi_upload_pic</name>
+</api>
+<api>
+<name>cgi_mfriend_del.cgi</name>
+</api>
+<api>
+<name>cgi_mfriend_auth.cgi</name>
+</api>
+</api_list>
+		</role>		
+		
+		<role>
+			<id>211</id>
+			<name>群空间</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>	
+			</api_list>
+		</role>
+
+		<role>
+			<id>212</id>
+			<name>搬家工具</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>cgi_qzone_tips</name>
+				</api>	
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>	
+				<api> 
+				<name>mblog_add_withtime</name>
+				</api>	
+			<api>
+<name>mblog_modify</name>
+</api>
+<api>
+<name>mcgi_list_album</name>
+</api>
+<api>
+<name>mcgi_upload_pic</name>
+</api>
+</api_list>
+		</role>			
+		<role>
+			<id>213</id>
+			<name>QQ视频</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_isactive</name>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				</api>	
+				<api> 
+				<name>mblog_del</name>
+				</api>				
+			</api_list>
+		</role>			
+
+		<role>
+			<id>214</id>
+			<name>QQ休闲游戏</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>	
+			</api_list>
+		</role>	
+
+		<role>
+			<id>215</id>
+			<name>腾讯十周年</name>
+			<desc> 通用活动系统 </desc>		
+			<api_list>
+				<api> 
+				<name>cgi_mqzone_isactive</name>
+				</api>	
+				<api> 
+				<name>cgi_mtaotao_getmymsg</name>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				</api>	
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>
+				
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_modify</name>
+				</api>					
+			</api_list>
+		</role>			
+
+		<role>
+			<id>216</id>
+			<name>短信</name>
+			<desc></desc>		
+			<api_list>
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_isactive</name>
+				</api>	
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				</api>
+				
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>	
+				<api> 
+				<name>mmsgb_addanswer.cgi</name>
+				</api>	
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_get_onecomment.fcg</name>
+				</api>
+				
+			       <api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>	
+				<api> 
+				<name>mmsgb_page.cgi</name>
+				</api>	
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>
+				
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_getcarefriend</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_visitor</name>
+				</api>	
+				<api> 
+				<name>cgi_mtaotao_publish</name>
+				</api>	
+				<api> 
+				<name>cgi_mtaotao_getmymsg</name>
+				</api>	
+				<api> 
+				<name>cgi_mtaotao_reply</name>
+				</api>	
+				<api> 
+				<name>mblog_reply_comment</name>
+				</api>
+				
+				<api> 
+				<name>mmsgb_comment_answer.cgi</name>
+				</api>	
+				<api> 
+				<name>mblog_get_readerlist</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_addcarefriend</name>
+				</api>
+
+				<api> 
+				<name>cgi_mic_getmyfriendfeeds.cgi</name>
+				</api>	
+				<api> 
+				<name>cgi_mic_getmyfeeds.cgi</name>
+				</api>				
+
+			</api_list>
+		</role>
+
+		<role>
+			<id>217</id>
+			<name>音乐盒</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_add</name>
+				</api>	
+			</api_list>
+		</role>	
+		
+		<role>
+			<id>218</id>
+			<name>taotao空间心情</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>cgi_mqzone_getnicklist.fcg</name>
+				</api>	
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>					
+			</api_list>
+		</role>
+		<role>
+			<id>219</id>
+			<name>Q吧</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>	
+			</api_list>
+		</role>		
+
+		<role>
+			<id>220</id>
+			<name>拍拍</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>cgi_mqzone_isactive</name>
+				</api>	
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				</api>	
+			<api>
+<name>cgi_mqzone_getportrait.fcg</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+</api>
+</api_list>
+		</role>			
+
+		<role>
+			<id>221</id>
+			<name>手机QQ空间</name>
+			<desc> </desc>		
+			<api_list>
+
+				<api> 
+				<name>mmsgb_show.cgi</name>
+				</api>	
+				<api> 
+				<name>mmsgb_getregard.cgi</name>
+				</api>	
+				<api> 
+				<name>mmsgb_get_one_answer.cgi</name>
+				</api>	
+
+				<api> 
+				<name>mmsgb_delanswer.cgi</name>
+				</api>	
+				<api> 
+				<name>mmsgb_comment_answer.cgi</name>
+				</api>	
+				<api> 
+				<name>mmsgb_addanswer.cgi</name>
+				</api>	
+
+				<api> 
+				<name>mblog_top</name>
+				</api>	
+				<api> 
+				<name>mblog_reply_comment</name>
+				</api>	
+				<api> 
+				<name>mblog_quote</name>
+				</api>	
+
+				<api> 
+				<name>mblog_modify_category</name>
+				</api>	
+				<api> 
+				<name>mblog_modify</name>
+				</api>	
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+
+				<api> 
+				<name>mblog_get_onecomment.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_get_latest.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+
+				<api> 
+				<name>mblog_del</name>
+				</api>					
+
+				<api> 
+				<name>mblog_delanswer</name>
+				</api>	
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>	
+
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				</api>	
+				<api> 
+				<name>cgi_mtaotao_update</name>
+				</api>	
+
+				<api> 
+				<name>cgi_mtaotao_reply</name>
+				</api>	
+				<api> 
+				<name>cgi_mtaotao_publish</name>
+				</api>	
+				<api> 
+				<name>cgi_mtaotao_getreplies</name>
+				</api>	
+
+				<api> 
+				<name>cgi_mtaotao_getmymsg</name>
+				</api>	
+				
+				<api> 
+				<name>cgi_mtaotao_delete</name>
+				</api>		
+
+				<api> 
+				<name>mblog_get_readzone_3g</name>
+				</api>					
+
+				<api> 
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_updateuserinfo</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>	
+
+				<api> 
+				<name>cgi_mqzone_isactive</name>
+				</api>	
+				<api> 
+				<name>cgi_mic_getmyfriendfeeds.cgi</name>
+				</api>	
+				<api> 
+				<name>cgi_mic_getmyfeeds.cgi</name>
+				</api>	
+
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				</api>	
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>	
+				<api> 
+				<name>cgi_emotion_list.fcg</name>
+				</api>	
+
+				<api> 
+				<name>cgi_mqzone_visitor.fcg</name>
+				</api>
+				
+				<api> 
+				<name>cgi_mapp_issetupapp.cgi</name>
+				</api>
+				<api> 
+				<name>cgi_mapp_setupapp.cgi</name>
+				</api>
+
+			</api_list>
+		</role>	
+
+		<role>
+			<id>222</id>
+			<name>企业信息平台</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_add</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_isactive</name>
+				</api>
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_del</name>
+				</api>
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>
+				<api> 
+				<name>mblog_delanswer</name>
+				</api>
+				<api>
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>					
+			<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+</api>
+</api_list>
+		</role>	
+
+		<role>
+			<id>223</id>
+			<name>投票</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>				
+			</api_list>
+		</role>	
+
+		<role>
+			<id>224</id>
+			<name>广告平台部</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_add</name>
+				</api>	
+			</api_list>
+		</role>		
+
+		<role>
+			<id>225</id>
+			<name>share分享</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>						
+				<api> 
+				<name>mcgi_list_album</name>
+				</api>	
+				<api> 
+				<name>mcgi_list_photo</name>
+				</api>	
+				<api> 
+				<name>mcgi_get_photoinfo</name>
+				</api>	
+				<api> 
+				<name>mcgi_get_albuminfo</name>
+				</api>	
+			</api_list>
+		</role>		
+
+		<role>
+			<id>226</id>
+			<name>秀世界</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>				
+			</api_list>
+		</role>			
+
+		<role>
+			<id>227</id>
+			<name>安全中心</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_del</name>
+				</api>	
+				<api> 
+				<name>mblog_get_onecomment.fcg</name>
+				</api>				
+
+				<api> 
+				<name>mblog_delanswer</name>
+				</api>	
+				<api> 
+				<name>mmsgb_page.cgi</name>
+				</api>	
+				<api> 
+				<name>mmsgb_delanswer.cgi</name>
+				</api>
+				<api> 
+				<name>mmsgb_get_one_answer.cgi</name>
+				</api>
+			</api_list>
+		</role>			
+
+		<role>
+			<id>228</id>
+			<name>qqcampusQQ校友</name>
+			<desc> </desc>		
+			<api_list>
+				<api> 
+				<name>mblog_top</name>
+				</api>	
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>	
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>				
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_get_onecomment.fcg</name>
+				</api>	
+				<api> 
+				<name>mmsgb_page.cgi</name>
+				</api>	
+				
+				<api> 
+				<name>mmsgb_getregard.cgi</name>
+				</api>		
+				<api> 
+				<name>mmsgb_getcount.cgi</name>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				</api>				
+
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_modify_commend</name>
+				</api>	
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				</api>				
+
+				<api> 
+				<name>msgb_addanswer_for_campus</name>
+				</api>	
+				<api> 
+				<name>cgi_mic_getmyschoolfriendfeeds.cgi</name>
+				</api>	
+
+				<api> 
+				<name>mblog_modify</name>
+				</api>		
+				<api> 
+				<name>mblog_del</name>
+				</api>	
+				<api> 
+				<name>mblog_delanswer</name>
+				</api>				
+
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>	
+				<api> 
+				<name>mblog_get_data.fcg</name>
+				</api>	
+
+				<api> 
+				<name>mblog_rss.fcg</name>
+				</api>		
+				<api> 
+				<name>mblog_commentlist_for_campus.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_get_countlist.fcg</name>
+				</api>				
+
+				<api> 
+				<name>mblog_reply_comment</name>
+				</api>	
+
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>		
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>	
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>				
+
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+				
+				<api> 
+				<name>mblog_get_readerlist</name>
+				</api>
+				
+				<api> 
+				<name>cgi_mic_setcampusfilter.cgi</name>
+				</api>	
+				<api> 
+				<name>cgi_mic_getcampusfilter.cgi</name>
+				</api>
+				
+				<api> 
+				<name>mprivateblog_get_count</name>
+				</api>
+				<api> 
+				<name>mprivateblog_get_titlelist</name>
+				</api>
+				<api> 
+				<name>mprivateblog_get_data</name>
+				</api>
+				<api> 
+				<name>mprivateblog_add</name>
+				</api>
+				<api> 
+				<name>mprivateblog_del_data</name>
+				</api>
+				<api> 
+				<name>mprivateblog_modify</name>
+				</api>
+				<api> 
+				<name>mprivateblog_prv2pub</name>
+				</api>
+				<api> 
+				<name>mprivateblog_pub2prv</name>
+				</api>
+				<api> 
+				<name>mprivateblog_del_comment</name>
+				</api>	
+				
+				<api> 
+				<name>mcgi_recent_picture</name>
+				</api>
+
+
+				<api> 
+				<name>mdraft_get_manual_list</name>
+				</api>
+				<api> 
+				<name>mdraft_get_manual_data</name>
+				</api>
+				<api> 
+				<name>mdraft_set_manual_data</name>
+				</api>
+				<api> 
+				<name>mdraft_del_manual_data</name>
+				</api>
+				<api> 
+				<name>mblog_modify_category</name>
+				</api>
+				<api> 
+				<name>mblog_add_category</name>
+				</api>
+				<api> 
+				<name>mblog_quote_by_blogid</name>
+				</api>				
+				<api>
+				<name>mcgi_pcomment_xml</name>
+				</api>
+
+				<api>
+				<name>mmsg_del_usermsg</name>
+				</api>
+				<api>
+				<name>mmsg_get_msgboxinfo</name>
+				</api>
+				<api>
+				<name>mmsg_get_usermsg</name>
+				</api>
+				<api>
+				<name>mmsg_send_usermsg</name>
+				</api>
+				<api>
+				<name>mmsg_read_usermsg</name>
+				</api>
+
+				<api>
+				<name>mqzone_pasture_register</name>
+				</api>
+
+			<api>
+<name>cgi_mic_getmyschoolfriends_xml_passive.cgi</name>
+</api>
+<api>
+<name>cgi_mic_getmyschoolfriends_xml_active.cgi</name>
+</api>
+<api>
+<name>cgi_mapp_xyGetAppIsOpenInfo.cgi</name>
+</api>
+<api>
+<name>cgi_memotion_publish</name>
+</api>
+<api>
+<name>cgi_memotion_getmymsg</name>
+</api>
+<api>
+<name>cgi_memotion_delete</name>
+</api>
+<api>
+<name>cgi_memotion_delcomment</name>
+</api>
+<api>
+<name>cgi_memotion_getmsgdetail</name>
+</api>
+<api>
+<name>cgi_memotion_addcomment</name>
+</api>
+<api>
+<name>cgi_memotion_addreply</name>
+</api>
+<api>
+<name>cgi_memotion_getbatchfirst</name>
+</api>
+<api>
+<name>cgi_memotion_multireplies</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_xiaoyou</name>
+</api>
+<api>
+<name>mcgi_add_album</name>
+</api>
+<api>
+<name>mcgi_modify_album</name>
+</api>
+<api>
+<name>mcgi_del_pic</name>
+</api>
+<api>
+<name>mcgi_del_album</name>
+</api>
+<api>
+<name>mcgi_list_album</name>
+</api>
+<api>
+<name>mcgi_get_albuminfo</name>
+</api>
+<api>
+<name>mcgi_list_photo</name>
+</api>
+<api>
+<name>mcgi_get_photoinfo</name>
+</api>
+<api>
+<name>mcgi_modify_pic</name>
+</api>
+<api>
+<name>mdraft_set_auto_data</name>
+</api>
+<api>
+<name>mdraft_get_auto_data</name>
+</api>
+<api>
+<name>mdraft_del_auto_data</name>
+</api>
+<api>
+<name>mcgi_move_pic</name>
+</api>
+<api>
+<name>mcgi_add_piccomment</name>
+</api>
+<api>
+<name>mcgi_add_reply</name>
+</api>
+<api>
+<name>mcgi_del_piccomment</name>
+</api>
+<api>
+<name>cgi_mapp_getopenidbyuin.cgi</name>
+</api>
+<api>
+<name>cgi_mapp_isadd_uins_apps.cgi</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+</api>
+<api>
+<name>cgi_mic_school_recent.cgi</name>
+</api>
+</api_list>
+		</role>			
+
+		<role>
+			<id>229</id>
+			<name>cityman</name>
+			<desc> 城市达人</desc>		
+			<api_list>	
+				<api> 
+				<name>mmsgb_addanswer.cgi</name>
+				</api>	
+				<api> 
+				<name>mmsgb_show.cgi</name>
+				</api>	
+				<api> 
+				<name>mmsgb_delanswer.cgi</name>
+				</api>				
+
+				<api> 
+				<name>friendshow_get_city_nb</name>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>	
+
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+
+				<api> 
+				<name>mblog_add</name>
+				</api>				
+
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>	
+
+				<api> 
+				<name>mblog_modify</name>
+				</api>	
+				
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>	
+
+				<api> 
+				<name>mblog_get_all_blogconent_byuin.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_get_countlist.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_del</name>
+				</api>				
+				
+				<api> 
+				<name>mblog_modify_commend</name>
+				</api>
+				
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>				
+
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				</api>	
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>
+				
+				<api> 
+				<name>mblog_delanswer</name>
+				</api>			
+				
+				<api> 
+				<name>mblog_rss.fcg</name>
+				</api>
+			<api>
+<name>mmsg_send_usermsg</name>
+</api>
+<api>
+<name>mmsg_del_usermsg</name>
+</api>
+<api>
+<name>mmsg_get_msgboxinfo</name>
+</api>
+<api>
+<name>mmsg_get_usermsg</name>
+</api>
+<api>
+<name>mmsg_read_usermsg</name>
+</api>
+</api_list>
+		</role>	
+
+		<role>
+			<id>230</id>
+			<name>门户</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>	
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+			<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+</api>
+</api_list>
+		</role>	
+
+		<role>
+			<id>231</id>
+			<name>注册通知</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>
+				<api> 
+				<name>mmsgb_getregard.cgi</name>
+				</api>
+				<api> 
+				<name>mcgi_list_album</name>
+				</api>	
+			<api>
+<name>mblog_add</name>
+</api>
+</api_list>
+		</role>		
+
+		<role>
+			<id>232</id>
+			<name>个人资料</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>	
+			</api_list>
+		</role>
+		
+		<role>
+			<id>233</id>
+			<name>simpleblog qzone空间超简版接口组</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>simpleblog_get_data</name>
+				</api>	
+				<api> 
+				<name>cgi_mic_brief_feeds_ic_cgi.cgi</name>
+				</api>	
+				<api> 
+				<name>mblog_static_page</name>
+				</api>
+			<api>
+<name>cgi_memotion_firstgbk</name>
+</api>
+</api_list>
+		</role>	
+		
+		<role>
+			<id>234</id>
+			<name>netbardaren网吧达人</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>				
+				<api> 
+				<name>mmsgb_page.cgi</name>
+				</api>
+				<api> 
+				<name>mmsgb_addanswer.cgi</name>
+				</api>
+				<api> 
+				<name>mmsgb_delanswer.cgi</name>
+				</api>
+				<api> 
+				<name>cgi_mapp_isuinsaddapp.cgi</name>
+				</api>
+				<api> 
+				<name>cgi_mapp_isadd_uins_apps.cgi</name>
+				</api>
+			</api_list>
+		</role>	
+
+		<role>
+			<id>236</id>
+			<name>无线Portal</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>				
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>
+				<api>
+				<name>mcgi_list_photo</name>
+				</api>
+			</api_list>
+		</role>	
+
+		<role>
+			<id>237</id>
+			<name>公益网</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mblog_add</name>
+				</api>
+			</api_list>
+		</role>	
+		
+		<role>
+			<id>238</id>
+			<name>oss旁路</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mcgi_del_piccomment</name>
+				</api>
+				<api>
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>
+			</api_list>
+		</role>
+		
+		<role>
+			<id>239</id>
+			<name>财经名博最新博客列表</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>
+			</api_list>
+		</role>
+		
+		<role>
+			<id>240</id>
+			<name>开心农场</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>cgi_mqzone_getnicklist.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_isfriend.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mapp_issetupapp.cgi</name>
+				</api>
+				<api> 
+				<name>cgi_qzone_tips</name>
+				</api>
+				<api> 
+				<name>cgi_mapp_isopenspeapp.cgi</name>
+				</api>
+			<api>
+<name>cgi_qzone_tips_ex</name>
+</api>
+<api>
+<name>cgi_mapp_isadd_uins_apps.cgi</name>
+</api>
+</api_list>
+		</role>
+		
+		<role>
+			<id>241</id>
+			<name>qqshowmall QQshow乐园</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_get_friendbirthday_pttc</name>
+				</api>
+			<api>
+<name>mblog_add</name>
+</api>
+<api>
+<name>cgi_memotion_getbatchfirst</name>
+</api>
+</api_list>
+		</role>
+		
+		<role>
+			<id>242</id>
+			<name>拍拍商品</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mcgi_del_pic</name>
+				</api>
+				<api> 
+				<name>mcgi_get_userinfo</name>
+				</api>
+				<api> 
+				<name>mcgi_upload_pic</name>
+				</api>
+			</api_list>
+		</role>
+		
+		
+		<role>
+			<id>243</id>
+			<name>soso 图片</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mcgi_upload_pic</name>
+				</api>				 				
+			</api_list>
+		</role>
+		
+		<role>
+			<id>244</id>
+			<name>astro 星座运势</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>mblog_add</name>
+				</api>						
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>
+				<api> 
+				<name>cgi_mqzone_updateuserinfo</name>
+				</api>
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>
+			</api_list>
+		</role>
+		
+		<role>
+			<id>245</id>
+			<name>游戏基地</name>
+			<desc> </desc>		
+			<api_list>			
+				<api> 
+				<name>cgi_mapp_isopenspeapp.cgi</name>
+				</api>				 				
+			</api_list>
+		</role>
+		
+		<role>
+			<id>246</id>
+			<name>qzplatform</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>mqzone_xy.php</name>
+				</api>
+				<api>
+				<name>check</name>
+				</api>
+				<api>
+				<name>happy_farm_callback.php</name>
+				</api>
+				<api>
+				<name>friendeffect_cgi_issetup</name>
+				</api>
+				<api>
+				<name>cgi_mapp_isaddok_num.cgi</name>
+				</api>
+				<api>
+				<name>cgi_mapp_isaddok_level.cgi</name>
+				</api>
+				<api>
+				<name>cgi_mapp_isaddok_level_num.cgi</name>
+				</api>
+				<api>
+				<name>mblog_add</name>
+				</api>
+				<api>
+				<name>card_user_register</name>
+				</api>
+				<api>
+				<name>mqzone_farmland_isinstallable</name>
+				</api>
+			<api>
+<name>white_list</name>
+</api>
+<api>
+<name>cgi_farm_isinstallable_mqzone_v2</name>
+</api>
+<api>
+<name>register_uin.php</name>
+</api>
+<api>
+<name>cgi_mapp_isaddok_levelandnum.cgi</name>
+</api>
+<api>
+<name>cgi_mapp_install_filt.cgi</name>
+</api>
+</api_list>
+		</role>
+		
+		<role>
+			<id>247</id>
+			<name>qqplayer</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>cgi_mqzone_isactive</name>
+				</api>
+				<api>
+				<name>mblog_add</name>
+				</api>
+				<api>
+				<name>mblog_categorylist</name>
+				</api>
+				<api>
+				<name>mblog_add_category</name>
+				</api>
+			</api_list>
+		</role>
+		
+		<role>
+			<id>248</id>
+			<name>pasture</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>cgi_mapp_isopenspeapp.cgi</name>
+				</api>
+				<api>
+				<name>cgi_mqzone_getnicklist.fcg</name>
+				</api>				
+			</api_list>
+		</role>
+		
+		
+		<role>
+			<id>249</id>
+			<name>mcampus</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>mcampus.php</name>
+				</api>
+				<api>
+				<name>mblog_addanswer</name>
+				</api>
+				<api>
+				<name>mblog_getbloglist.fcg</name>
+				</api>
+				<api>
+				<name>mblog_commentlist.fcg</name>
+				</api>
+				<api>
+				<name>mblog_reply_comment</name>
+				</api>		
+				<api>
+				<name>mblog_get_content.fcg</name>
+				</api>		
+			</api_list>
+		</role>	
+				
+		<role>
+			<id>250</id>
+			<name>avavideo</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>mblog_add</name>
+				</api>		
+				<api>
+				<name>cgi_mqzone_isactive</name>
+				</api>	
+				<api>
+				<name>cgi_mblog_active_space</name>
+				</api>	
+			</api_list>
+		</role>	
+
+		<role>
+			<id>251</id>
+			<name>mv</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>mblog_add</name>
+				</api>				
+			</api_list>
+		</role>	
+
+		<role>
+			<id>252</id>
+			<name>slideshow</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>mcgi_add_album</name>
+				</api>		
+				<api>
+				<name>mcgi_upload_pic</name>
+				</api>	
+			</api_list>
+		</role>	
+
+		<role>
+			<id>253</id>
+			<name>sec_info</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>mblog_categorylist</name>
+				</api>					
+				<api>
+				<name>mblog_getbloglist.fcg</name>
+				</api>	
+				<api>
+				<name>mblog_get_content.fcg</name>
+				</api>	
+				<api>
+				<name>mblog_commentlist.fcg</name>
+				</api>	
+				<api>
+				<name>mblog_get_onecomment.fcg</name>
+				</api>	
+				<api>
+				<name>mmsgb_page.cgi</name>
+				</api>	
+				<api>
+				<name>mmsgb_get_one_answer.cgi</name>
+				</api>	
+				<api>
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>	
+				<api>
+				<name>cgi_mqzone_visitor</name>
+				</api>	
+				<api>
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>	
+				<api>
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>	
+			<api>
+<name>mcgi_modify_album</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_info</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+</api>
+</api_list>
+		</role>	
+
+		<role>
+			<id>254</id>
+			<name>sosord</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>	
+				<api>
+				<name>mblog_commentlist.fcg</name>
+				</api>
+				<api>
+				<name>cgi_mqzone_getnicklist.fcg</name>
+				</api>
+				<api>
+				<name>cgi_mqzone_visitor</name>
+				</api>
+				<api>
+				<name>cgi_mqzone_visit_to_userinfo</name>
+				</api>
+			<api>
+<name>mblog_get_readerlist</name>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+</api>
+</api_list>
+		</role>	
+
+		<role>
+			<id>255</id>
+			<name>diy_emotion</name>
+			<desc></desc>
+			<api_list>
+				<api>
+				<name>mcgi_add_album</name>
+				</api>		
+				<api>
+				<name>mcgi_upload_pic</name>
+				</api>		
+			</api_list>
+		</role>	
+		
+		<role>
+<id>256</id>
+<name>PersonalCard</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_mtaotao_getmymsg</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>257</id>
+<name>loverspace</name>
+<desc> </desc>
+<api_list> <api>
+<name>mapi_add_feed</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>258</id>
+<name>quiz</name>
+<desc> </desc>
+<api_list> <api>
+<name>mapi_add_feed</name>
+</api>
+<api>
+<name>mapi_update_feed</name>
+</api>
+<api>
+<name>mapi_delete_feed</name>
+</api>
+<api>
+<name>cgi_mapp_isopenspeapp.cgi</name>
+</api>
+<api>
+<name>cgi_mqzone_userinfo.fcg</name>
+</api>
+<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>259</id>
+<name>douban</name>
+<desc> </desc>
+<api_list> <api>
+<name>mblog_add</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>260</id>
+<name>friendvistor</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_mtaotao_batchfirst</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>261</id>
+<name>vipshop</name>
+<desc> </desc>
+<api_list> <api>
+<name>mmsgb_addanswer.cgi</name>
+</api>
+<api>
+<name>mmsgb_delanswer.cgi</name>
+</api>
+<api>
+<name>mmsgb_comment_answer.cgi</name>
+</api>
+<api>
+<name>mmsgb_show.cgi</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>262</id>
+<name>oss_scrip</name>
+<desc> </desc>
+<api_list> <api>
+<name>mmsg_del_usermsg</name>
+</api>
+<api>
+<name>mapi_oss_del_feed</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>263</id>
+<name>yellowright</name>
+<desc> </desc>
+<api_list> <api>
+<name>mapi_update_feed</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>264</id>
+<name>bailing</name>
+<desc> </desc>
+<api_list> <api>
+<name>mblog_get_content.fcg</name>
+</api>
+<api>
+<name>mblog_categorylist</name>
+</api>
+<api>
+<name>mblog_top</name>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+</api>
+<api>
+<name>mblog_add</name>
+</api>
+<api>
+<name>mblog_modify</name>
+</api>
+<api>
+<name>mblog_del</name>
+</api>
+<api>
+<name>mblog_delanswer</name>
+</api>
+<api>
+<name>mblog_addanswer</name>
+</api>
+<api>
+<name>mblog_get_data.fcg</name>
+</api>
+<api>
+<name>mblog_rss.fcg</name>
+</api>
+<api>
+<name>mblog_get_onecomment.fcg</name>
+</api>
+<api>
+<name>mblog_get_countlist.fcg</name>
+</api>
+<api>
+<name>mblog_reply_comment</name>
+</api>
+<api>
+<name>mblog_quote_by_blogid</name>
+</api>
+<api>
+<name>mblog_get_readerlist</name>
+</api>
+<api>
+<name>mblog_getbloglistbyblogid.fcg</name>
+</api>
+<api>
+<name>mblog_batchmodflag_whitecollar</name>
+</api>
+<api>
+<name>mapi_add_feed</name>
+</api>
+<api>
+<name>mapi_update_feed</name>
+</api>
+<api>
+<name>mapi_delete_feed</name>
+</api>
+<api>
+<name>cgi_mic_getmybailingfriendfeeds.cgi</name>
+</api>
+<api>
+<name>mmsg_send_usermsg</name>
+</api>
+<api>
+<name>mmsg_get_usermsg</name>
+</api>
+<api>
+<name>mmsg_del_usermsg</name>
+</api>
+<api>
+<name>mmsg_get_msgboxinfo</name>
+</api>
+<api>
+<name>mmsg_read_usermsg</name>
+</api>
+<api>
+<name>cgi_blog_compete_userinfo.fcg</name>
+</api>
+<api>
+<name>cgi_mblog_active_space</name>
+</api>
+<api>
+<name>cgi_memotion_getmsgdetail</name>
+</api>
+<api>
+<name>cgi_memotion_delete</name>
+</api>
+<api>
+<name>cgi_memotion_getmymsg</name>
+</api>
+<api>
+<name>cgi_memotion_publish</name>
+</api>
+<api>
+<name>cgi_memotion_addcomment</name>
+</api>
+<api>
+<name>cgi_memotion_delcomment</name>
+</api>
+<api>
+<name>cgi_memotion_addreply</name>
+</api>
+<api>
+<name>cgi_memotion_delreply</name>
+</api>
+<api>
+<name>cgi_memotion_getbatchfirst</name>
+</api>
+<api>
+<name>cgi_memotion_getmsgbytagid</name>
+</api>
+<api>
+<name>cgi_memotion_getmixlist</name>
+</api>
+<api>
+<name>cgi_mic_getmybailingfriends_xml_passive.cgi</name>
+</api>
+<api>
+<name>cgi_mic_getmybailingfriends_xml_active.cgi</name>
+</api>
+<api>
+<name>cgi_mic_getmybailingfriends_xml_activemore.cgi</name>
+</api>
+<api>
+<name>cgi_mic_bailing_default_xml_active.cgi</name>
+</api>
+<api>
+<name>cgi_memotion_censor</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>265</id>
+<name>QQhuayuan</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_mapp_issetupapp.cgi</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>266</id>
+<name>restaurant</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_mapp_isopenspeapp.cgi</name>
+</api>
+<api>
+<name>cgi_mqzone_userinfo.fcg</name>
+</api>
+<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>267</id>
+<name>qzonevideo</name>
+<desc> </desc>
+<api_list> <api>
+<name>mblog_add</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_info</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>268</id>
+<name>mobile</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_blog_compete_userinfo.fcg</name>
+</api>
+<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+</api>
+<api>
+<name>cgi_mqzone_getportrait.fcg</name>
+</api>
+<api>
+<name>cgi_mic_getmyfeeds.cgi</name>
+</api>
+<api>
+<name>cgi_mic_getmyfriendfeeds.cgi</name>
+</api>
+<api>
+<name>cgi_mqzone_visitor</name>
+</api>
+<api>
+<name>mapi_add_feed</name>
+</api>
+<api>
+<name>mblog_get_content.fcg</name>
+</api>
+<api>
+<name>mblog_commentlist.fcg</name>
+</api>
+<api>
+<name>mblog_addanswer</name>
+</api>
+<api>
+<name>cgi_mtaotao_publish</name>
+</api>
+<api>
+<name>cgi_mtaotao_update</name>
+</api>
+<api>
+<name>cgi_mtaotao_reply</name>
+</api>
+<api>
+<name>cgi_mtaotao_delete</name>
+</api>
+<api>
+<name>mcgi_add_piccomment</name>
+</api>
+<api>
+<name>mcgi_del_piccomment</name>
+</api>
+<api>
+<name>mmsgb_addanswer.cgi</name>
+</api>
+<api>
+<name>mmsgb_delanswer.cgi</name>
+</api>
+<api>
+<name>mblog_reply_comment</name>
+</api>
+<api>
+<name>cgi_mqzone_show_qqfriends</name>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+</api>
+<api>
+<name>cgi_mtaotao_getmymsg</name>
+</api>
+<api>
+<name>cgi_mic_getusermorefeeds_xml.cgi</name>
+</api>
+<api>
+<name>cgi_mtaotao_getreplies</name>
+</api>
+<api>
+<name>mmsgb_comment_answer.cgi</name>
+</api>
+<api>
+<name>mcgi_get_photoinfo</name>
+</api>
+<api>
+<name>mcgi_pcomment_xml</name>
+</api>
+<api>
+<name>mcgi_add_reply</name>
+</api>
+<api>
+<name>cgi_mic_getqz_feeds.cgi</name>
+</api>
+<api>
+<name>mmsgb_get_one_answer.cgi</name>
+</api>
+<api>
+<name>mmsgb_getregard.cgi</name>
+</api>
+<api>
+<name>mmsgb_show.cgi</name>
+</api>
+<api>
+<name>mcgi_list_album</name>
+</api>
+<api>
+<name>mcgi_list_photo</name>
+</api>
+<api>
+<name>mblog_add</name>
+</api>
+<api>
+<name>mblog_quote_by_blogid</name>
+</api>
+<api>
+<name>mblog_get_readzone_3g</name>
+</api>
+<api>
+<name>cgi_memotion_addcomment</name>
+</api>
+<api>
+<name>cgi_memotion_addreply</name>
+</api>
+<api>
+<name>cgi_memotion_forward</name>
+</api>
+<api>
+<name>mcgi_list_friendphoto</name>
+</api>
+<api>
+<name>mblog_get_replylist</name>
+</api>
+<api>
+<name>mblog_get_readzonefriend</name>
+</api>
+<api>
+<name>cgi_memotion_getmymsg</name>
+</api>
+<api>
+<name>cgi_memotion_getmsgdetail</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>269</id>
+<name>trip</name>
+<desc> </desc>
+<api_list> <api>
+<name>mblog_get_content.fcg</name>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>270</id>
+<name>yidong</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_memotion_getbatchfirst</name>
+</api>
+<api>
+<name>cgi_mtaotao_batchfirst</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>271</id>
+<name>soso_icenter_keysub</name>
+<desc> </desc>
+<api_list> <api>
+<name>mblog_add</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>272</id>
+<name>gh_video</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>273</id>
+<name>QzoneMovie</name>
+<desc> </desc>
+<api_list> <api>
+<name>mapi_delete_feed</name>
+</api>
+<api>
+<name>mapi_add_feed</name>
+</api>
+<api>
+<name>mapi_update_feed</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>274</id>
+<name>soso_comic</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_qzshare_unifiedadd</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+</api>
+<api>
+<name>cgi_mapp_isopenspeapp.cgi</name>
+</api>
+<api>
+<name>cgi_mqzone_getportrait.fcg</name>
+</api>
+<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+</api>
+<api>
+<name>cgi_mapp_issetupapp.cgi</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>275</id>
+<name>worldcup_guess</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_qzshare_unifiedadd</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>276</id>
+<name>3g_microblog</name>
+<desc> </desc>
+<api_list> <api>
+<name>cgi_memotion_signget</name>
+</api>
+<api>
+<name>cgi_memotion_signset</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>277</id>
+<name>oss</name>
+<desc> </desc>
+<api_list> <api>
+<name>mcgi_del_picmark</name>
+</api>
+<api>
+<name>mcgi_del_piccomment</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>278</id>
+<name>photosearch</name>
+<desc> </desc>
+<api_list> <api>
+<name>mcgi_get_albuminfo</name>
+</api>
+<api>
+<name>mcgi_get_photoinfo</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>279</id>
+<name>soren-blog</name>
+<desc> </desc>
+<api_list> <api>
+<name>mblog_get_latest.fcg</name>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>280</id>
+<name>hotrecommend</name>
+<desc> </desc>
+<api_list> <api>
+<name>mblog_modify_commend</name>
+</api>
+</api_list>
+</role>
+<role>
+<id>281</id>
+<name>wapqqshow</name>
+<desc> </desc>
+<api_list> <api>
+<name>mblog_add</name>
+</api>
+</api_list>
+</role>
+<role>
+			<id>999</id>
+			<name>QZone 普通应用</name>
+			<desc>mqzone </desc>
+			
+			<api_list>
+				<api> 
+				<name>mblog_delanswer</name>
+				</api>          
+				<api> 
+				<name>mblog_categorylist</name>
+				</api>       
+				<api> 
+				<name>mblog_del</name>
+				</api>               
+				<api> 
+				<name>mblog_modify</name>
+				</api>            
+				<api> 
+				<name>mblog_modify_commend</name>
+				</api>    
+				<api> 
+				<name>mblog_add</name>
+				</api>               
+				<api> 
+				<name>mblog_top</name>
+				</api>                
+				<api> 
+				<name>mblog_quote</name>
+				</api>             
+				<api> 
+				<name>mblog_add_withtime</name>
+				</api>     
+				<api> 
+				<name>mblog_addanswer</name>
+				</api>         
+				<api> 
+				<name>mblog_reply_comment</name>
+				</api>      
+				<api> 
+				<name>mblog_get_readerlist</name>
+				</api>     
+				<api> 
+				<name>mblog_get_data.fcg</name>
+				</api>       
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				</api>    
+				<api> 
+				<name>mblog_get_onecomment.fcg</name>
+				</api> 
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				</api>    
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				</api>    
+				<api> 
+				<name>mblog_get_latest.fcg</name>
+				</api>     
+				<api> 
+				<name>mblog_commentlist_for_campus.fcg</name>
+				</api>   
+				<api> 
+				<name>mblog_rss.fcg</name>
+				</api>            
+				<api> 
+				<name>mblog_get_countlist.fcg</name>
+				</api>  
+				<api> 
+				<name>mblog_updatelist.fcg</name>
+				</api>     
+				<api> 
+				<name>mblog_get_all_blogconent_byuin.fcg</name>
+				</api>  
+				<api> 
+				<name>mblog_quote_by_blogid</name>
+				</api>  
+				<api> 
+				<name>mmsgb_addanswer.cgi</name>
+				</api>  
+				<api> 
+				<name>mmsgb_delanswer.cgi</name>
+				</api>  
+				<api> 
+				<name>mmsgb_page.cgi</name>
+				</api>       
+				<api> 
+				<name>mmsgb_getregard.cgi</name>
+				</api>  
+				<api> 
+				<name>msgb_addanswer_for_campus</name>
+				</api>  
+				<api> 
+				<name>mmsgb_comment_answer.cgi</name>
+				</api>   
+				<api> 
+				<name>mmsgb_show.cgi</name>
+				</api>             
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				</api>   
+				<api> 
+				<name>cgi_mqzone_isactive</name>
+				</api>      
+				<api> 
+				<name>cgi_mqzone_updateuserinfo</name>
+				</api> 
+				<api> 
+				<name>cgi_mqzone_visitor</name>
+				</api>       
+				<api> 
+				<name>cgi_qzone_tips</name>
+				</api>           
+				<api> 
+				<name>cgi_get_flower</name>
+				</api>           
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				</api>   
+				<api> 
+				<name>cgi_emotion_list.fcg</name>
+				</api>     
+				<api> 
+				<name>cgi_mqzone_visitor.fcg</name>
+				</api>   
+				<api> 
+				<name>cgi_mqzone_userinfo.fcg</name>
+				</api>  
+				<api> 
+				<name>cgi_mqzone_online</name>
+				</api>        
+				<api> 
+				<name>cgi_mqzone_userprop2.fcg</name>
+				</api>    
+				<api> 
+				<name>cgi_mqzone_isfriend.fcg</name>
+				</api>     
+				<api> 
+				<name>cgi_mqzone_getnicklist.fcg</name>
+				</api>  
+				<api> 
+				<name>cgi_mqzone_rightcheck_batch</name>
+				</api>     
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				</api>   
+				<api> 
+				<name>cgi_mqzone_getportrait.fcg</name>
+				</api>  
+				<api> 
+				<name>cgi_mqzone_visit_to_userinfo</name>
+				</api>  
+				<api> 
+				<name>cgi_mqzone_set_revertright</name>
+				</api> 
+				<api> 
+				<name>cgi_mqzone_black_action</name>
+				</api> 
+				<api> 
+				<name>cgi_mqzone_set_entryright</name>
+				</api>         
+				<api> 
+				<name>cgi_mic_getmyfeeds.cgi</name>
+				</api>        
+				<api> 
+				<name>cgi_mic_getmyfriendfeeds.cgi</name>
+				</api>  
+				<api> 
+				<name>cgi_mic_getuserfeeds.cgi</name>
+				</api>
+				<api> 
+				<name>cgi_mic_getmyfriendfeeds_xml.cgi</name>
+				</api>
+				<api> 
+				<name>cgi_mic_getmyfeeds_xml.cgi</name>
+				</api>
+				<api> 
+				<name>cgi_mic_getuserfeeds_xml.cgi</name>
+				</api>
+
+				<api> 
+				<name>cgi_mtaotao_delete</name>
+				</api>           
+				<api> 
+				<name>cgi_mtaotao_getmymsg</name>
+				</api>         
+				<api> 
+				<name>cgi_mtaotao_getreplies</name>
+				</api>       
+				<api> 
+				<name>cgi_mtaotao_publish</name>
+				</api>          
+				<api> 
+				<name>cgi_mtaotao_reply</name>
+				</api>            
+				<api> 
+				<name>cgi_mtaotao_update</name>
+				</api>      
+				<api> 
+				<name>cgi_mtaotao_batchfirst</name>
+				</api> 
+				<api> 
+				<name>mapi_add_feed</name>
+				</api>                
+				<api> 
+				<name>mapi_delete_feed</name>
+				</api>            
+				<api> 
+				<name>mapi_update_feed</name>
+				</api>             
+				<api> 
+				<name>friendshow_get_city_nb</name>
+				</api>       
+				<api> 
+				<name>cgi_mqzone_addcarefriend</name>
+				</api>     
+				<api> 
+				<name>cgi_mqzone_getcarefriend</name>
+				</api>     				
+				<api> 
+				<name>mblog_add</name>
+				</api> 
+				<api> 
+				<name>cgi_apigw_test.cgi</name>
+				</api> 	
+
+				<api> 
+				<name>mmsgb_get_one_answer.cgi</name>
+				</api>     				
+				<api> 
+				<name>mblog_modify_category</name>
+				</api> 
+				<api> 
+				<name>mblog_get_readzone_3g</name>
+				</api> 
+				
+				<api> 
+				<name>cgi_mapp_issetupapp.cgi</name>
+				</api>
+				<api> 
+				<name>cgi_mapp_setupapp.cgi</name>
+				</api>
+
+				<api>
+				<name>mdraft_get_manual_list</name>
+				</api>
+				<api>
+				<name>mdraft_get_manual_data</name>
+				</api>
+				<api>
+				<name>mdraft_set_manual_data</name>
+				</api>
+				<api>
+				<name>mdraft_del_manual_data</name>
+				</api>
+		
+				<api> 
+				<name>mqzone_cgi_action</name>
+				</api> 
+				<api> 
+				<name>mqzone_cgi_action_w</name>
+				</api>
+				<api> 
+				<name>mqzone_cgi_buy</name>
+				</api>
+				<api>
+				<name>mqzone_cgi_card</name>
+				</api>
+				<api>
+				<name>mqzone_cgi_buyfriendlist</name>
+				</api>
+				<api>
+				<name>mqzone_cgi_init</name>
+				</api>
+				<api>
+				<name>mqzone_cgi_space</name>
+				</api>
+				
+				<api> 
+				<name>mcgi_add_reply</name>
+				</api> 
+				<api> 
+				<name>mcgi_add_piccomment</name>
+				</api>
+				<api> 
+				<name>mcgi_pcomment_xml</name>
+				</api>
+				<api>
+				<name>mcgi_recent_picture</name>
+				</api>
+				<api>
+				<name>mcgi_modify_pic</name>
+				</api>
+				<api>
+				<name>mcgi_recent_update</name>
+				</api>
+				<api>
+				<name>mcgi_del_piccomment</name>
+				</api>
+				<api>
+				<name>mcgi_del_pic</name>
+				</api>
+				<api>
+				<name>mcgi_modify_album</name>
+				</api>
+				<api>
+				<name>mcgi_add_album</name>
+				</api>
+				
+				<api> 
+				<name>parker_user_front_mqzone</name>
+				</api>
+				<api>
+				<name>parker_user_info_mqzone</name>
+				</api>
+				<api>
+				<name>parker_user_friendpark_mqzone</name>
+				</api>
+				<api>
+				<name>parker_user_register_mqzone</name>
+				</api>
+				<api>
+				<name>parker_user_pin_mqzone</name>
+				</api>
+				<api>
+				<name>parker_user_action_mqzone</name>				
+				</api>
+				<api>
+				<name>parker_user_login_mqzone</name>				
+				</api>
+				<api>
+				<name>parker_user_report_mqzone</name>				
+				</api>
+				<api>
+				<name>parker_user_report_history_mqzone</name>				
+				</api>
+
+				<api>
+				<name>mprivateblog_add</name>
+				</api>
+				<api>
+				<name>mprivateblog_del_data</name>
+				</api>
+				<api>
+				<name>mprivateblog_get_data</name>
+				</api>				
+				<api> 
+				<name>mprivateblog_modify</name>
+				</api>
+				<api>
+				<name>mprivateblog_pub2prv</name>
+				</api>
+				<api>
+				<name>mprivateblog_del_comment</name>
+				</api>
+				<api>
+				<name>mprivateblog_get_count</name>
+				</api>
+				<api>
+				<name>mprivateblog_get_titlelist</name>
+				</api>
+				<api>
+				<name>mprivateblog_prv2pub</name>				
+				</api>
+				<api>
+				<name>mqzone_cgi_friendsort</name>				
+				</api>
+				<api>
+				<name>mqzone_cgi_getUserFeeds</name>				
+				</api>
+
+				<api>
+				<name>cgi_mfriend_auth.cgi</name>				
+				</api>
+				<api>
+				<name>cgi_mfriend_add.cgi</name>				
+				</api>
+
+			<api>
+<name>cgi_qzshare_unifiedadd</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+</api>
+<api>
+<name>mblog_setcount</name>
+</api>
+<api>
+<name>cgi_mic_getmyfriendfeeds_xml_page.cgi</name>
+</api>
+<api>
+<name>cgi_memotion_publish</name>
+</api>
+<api>
+<name>mblog_msg_static_get</name>
+</api>
+<api>
+<name>cgi_mqzone_auth</name>
+</api>
+<api>
+<name>mcgi_upload_pic</name>
+</api>
+<api>
+<name>mcgi_get_albuminfo</name>
+</api>
+<api>
+<name>mcgi_list_photo</name>
+</api>
+<api>
+<name>mcgi_get_photoinfo</name>
+</api>
+<api>
+<name>mcgi_list_album</name>
+</api>
+<api>
+<name>mcgi_view_album</name>
+</api>
+<api>
+<name>cgi_memotion_forward</name>
+</api>
+<api>
+<name>cgi_memotion_signget</name>
+</api>
+<api>
+<name>cgi_memotion_signset</name>
+</api>
+</api_list>
+		</role>	
+	</role_list>
+	
+	<app_list>
+	
+		<app>
+			<id>200</id>
+			<name>photokf</name>
+			<desc>QQ相册客服</desc>
+			<appkey>07d98c4b99084b758bd25777486e6a1b</appkey>
+				
+			<role_list>
+				<role id = 200> </role>
+			</role_list>
+			
+            		<default_max_load> 5 </default_max_load>
+                     
+                     <api_list>
+                            <api>
+                               <name> cgi_mqzone_rightcheck_new.fcg </name>
+                               <max_load> 5 </max_load>
+                            </api>
+                     </api_list>
+		</app>		
+
+		<app>
+			<id>201</id>
+			<name>mall</name>
+			<desc>商城</desc>
+			<appkey>9b739596ac554f11a1ef8c0aa237adaf</appkey>
+				
+			<role_list>
+				<role id = 201> </role>
+			</role_list>
+			
+            		<default_max_load> 5 </default_max_load>
+                     
+                     <api_list>
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 5 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_rightcheck_new.fcg</name>
+                               <max_load> 100 </max_load>
+                            </api>                            
+                            <api>
+                               <name>cgi_mqzone_userprop2.fcg</name>
+                               <max_load>150</max_load>
+                            </api>                            
+                            <api>
+                               <name>mapi_update_feed</name>
+                               <max_load>500</max_load>
+                            </api>   
+                            <api>
+                               <name>cgi_mqzone_getavatar</name>
+                               <max_load> 10 </max_load>
+                            </api>                            
+                            <api>
+                               <name>cgi_mqzone_getnicklist.fcg</name>
+                               <max_load> 10 </max_load>
+                            </api>                            
+                            <api>
+                               <name>cgi_mqzone_getportrait.fcg</name>
+                               <max_load> 10 </max_load>
+                            </api>
+                     <api>
+<name>mapi_add_feed</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mapi_delete_feed</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mblog_modify_commend</name>
+<max_load>50</max_load>
+</api>
+</api_list>
+		</app>
+
+
+		<app>
+			<id>203</id>
+			<name>qqmail</name>
+			<desc>QQ邮箱</desc>
+			<appkey>3bfaa32aebda4ddea08946fe47960a2b</appkey>
+				
+			<role_list>
+				<role id = 203> </role>
+			</role_list>
+            		<default_max_load> 500 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_get_content.fcg</name>
+                               <max_load> 800 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_userinfo.fcg</name>
+                               <max_load> 1500 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_addanswer</name>
+                               <max_load> 280 </max_load>
+                            </api>      
+
+                            <api>
+                               <name>cgi_mqzone_rightcheck_new.fcg</name>
+                               <max_load> 1500 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_rightcheck_batch</name>
+                               <max_load> 500 </max_load>
+                            </api>
+                            
+                            <api>
+                               <name>cgi_mqzone_questionauth</name>
+                               <max_load> 200 </max_load>
+                            </api>
+
+                            <api>
+                               <name>mblog_commentlist.fcg</name>
+                               <max_load> 1200 </max_load>
+                            </api>      
+
+                            <api>
+                               <name>mblog_get_readerlist</name>
+                               <max_load> 280 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_online</name>
+                               <max_load> 280 </max_load>
+                            </api>
+                            
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 50 </max_load>
+                            </api>             
+                            <api>
+                               <name>mblog_getbloglist.fcg</name>
+                               <max_load> 50 </max_load>
+                            </api> 
+							<api>
+                               <name>mblog_get_latest.fcg</name>
+                               <max_load> 200 </max_load>
+                            </api>
+							<api>
+                               <name>cgi_mqzone_online</name>
+                               <max_load> 280 </max_load>
+                            </api>
+                            
+                            <api>
+								<name>mblog_reply_comment</name>
+								<max_load> 20 </max_load>
+							</api>
+							<api>
+								<name>mblog_delanswer</name>
+								<max_load> 10 </max_load>
+							</api>
+							<api>
+								<name>mblog_del_replycomment</name>
+								<max_load> 10 </max_load>
+							</api>
+                            
+                            <api>
+                               <name>mcgi_recent_picture</name>
+                               <max_load> 400 </max_load>
+                            </api>
+                                                                                           
+                     <api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+<max_load>20</max_load>
+</api>
+</api_list>
+		</app>		
+
+		<app>
+			<id>204</id>
+			<name>qqspeed</name>
+			<desc>QQ飞车</desc>
+			<appkey>75bb4d814fa54283924d9df8247fe438</appkey>
+				
+			<role_list>
+				<role id = 204> </role>
+			</role_list>
+			
+            		<default_max_load> 15 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 15 </max_load>
+                            </api>
+                     </api_list>
+		</app>
+
+		<app>
+			<id>205</id>
+			<name>wenwen</name>
+			<desc>问问</desc>
+			<appkey>b9c6edcbe0294b6caa1c28befe00c7f2</appkey>
+				
+			<role_list>
+				<role id = 205> </role>
+			</role_list>
+			
+            		<default_max_load> 100 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mapi_add_feed</name>
+                               <max_load> 500 </max_load>
+                            </api>
+							<api>
+                               <name>mapi_delete_feed</name>
+                               <max_load> 500 </max_load>
+                            </api>
+                     <api>
+<name>mblog_add</name>
+<max_load>200</max_load>
+</api>
+</api_list>
+		</app>		
+
+		<app>
+			<id>206</id>
+			<name>xunxian</name>
+			<desc>寻仙</desc>
+			<appkey>6e550a3854e94b5d80ea9f4ace0eccc7</appkey>
+				
+			<role_list>
+				<role id = 206> </role>
+			</role_list>
+			
+            		<default_max_load> 5 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 5 </max_load>
+                            </api>
+                     </api_list>
+		</app>
+
+		<app>
+			<id>207</id>
+			<name>ivr</name>
+			<desc>语音日志</desc>
+			<appkey>85ece65384e441f5af95dbe893aa4636</appkey>
+				
+			<role_list>
+				<role id = 207> </role>
+			</role_list>
+		
+            		<default_max_load> 5 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>cgi_mqzone_isactive</name>
+                               <max_load> 5 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mblog_active_space</name>
+                               <max_load> 5 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 5 </max_load>
+                            </api>
+							<api>
+								<name>cgi_blog_compete_userinfo.fcg</name>
+								<max_load> 10 </max_load>
+							</api>
+                     </api_list>
+		</app>		
+
+		<app>
+			<id>208</id>
+			<name>webqq</name>
+			<desc>Web QQ</desc>
+			<appkey>379af6685abe4b97b7b7d16fc64925bd</appkey>
+				
+			<role_list>
+				<role id = 208> </role>
+			</role_list>
+		
+            		<default_max_load> 400 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_updatelist.fcg</name>
+                               <max_load>1200</max_load>
+                            </api>
+							
+							<api>
+                               <name>mblog_get_content.fcg</name>
+                               <max_load> 400 </max_load>
+                            </api>
+							
+                     </api_list>
+		</app>			
+
+		<app>
+			<id>209</id>
+			<name>celebrity</name>
+			<desc>名博</desc>
+			<appkey>c8c73a86b0e6436cad4761635e8f8f80</appkey>
+
+			<role_list>
+				<role id = 209> </role>
+			</role_list>
+		
+            		<default_max_load> 20 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>cgi_blog_compete_userinfo.fcg</name>
+                               <max_load> 80 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_get_content.fcg</name>
+                               <max_load> 20 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_userinfo.fcg</name>
+                               <max_load> 250 </max_load>
+                            </api>
+							<api>
+								<name>mblog_modify_commend</name>
+								<max_load> 10 </max_load>
+							</api>
+                     <api>
+<name>frame_blogstatic</name>
+<max_load>20</max_load>
+</api>
+</api_list>
+		</app>	
+
+		<app>
+			<id>210</id>
+			<name>qzoneact</name>
+			<desc>广告活动</desc>
+			<appkey>c57279b358bf41a788bce693a127a0e8</appkey>
+
+			<role_list>
+				<role id = 210> </role>
+			</role_list>
+		
+            		<default_max_load> 10 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_addanswer</name>
+                               <max_load> 50 </max_load>
+                            </api>
+                            <api>
+                               <name>mapi_add_feed</name>
+                               <max_load>500</max_load>
+                            </api>
+                            <api>
+                               <name>cgi_get_flower</name>
+                               <max_load> 100 </max_load>
+                            </api>
+
+                            <api>
+                               <name>cgi_mqzone_userinfo.fcg</name>
+                               <max_load>100</max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_getnicklist.fcg</name>
+                               <max_load> 800 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mtaotao_publish</name>
+                               <max_load> 50 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_get_content.fcg</name>
+                               <max_load>300</max_load>
+                            </api>
+                            
+                            <api>
+                               <name>cgi_blog_compete_userinfo.fcg</name>
+                               <max_load> 50 </max_load>
+                            </api>
+                            
+                            <api> 
+								<name>mblog_get_latest.fcg</name>
+								<max_load> 100 </max_load>
+							</api>	
+							<api> 
+								<name>mmsgb_addanswer.cgi</name>
+								<max_load>100</max_load>
+							</api>	
+							<api>
+								<name>cgi_mqzone_addcarefriend</name>
+								<max_load>100</max_load>
+							</api>
+
+							<api>
+								<name>cgi_mqzone_getportrait.fcg</name>
+								<max_load> 800 </max_load>
+							</api>
+							
+							<api>
+								<name>mblog_commentlist.fcg</name>
+								<max_load>50 </max_load>
+							</api>
+							
+							<api>
+								<name>mblog_getbloglist.fcg</name>
+								<max_load>100 </max_load>
+							</api>
+							
+							<api>
+								<name>mblog_add</name>
+								<max_load>300 </max_load>
+							</api>
+							<api>
+								<name>mapi_update_feed</name>
+								<max_load>50 </max_load>
+							</api>
+							<api>
+								<name>mblog_modify</name>
+								<max_load> 50</max_load>
+							</api>
+							<api>
+								<name>mblog_top</name>
+								<max_load> 50</max_load>
+							</api>
+							<api>
+								<name>cgi_mqzone_visitor</name>
+								<max_load> 50</max_load>
+							</api>
+							<api>
+								<name>cgi_mqzone_rightcheck_new.fcg</name>
+								<max_load> 50</max_load>
+							</api>
+							<api>
+								<name>mapi_delete_feed</name>
+								<max_load>50 </max_load>
+							</api>
+							
+                     <api>
+<name>cgi_mfriend_add.cgi</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mcgi_upload_pic</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_mfriend_del.cgi</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mfriend_auth.cgi</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+		</app>			
+
+		<app>
+			<id>211</id>
+			<name>groupspace</name>
+			<desc>群空间</desc>
+			<appkey>569b579175114f39b48904625be657d7</appkey>
+
+			<role_list>
+				<role id = 211> </role>
+			</role_list>
+            		<default_max_load> 400 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_getbloglist.fcg</name>
+                               <max_load> 400 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_commentlist.fcg</name>
+                               <max_load> 200 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_get_content.fcg</name>
+                               <max_load> 400 </max_load>
+                            </api>          
+                            <api>
+                               <name>mblog_addanswer</name>
+                               <max_load> 200 </max_load>
+                            </api>            
+                     </api_list>
+		</app>			
+
+		<app>
+			<id>212</id>
+			<name>mover</name>
+			<desc>搬家工具</desc>
+			<appkey>a915210391c644788bf1e6a0e0035326</appkey>
+
+			<role_list>
+				<role id = 212> </role>
+			</role_list>
+            		<default_max_load> 10 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>cgi_qzone_tips</name>
+                               <max_load> 10 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_addanswer</name>
+                               <max_load> 10 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_add_withtime</name>
+                               <max_load> 10 </max_load>
+                            </api>          
+                     <api>
+<name>mblog_modify</name>
+<max_load>10</max_load>
+</api>
+<api>
+<name>mcgi_list_album</name>
+<max_load>10</max_load>
+</api>
+<api>
+<name>mcgi_upload_pic</name>
+<max_load>200</max_load>
+</api>
+</api_list>
+		</app>			
+
+		<app>
+			<id>213</id>
+			<name>qqvideo</name>
+			<desc>QQ视频</desc>
+			<appkey>1104ec158b9545cabf8fcd874ce6473a</appkey>
+
+		       <role_list>
+				<role id = 213> </role>
+			</role_list>
+            		<default_max_load> 10 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>cgi_mblog_active_space</name>
+                               <max_load> 5 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_isactive</name>
+                               <max_load> 5 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 10 </max_load>
+                            </api>   
+                            <api>
+                               <name>mblog_del</name>
+                               <max_load> 5 </max_load>
+                            </api>                             
+                     </api_list>
+		</app>	
+
+		<app>
+			<id>214</id>
+			<name>qqgame</name>
+			<desc>QQ休闲游戏</desc>
+			<appkey>5e1aa97554cc44af8cc99c4a44685b17</appkey>
+
+		       <role_list>
+				<role id = 214> </role>
+			</role_list>
+            		<default_max_load> 10 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>cgi_blog_compete_userinfo.fcg</name>
+                               <max_load> 10 </max_load>
+                            </api>
+                     </api_list>
+		</app>			
+
+		<app>
+			<id>215</id>
+			<name>qqcom</name>
+			<desc>腾讯十周年/通用活动系统</desc>
+			<appkey>c66aa8a6c1b94cae93013465130a449e</appkey>
+
+		       <role_list>
+				<role id = 215> </role>
+			</role_list>
+
+            		<default_max_load> 100 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>cgi_mqzone_isactive</name>
+                               <max_load> 100 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mtaotao_getmymsg</name>
+                               <max_load> 100 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 100 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_categorylist</name>
+                               <max_load> 10 </max_load>
+                            </api>
+
+                            <api>
+                               <name>mblog_getbloglist.fcg</name>
+                               <max_load> 10 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_get_content.fcg</name>
+                               <max_load> 10 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_userinfo.fcg</name>
+                               <max_load> 10 </max_load>
+                            </api>
+                            <api>
+                               <name>mblog_modify</name>
+                               <max_load> 10 </max_load>
+                            </api>                            
+                     </api_list>
+		</app>	
+
+
+		<app>
+			<id>216</id>
+			<name>sms</name>
+			<desc>短信</desc>
+			<appkey>72a6c1527c934f918b4b74c564f8d898</appkey>
+
+		       <role_list>
+				<role id = 216> </role>
+			</role_list>
+
+            		<default_max_load> 10 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_categorylist</name>
+                               <max_load> 5 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_blog_compete_userinfo.fcg</name>
+                               <max_load> 5</max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_addcarefriend</name>
+                               <max_load> 5 </max_load>
+                            </api>
+                     </api_list>
+		</app>	
+
+		<app>
+			<id>217</id>
+			<name>musicbox</name>
+			<desc>音乐盒</desc>
+			<appkey>3d34936d6e7645a9a1329d966358238a</appkey>
+
+		       <role_list>
+				<role id = 217> </role>
+			</role_list>
+
+            		<default_max_load> 120 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 120 </max_load>
+                            </api>
+                     </api_list>
+		</app>	
+
+		<app>
+			<id>218</id>
+			<name>taotao</name>
+			<desc>空间心情</desc>
+			<appkey>467822919cd34a8f9b5c4d7433adb4d2</appkey>
+
+		       <role_list>
+				<role id = 218> </role>
+			</role_list>
+
+            		<default_max_load> 300 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>cgi_mqzone_getnicklist.fcg</name>
+                               <max_load> 2500 </max_load>
+                            </api>
+                            <api>
+                               <name>mapi_add_feed</name>
+                               <max_load> 1000 </max_load>
+                            </api>
+                            <api>
+                               <name>mapi_delete_feed</name>
+                               <max_load> 600 </max_load>
+                            </api>
+                            <api>
+                               <name>mapi_update_feed</name>
+                               <max_load>1200</max_load>
+                            </api>                            
+                     </api_list>
+		</app>			
+
+		<app>
+			<id>219</id>
+			<name>qbar</name>
+			<desc>Q吧</desc>
+			<appkey>7ab47a19339145be8da2481127054c33</appkey>
+
+		       <role_list>
+				<role id = 219> </role>
+			</role_list>
+
+            		<default_max_load> 30 </default_max_load>
+                     <api_list>
+                     </api_list>
+		</app>		
+
+		<app>
+			<id>220</id>
+			<name>paipai</name>
+			<desc>拍拍</desc>
+			<appkey>90b13aa172b64e63b183a6485bffbd4c</appkey>
+
+		       <role_list>
+				<role id = 220> </role>
+			</role_list>
+
+            		<default_max_load> 20 </default_max_load>
+                     <api_list>
+                     <api>
+<name>cgi_mqzone_getportrait.fcg</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+<max_load>180</max_load>
+</api>
+<api>
+<name>cgi_mqzone_isactive</name>
+<max_load>80</max_load>
+</api>
+</api_list>
+		</app>			
+
+		<app>
+			<id>222</id>
+			<name>qqcrm</name>
+			<desc>企业信息平台</desc>
+			<appkey>bd71ada8fd994155b76f032cf7f430dc</appkey>
+
+		       <role_list>
+				<role id = 222> </role>
+			</role_list>
+
+            		<default_max_load> 5 </default_max_load>
+                     <api_list>
+						<api> 
+						<name>mblog_commentlist.fcg</name>
+						<max_load>10</max_load>
+						</api>
+						<api>
+						<name>cgi_mqzone_userinfo.fcg</name>
+						<max_load>15</max_load>
+						</api>
+                     <api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+<max_load>60</max_load>
+</api>
+</api_list>
+		</app>		
+
+		<app>
+			<id>223</id>
+			<name>vote</name>
+			<desc>投票</desc>
+			<appkey>e8f71b310c534b0a98b9e44fdba0bfb5</appkey>
+
+		       <role_list>
+				<role id = 223> </role>
+			</role_list>
+
+            		<default_max_load> 150 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mapi_delete_feed</name>
+                               <max_load> 15 </max_load>
+                            </api>                         
+                     </api_list>
+		</app>	
+
+		<app>
+			<id>225</id>
+			<name>share</name>
+			<desc>分享</desc>
+			<appkey>e9d5f77f72b245a192da5e35fcc29dd8</appkey>
+
+		       <role_list>
+				<role id = 225> </role>
+			</role_list>
+
+            		<default_max_load> 50 </default_max_load>
+                     <api_list>   
+							<api>
+                               <name>mapi_add_feed</name>
+                               <max_load> 500 </max_load>
+                            </api>  
+							<api>
+                               <name>mcgi_list_album</name>
+                               <max_load> 60 </max_load>
+                            </api>    
+							<api>
+                               <name>mcgi_list_photo</name>
+                               <max_load>500</max_load>
+                            </api>    
+							<api>
+                               <name>mcgi_get_photoinfo</name>
+                               <max_load>500</max_load>
+                            </api>  
+							<api>
+                               <name>mcgi_get_albuminfo</name>
+                               <max_load> 60 </max_load>
+                            </api>  
+                     </api_list>
+		</app>	
+
+		<app>
+			<id>226</id>
+			<name>minihome</name>
+			<desc>秀世界</desc>
+			<appkey>5467457fdf8548ceb733432405e9973c</appkey>
+
+		       <role_list>
+				<role id = 226> </role>
+			</role_list>
+
+            		<default_max_load> 20 </default_max_load>
+                     <api_list>              
+                     </api_list>
+		</app>		
+
+		<app>
+			<id>227</id>
+			<name>sh</name>
+			<desc>安全中心</desc>
+			<appkey>fedd885abb9045e2af9efbe0d67fa544</appkey>
+
+		       <role_list>
+				<role id = 227> </role>
+			</role_list>
+
+           		<default_max_load> 20 </default_max_load>
+                     <api_list>              
+                            <api>
+                               <name>mblog_get_content.fcg</name>
+                               <max_load> 10 </max_load>
+                            </api>   
+                            <api>
+                               <name>mblog_del</name>
+                               <max_load> 5 </max_load>
+                            </api>  
+                            <api>
+                               <name>mblog_get_onecomment.fcg</name>
+                               <max_load> 20 </max_load>
+                            </api>  
+                            <api>
+                               <name>mblog_delanswer</name>
+                               <max_load> 10 </max_load>
+                            </api>  
+                            <api>
+                               <name>mmsgb_page.cgi</name>
+                               <max_load> 20 </max_load>
+                            </api>  
+
+                            <api>
+                               <name>mmsgb_delanswer.cgi</name>
+                               <max_load> 10 </max_load>
+                            </api> 
+							<api>
+                               <name>mmsgb_get_one_answer.cgi</name>
+                               <max_load> 20 </max_load>
+                            </api>
+                     </api_list>
+		</app>			
+
+		<app>
+			<id>228</id>
+			<name>qqcampus</name>
+			<desc>QQ校友</desc>
+			<appkey>3f602400044249739e08b110c76290ee</appkey>
+
+		       <role_list>
+				<role id = 228> </role>
+				</role_list>
+
+            	<default_max_load> 400 </default_max_load>
+                <api_list>     
+  
+				<api> 
+				<name>mblog_top</name>
+				<max_load> 50 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_categorylist</name>
+				<max_load> 50 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				<max_load>200</max_load>
+				</api>	
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				<max_load> 50 </max_load>
+				</api>	
+				
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				<max_load> 250 </max_load>
+				</api>				
+
+				<api> 
+				<name>mblog_get_onecomment.fcg</name>
+				<max_load> 20 </max_load>
+				</api>	
+				<api> 
+				<name>mmsgb_page.cgi</name>
+				<max_load> 10 </max_load>
+				</api>	
+				
+				<api> 
+				<name>mmsgb_getregard.cgi</name>
+				<max_load> 10 </max_load>
+				</api>		
+				<api> 
+				<name>mmsgb_getcount.cgi</name>
+				<max_load> 10 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_add</name>
+				<max_load> 50 </max_load>
+				</api>				
+
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				<max_load> 50 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_modify_commend</name>
+				<max_load> 10 </max_load>
+				</api>	
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				<max_load> 50 </max_load>
+				</api>				
+
+				<api> 
+				<name>msgb_addanswer_for_campus</name>
+				<max_load> 10 </max_load>
+				</api>	
+				<api> 
+				<name>cgi_mic_getmyschoolfriendfeeds.cgi</name>
+				<max_load> 1500 </max_load>
+				</api>	
+
+				<api> 
+				<name>mblog_modify</name>
+				<max_load> 50 </max_load>
+				</api>		
+				<api> 
+				<name>mblog_del</name>
+				<max_load> 50 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_delanswer</name>
+				<max_load> 50 </max_load>
+				</api>				
+
+				<api> 
+				<name>mblog_addanswer</name>
+				<max_load> 60 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_get_data.fcg</name>
+				<max_load>200</max_load>
+				</api>	
+
+				<api> 
+				<name>mblog_rss.fcg</name>
+				<max_load> 100 </max_load>
+				</api>		
+				<api> 
+				<name>mblog_commentlist_for_campus.fcg</name>
+				<max_load> 50 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_get_countlist.fcg</name>
+				<max_load>100</max_load>
+				</api>				
+
+				<api> 
+				<name>mblog_reply_comment</name>
+				<max_load> 60 </max_load>
+				</api>	
+
+				<api> 
+				<name>mapi_add_feed</name>
+				<max_load>150</max_load>
+				</api>	
+				<api> 
+				<name>mapi_update_feed</name>
+				<max_load> 100 </max_load>
+				</api>	
+				<api> 
+				<name>mapi_delete_feed</name>
+				<max_load> 100 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				<max_load> 100 </max_load>
+				</api>	
+				
+				<api> 
+				<name>mblog_get_readerlist</name>
+				<max_load>200</max_load>
+				</api>	
+				
+				<api> 
+				<name>cgi_mic_getcampusfilter.cgi</name>
+				<max_load> 100 </max_load>
+				</api>	
+				
+				<api> 
+				<name>cgi_mic_setcampusfilter.cgi</name>
+				<max_load> 50 </max_load>
+				</api>
+				
+				<api> 
+				<name>mprivateblog_get_count</name>
+				<max_load> 50 </max_load>
+				</api>
+				<api> 
+				<name>mprivateblog_get_titlelist</name>
+				<max_load> 50 </max_load>
+				</api>
+				<api> 
+				<name>mprivateblog_get_data</name>
+				<max_load> 50 </max_load>
+				</api>
+				<api> 
+				<name>mprivateblog_add</name>
+				<max_load> 25 </max_load>
+				</api>
+				<api> 
+				<name>mprivateblog_del_data</name>
+				<max_load> 25 </max_load>
+				</api>
+				<api> 
+				<name>mprivateblog_modify</name>
+				<max_load> 25 </max_load>
+				</api>
+				<api> 
+				<name>mprivateblog_prv2pub</name>
+				<max_load> 25 </max_load>
+				</api>
+				<api> 
+				<name>mprivateblog_pub2prv</name>
+				<max_load> 25 </max_load>
+				</api>
+				<api> 
+				<name>mprivateblog_del_comment</name>
+				<max_load> 25 </max_load>
+				</api>
+				
+				<api> 
+				<name>mcgi_recent_picture</name>
+				<max_load>80</max_load>
+				</api>
+				
+				<api> 
+				<name>mdraft_get_manual_list</name>
+				<max_load> 70 </max_load>
+				</api>
+				<api> 
+				<name>mdraft_get_manual_data</name>
+				<max_load> 50 </max_load>
+				</api>
+				<api> 
+				<name>mdraft_set_manual_data</name>
+				<max_load> 50</max_load>
+				</api>
+				<api> 
+				<name>mdraft_del_manual_data</name>
+				<max_load> 50</max_load>
+				</api>
+				<api> 
+				<name>mblog_modify_category</name>
+				<max_load> 50</max_load>
+				</api>
+				<api> 
+				<name>mblog_add_category</name>
+				<max_load>50 </max_load>
+				</api>
+				<api> 
+				<name>mblog_quote_by_blogid</name>
+				<max_load> 100</max_load>
+				</api>				
+				<api>
+				<name>mcgi_pcomment_xml</name>
+				<max_load>250</max_load>
+				</api>
+
+				<api>
+				<name>mmsg_del_usermsg</name>
+				<max_load>50</max_load>
+				</api>
+				<api>
+				<name>mmsg_get_msgboxinfo</name>
+				<max_load>150</max_load>
+				</api>
+				<api>
+				<name>mmsg_get_usermsg</name>
+				<max_load>150</max_load>
+				</api>
+				<api>
+				<name>mmsg_send_usermsg</name>
+				<max_load>50</max_load>
+				</api>
+				<api>
+				<name>mmsg_read_usermsg</name>
+				<max_load>50</max_load>
+				</api>
+
+				<api>
+				<name>mqzone_pasture_register</name>
+				<max_load>30</max_load>
+				</api>
+
+                <api>
+<name>cgi_mic_getmyschoolfriends_xml_passive.cgi</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>cgi_mic_getmyschoolfriends_xml_active.cgi</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>cgi_mapp_xyGetAppIsOpenInfo.cgi</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_memotion_publish</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_memotion_getmymsg</name>
+<max_load>450</max_load>
+</api>
+<api>
+<name>cgi_memotion_delete</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_memotion_delcomment</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_memotion_getmsgdetail</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_memotion_addcomment</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_memotion_addreply</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_memotion_getbatchfirst</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_memotion_multireplies</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+<max_load>230</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_xiaoyou</name>
+<max_load>400</max_load>
+</api>
+<api>
+<name>mcgi_add_album</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mcgi_modify_album</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mcgi_del_pic</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mcgi_del_album</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mcgi_list_album</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mcgi_get_albuminfo</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>mcgi_list_photo</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mcgi_get_photoinfo</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mcgi_modify_pic</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mdraft_set_auto_data</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mdraft_get_auto_data</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>mdraft_del_auto_data</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mcgi_move_pic</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mcgi_add_piccomment</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mcgi_add_reply</name>
+<max_load>80</max_load>
+</api>
+<api>
+<name>mcgi_del_piccomment</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mapp_getopenidbyuin.cgi</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_mapp_isadd_uins_apps.cgi</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mic_school_recent.cgi</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+		</app>		
+		
+		<app>
+			<id>229</id>
+			<name>cityman</name>
+			<desc>城市达人</desc>
+			<appkey>6d7769815df646b7a6feb793135e8510</appkey>
+
+		       <role_list>
+				<role id = 229> </role>
+			</role_list>
+
+           		<default_max_load> 1500 </default_max_load>
+                     <api_list>          
+                    
+				<api> 
+				<name>mmsgb_addanswer.cgi</name>
+				<max_load> 100 </max_load>
+				</api>	
+				<api> 
+				<name>mmsgb_show.cgi</name>
+				<max_load> 1000 </max_load>
+				</api>	
+				<api> 
+				<name>mmsgb_delanswer.cgi</name>
+				<max_load> 50 </max_load>
+				</api>				
+
+				<api> 
+				<name>friendshow_get_city_nb</name>
+				<max_load> 100 </max_load>
+				</api>	
+				<api> 
+				<name>cgi_mqzone_rightcheck_new.fcg</name>
+				<max_load> 2300 </max_load>
+				</api>	
+
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				<max_load> 50 </max_load>
+				</api>
+
+				<api> 
+				<name>mblog_add</name>
+				<max_load> 40 </max_load>
+				</api>				
+
+				<api> 
+				<name>mblog_commentlist.fcg</name>
+				<max_load> 300 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_addanswer</name>
+				<max_load> 100 </max_load>
+				</api>	
+
+				<api> 
+				<name>mblog_modify</name>
+				<max_load> 50 </max_load>
+				</api>				
+				
+				<api> 
+				<name>mblog_categorylist</name>
+				<max_load> 40 </max_load>
+				</api>	
+
+				<api> 
+				<name>mblog_get_all_blogconent_byuin.fcg</name>
+				<max_load> 200 </max_load>
+				</api>
+				<api> 
+				<name>mblog_get_countlist.fcg</name>
+				<max_load> 1000 </max_load>
+				</api>
+				<api> 
+				<name>mblog_del</name>
+				<max_load> 20 </max_load>
+				</api>
+				
+
+				<api> 
+				<name>mblog_modify_commend</name>
+				<max_load> 10 </max_load>
+				</api>	
+				
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				<max_load> 80 </max_load>
+				</api>				
+
+				<api> 
+				<name>cgi_mblog_active_space</name>
+				<max_load> 20 </max_load>
+				</api>	
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				<max_load> 20 </max_load>
+				</api>
+				
+				<api> 
+				<name>mblog_delanswer</name>
+				<max_load> 100 </max_load>
+				</api>
+
+				<api> 
+				<name>mblog_rss.fcg</name>
+				<max_load> 20 </max_load>
+				</api>
+				
+				<api>
+<name>mmsg_send_usermsg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mmsg_del_usermsg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mmsg_get_msgboxinfo</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mmsg_get_usermsg</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mmsg_read_usermsg</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+		</app>		
+
+		<app>
+			<id>230</id>
+			<name>portal</name>
+			<desc>门户</desc>
+			<appkey>12d172ef2b25423082fec832622f2559</appkey>
+
+		       <role_list>
+				<role id = 230> </role>
+			</role_list>
+
+           		<default_max_load> 30 </default_max_load>
+                     <api_list>          
+                   
+				<api> 
+				<name>cgi_blog_compete_userinfo.fcg</name>
+				<max_load>50 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_get_content.fcg</name>
+				<max_load>10 </max_load>
+				</api>	
+				<api> 
+				<name>mblog_categorylist</name>
+				<max_load>10 </max_load>
+				</api>
+				<api> 
+				<name>mblog_getbloglist.fcg</name>
+				<max_load>10 </max_load>
+				</api>	
+				
+                     <api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+		</app>		
+
+		<app>
+			<id>231</id>
+			<name>registernotify</name>
+			<desc>注册通知</desc>
+			<appkey>8311a5e8e8bf4e01b5e802ba3c5c3915</appkey>
+
+		       <role_list>
+				<role id = 231> </role>
+			</role_list>
+
+           		<default_max_load> 100 </default_max_load>
+                 <api_list>          
+					<api> 
+						<name>mapi_add_feed</name>
+						<max_load>100 </max_load>
+					</api>
+					<api> 
+						<name>mmsgb_getregard.cgi</name>
+						<max_load>50 </max_load>
+					</api>
+					<api> 
+						<name>mcgi_list_album</name>
+						<max_load>50 </max_load>
+					</api>					
+                <api>
+<name>mblog_add</name>
+<max_load>50</max_load>
+</api>
+</api_list>
+		</app>				
+
+		<app>
+			<id>232</id>
+			<name>profile</name>
+			<desc>个人资料</desc>
+			<appkey>ecba96c5138b4780b8392eadb131a68f</appkey>
+
+		       <role_list>
+				<role id = 232> </role>
+			</role_list>
+
+           		<default_max_load> 200 </default_max_load>
+                     <api_list>          
+                   
+				<api> 
+				<name>mapi_update_feed</name>
+				<max_load>200 </max_load>
+				</api>					
+                     </api_list>
+		</app>
+
+		<app>
+			<id>233</id>
+			<name>simpleblog</name>
+			<desc>超简版</desc>
+			<appkey>8c8d711810d946dd99c4ada8e1cace5a</appkey>
+			<role_list>
+				<role id = 233> </role>
+			</role_list>
+
+			<default_max_load>100</default_max_load>
+
+           	<api_list>          
+				<api> 
+					<name>simpleblog_get_data</name>
+					<max_load>100</max_load>
+				</api>			
+				<api> 
+					<name>cgi_mic_brief_feeds_ic_cgi.cgi</name>
+					<max_load>500</max_load>
+				</api>	
+				<api> 
+					<name>mblog_static_page</name>
+					<max_load>200</max_load>
+				</api>
+			<api>
+<name>cgi_memotion_firstgbk</name>
+<max_load>1000</max_load>
+</api>
+</api_list>
+		</app>
+
+		<app>
+			<id>234</id>
+			<name>parkingwar</name>
+			<desc>抢车位</desc>
+			<appkey>0e93ac80b0c040ac90ac506885a72906</appkey>
+			<role_list>
+				<role id = 205> </role>
+			</role_list>
+			
+			<default_max_load>30</default_max_load>
+
+           	<api_list>          
+				<api> 
+					<name>mapi_add_feed</name>
+					<max_load>30</max_load>
+				</api>					
+			</api_list>
+		</app>
+
+		<app>
+			<id>235</id>
+			<name>netbardaren</name>
+			<desc>网吧达人</desc>
+			<appkey>d0335527648b4e90b172df9b44db2a4a</appkey>
+			<role_list>
+				<role id = 234> </role>
+			</role_list>
+			
+			<default_max_load>30</default_max_load>
+
+           	<api_list>          
+				<api> 
+					<name>cgi_mqzone_rightcheck_new.fcg</name>
+					<max_load>100</max_load>
+				</api>				
+				<api> 
+					<name>mmsgb_page.cgi</name>
+					<max_load>100</max_load>
+				</api>
+				<api> 
+					<name>mmsgb_addanswer.cgi</name>
+					<max_load>20</max_load>
+				</api>
+				<api> 
+					<name>mmsgb_delanswer.cgi</name>
+					<max_load>20</max_load>
+				</api>
+				<api> 
+					<name>cgi_mapp_isuinsaddapp.cgi</name>
+					<max_load>200</max_load>
+				</api>
+				<api> 
+					<name>cgi_mapp_isadd_uins_apps.cgi</name>
+					<max_load>200</max_load>
+				</api>
+			</api_list>
+		</app>
+
+		<app>
+			<id>236</id>
+			<name>mlive</name>
+			<desc>无线portal</desc>
+			<appkey>6e9ff3db605349638cc156010d14faf2</appkey>
+			<role_list>
+				<role id = 236> </role>
+			</role_list>
+			
+			<default_max_load>30</default_max_load>
+           	<api_list>          
+				<api> 
+					<name>cgi_mqzone_rightcheck_new.fcg</name>
+					<max_load>150</max_load>
+				</api>
+				<api> 
+					<name>mblog_get_content.fcg</name>
+					<max_load>150</max_load>
+				</api>
+				<api> 
+					<name>mcgi_list_photo</name>
+					<max_load>80</max_load>
+				</api>
+			</api_list>
+		</app>
+
+		<app>
+			<id>237</id>
+			<name>gongyi</name>
+			<desc>公益网</desc>
+			<appkey>5f716c2937094626a8c8b1af224488b1</appkey>
+			<role_list>
+				<role id = 237> </role>
+			</role_list>
+			
+			<default_max_load>15</default_max_load>
+           	<api_list>          
+				<api> 
+					<name>mblog_add</name>
+					<max_load>15</max_load>
+				</api>
+			</api_list>
+		</app>
+
+		<app>
+			<id>238</id>
+			<name>mobilegame</name>
+			<desc>手机游戏</desc>
+			<appkey>00e6e2226a2a493a8b9a19653ba37c86</appkey>
+
+		       <role_list>
+				<role id = 224> </role>
+			</role_list>
+
+            		<default_max_load> 150 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_add</name>
+                               <max_load> 15 </max_load>
+                            </api>                         
+                     </api_list>
+		</app>
+		
+		<app>
+			<id>239</id>
+			<name>osssh</name>
+			<desc>oss旁路</desc>
+			<appkey>6d781e81a0564f2c9b7e481c01d6be98</appkey>
+
+		       <role_list>
+				<role id = 238> </role>
+			</role_list>
+
+            		<default_max_load> 150 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mcgi_del_piccomment</name>
+                               <max_load> 100 </max_load>
+                            </api>
+                            <api>
+                               <name>cgi_mqzone_userinfo.fcg</name>
+                               <max_load> 300 </max_load>
+                            </api>                         
+                     </api_list>
+		</app>
+		
+		<app>
+			<id>240</id>
+			<name>finance</name>
+			<desc>财经名博最新博客列表</desc>
+			<appkey>d171643a873f45d19e92277c3810a18e</appkey>
+
+		       <role_list>
+				<role id = 239> </role>
+			</role_list>
+
+            		<default_max_load> 150 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>mblog_getbloglist.fcg</name>
+                               <max_load>50</max_load>
+                            </api>                         
+                     </api_list>
+		</app>	
+		
+		<app>
+			<id>241</id>
+			<name>happyfarm</name>
+			<desc>开心农场</desc>
+			<appkey>d345b148705f4a329d734e7e956c00da</appkey>
+
+		       <role_list>
+				<role id = 240> </role>
+			</role_list>
+
+            		<default_max_load> 200 </default_max_load>
+                     <api_list>
+                            <api>
+                               <name>cgi_mqzone_getnicklist.fcg</name>
+                               <max_load>900</max_load>
+                            </api>
+							<api>
+                               <name>cgi_mqzone_isfriend.fcg</name>
+                               <max_load> 200 </max_load>
+                            </api>
+							<api>
+                               <name>cgi_mapp_issetupapp.cgi</name>
+                               <max_load> 200 </max_load>
+                            </api>
+							<api>
+                               <name>cgi_qzone_tips</name>
+                               <max_load> 200 </max_load>
+                            </api>
+							<api>
+                               <name>cgi_mapp_isopenspeapp.cgi</name>
+                               <max_load> 6000 </max_load>
+                            </api>
+                     <api>
+<name>cgi_qzone_tips_ex</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_mapp_isadd_uins_apps.cgi</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+		</app>
+		
+		<app>
+			<id>242</id>
+			<name>qqshowmall</name>
+			<desc>QQShow乐园</desc>
+			<appkey>c64ba07b2d044055930d1d3b6de63565</appkey>
+
+		    <role_list>
+				<role id = 241> </role>
+			</role_list>
+            		<default_max_load> 20 </default_max_load>
+                     <api_list>                                                  
+                     <api>
+<name>mblog_add</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>cgi_mqzone_get_friendbirthday_pttc</name>
+<max_load>120</max_load>
+</api>
+<api>
+<name>cgi_memotion_getbatchfirst</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>mblog_categorylist</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+		</app>
+		
+		<app>
+			<id>243</id>
+			<name>paipai_item</name>
+			<desc>paipai商品</desc>
+			<appkey>b1a71741af1248e4b434c6c67dfe9395</appkey>
+
+		    <role_list>
+				<role id = 242> </role>
+			</role_list>
+            		<default_max_load> 20 </default_max_load>
+                     <api_list>                                                  
+                     </api_list>
+		</app>
+		
+		<app>
+			<id>244</id>
+			<name>sosoimage</name>
+			<desc>soso图片</desc>
+			<appkey>b86a08440f9e444fbbf9cf99595d0e03</appkey>
+
+		    <role_list>
+				<role id = 243> </role>
+			</role_list>
+            		<default_max_load> 50 </default_max_load>
+                     <api_list>                                                  
+                     </api_list>
+		</app>
+		
+		<app>
+			<id>245</id>
+			<name>astro</name>
+			<desc>星座运势</desc>
+			<appkey>0ea14e76d8f046018c59b1d217e45c9a</appkey>
+
+		    <role_list>
+				<role id = 244> </role>
+			</role_list>
+            		<default_max_load> 25 </default_max_load>
+                     <api_list>    
+						 <api>
+                               <name>mblog_add</name>
+                               <max_load> 50 </max_load>
+                        </api>
+						<api>
+                               <name>cgi_blog_compete_userinfo.fcg</name>
+                               <max_load> 150 </max_load>
+                        </api>
+						<api>
+                               <name>cgi_mqzone_updateuserinfo</name>
+                               <max_load> 20 </max_load>
+                        </api>
+						<api>
+                               <name>mblog_get_content.fcg</name>
+                               <max_load> 20 </max_load>
+                        </api>
+						<api>
+                               <name>mblog_getbloglist.fcg</name>
+                               <max_load> 20 </max_load>
+                        </api>
+                     </api_list>
+		</app>	
+		
+		
+		<app>
+			<id>246</id>
+			<name>minigame</name>
+			<desc>游戏基地</desc>
+			<appkey>bd5c8555979f4b11ab4f664869927003</appkey>
+
+		    <role_list>
+				<role id = 245> </role>
+			</role_list>
+            		<default_max_load> 25 </default_max_load>
+                     <api_list>                     
+                        <api>
+                               <name>cgi_mapp_isopenspeapp.cgi</name>
+                               <max_load> 1500 </max_load>
+                        </api>
+                                                                           
+                     </api_list>
+		</app>	
+		
+		<app>
+			<id>247</id>
+            <name>qzplatform</name>
+			<desc></desc>
+			<appkey>82f12c725e59457aa0e573d9bdea346a</appkey>
+                <role_list>
+				<role id=246></role>
+                </role_list>
+			
+			<default_max_load>5000</default_max_load>
+			<api_list>
+			<api>
+<name>white_list</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>cgi_farm_isinstallable_mqzone_v2</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>register_uin.php</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_mapp_isaddok_levelandnum.cgi</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>cgi_mapp_install_filt.cgi</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+		</app>
+		
+		<app>
+			<id>248</id>
+            <name>qqplayer</name>
+			<desc></desc>
+			<appkey>d8744e183b8b448dab146356c478fd57</appkey>
+                <role_list>
+				<role id=247></role>
+                </role_list>
+			
+			<default_max_load>50</default_max_load>
+			<api_list>
+			</api_list>
+		</app>
+		
+		<app>
+			<id>249</id>
+			<name>pasture</name>
+			<desc>开心牧场</desc>
+			<appkey>244794f1bc054470b258fcd61bd34176</appkey>
+
+		       <role_list>
+				<role id = 248> </role>
+			</role_list>
+
+            <default_max_load> 200 </default_max_load>
+                <api_list>
+                    <api>
+                        <name>cgi_mapp_isopenspeapp.cgi</name>
+                            <max_load> 1000 </max_load>
+                    </api>
+                    <api>
+                        <name>cgi_mqzone_getnicklist.fcg</name>
+                            <max_load>15000</max_load>
+                    </api>
+                </api_list>
+		</app>
+		
+		
+		<app>
+			<id>250</id>
+			<name>mcampus</name>
+			<desc>手机校友</desc>
+			<appkey>6330a27a374a4ba9b757d84fe7faf3b6</appkey>
+
+		       <role_list>
+				<role id = 249> </role>
+			</role_list>
+
+            <default_max_load> 200 </default_max_load>
+                <api_list>
+                    <api>
+                        <name>mcampus.php</name>
+                            <max_load> 800 </max_load>
+                    </api>
+                    <api>
+                        <name>mblog_addanswer</name>
+                            <max_load> 5</max_load>
+                    </api>
+                    <api>
+                        <name>mblog_getbloglist.fcg</name>
+                            <max_load> 50</max_load>
+                    </api>
+                    <api>
+                        <name>mblog_commentlist.fcg</name>
+                            <max_load> 40 </max_load>
+                    </api>
+                    <api>
+                        <name>mblog_reply_comment</name>
+                            <max_load> 5 </max_load>
+                    </api>
+                    <api>
+                        <name>mblog_get_content.fcg</name>
+                            <max_load> 40 </max_load>
+                    </api>
+                </api_list>
+		</app>
+		
+		
+		<app>
+			<id>251</id>
+			<name>avavideo</name>
+			<desc>视觉盛宴</desc>
+			<appkey>2bff27f7bf6341029f891b2d9d538a56</appkey>
+
+		       <role_list>
+				<role id = 250> </role>
+			</role_list>
+
+            <default_max_load> 30 </default_max_load>
+                <api_list>      
+					<api>
+                        <name>cgi_mqzone_isactive</name>
+                            <max_load>1500</max_load>
+                    </api>
+                    <api>
+                        <name>cgi_mblog_active_space</name>
+                            <max_load>1500</max_load>
+                    </api>
+					<api>
+                        <name>mblog_add</name>
+                            <max_load>1500</max_load>
+                    </api>
+                </api_list>
+		</app>
+		
+		<app>
+			<id>252</id>
+			<name>mv</name>
+			<desc>看电影</desc>
+			<appkey>a0bb50bed7424117bd0b1a3ebe7c47e6</appkey>
+
+		    <role_list>
+				<role id = 251> </role>
+			</role_list>
+
+            <default_max_load> 20 </default_max_load>
+                <api_list>                   
+                </api_list>
+		</app>
+
+		<app>
+			<id>253</id>
+			<name>slideshow</name>
+			<desc>PPT相册</desc>
+			<appkey>e93f6c4902f74c4badaa9d4bf1859810</appkey>
+
+		    <role_list>
+				<role id = 252> </role>
+			</role_list>
+
+            <default_max_load> 50 </default_max_load>
+                <api_list>      
+                    <api>
+                        <name>mcgi_add_album</name>
+                            <max_load> 50 </max_load>
+                    </api>
+                    <api>
+                        <name>mcgi_upload_pic</name>
+                            <max_load> 200</max_load>
+                    </api>				
+                </api_list>
+		</app>		
+
+		<app>
+			<id>254</id>
+			<name>sec_info</name>
+			<desc>安全中心2号</desc>
+			<appkey>74a6c83884eb4204860c69648205bc03</appkey>
+
+		    <role_list>
+				<role id = 253> </role>
+			</role_list>
+
+            <default_max_load> 50 </default_max_load>
+                <api_list>      
+                    <api>
+                        <name>mblog_categorylist</name>
+                            <max_load> 10 </max_load>
+                    </api>
+                    <api>
+                        <name>mblog_getbloglist.fcg</name>
+                            <max_load>200</max_load>
+                    </api>								
+					<api>
+                        <name>mblog_commentlist.fcg</name>
+                            <max_load> 30</max_load>
+                    </api>	
+					<api>
+                        <name>mmsgb_page.cgi</name>
+                            <max_load> 30</max_load>
+                    </api>	
+					<api>
+                        <name>cgi_mqzone_rightcheck_new.fcg</name>
+                            <max_load> 30</max_load>
+                    </api>	
+					<api>
+                        <name>cgi_mqzone_userinfo.fcg</name>
+                            <max_load> 30</max_load>
+                    </api>	
+                <api>
+<name>mcgi_modify_album</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mblog_get_content.fcg</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_info</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+<max_load>200</max_load>
+</api>
+</api_list>
+		</app>	
+
+		<app>
+			<id>255</id>
+			<name>sosord</name>
+			<desc>SoSo研发中心</desc>
+			<appkey>ba2c0b82c5354adf8dda0787b0ef78f7</appkey>
+
+		    <role_list>
+				<role id = 254> </role>
+			</role_list>
+
+            <default_max_load> 20 </default_max_load>
+                <api_list>     			
+                <api>
+<name>mblog_get_readerlist</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mblog_commentlist.fcg</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_mqzone_visitor</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_mqzone_visit_to_userinfo</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+<max_load>20</max_load>
+</api>
+</api_list>
+		</app>	
+
+		<app>
+			<id>256</id>
+			<name>diy_emotion</name>
+			<desc>自定义表情上传</desc>
+			<appkey>076cb2ff81224253b335873865e8d024</appkey>
+
+		    <role_list>
+				<role id = 255> </role>
+			</role_list>
+
+            <default_max_load> 50 </default_max_load>
+                <api_list>     	
+					<api>
+                        <name>mcgi_add_album</name>
+                            <max_load> 50</max_load>
+                    </api>	
+					<api>
+                        <name>mcgi_upload_pic</name>
+                            <max_load>500</max_load>
+                    </api>	
+                </api_list>
+		</app>	
+
+		<app>
+<id>257</id>
+<name>PersonalCard</name>
+<desc>空间名片</desc>
+<appkey>98eaf9d966c144a38feb576a1d1addb9</appkey>
+<role_list>
+<role id=256> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_mtaotao_getmymsg</name>
+<max_load>2000</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>258</id>
+<name>loverspace</name>
+<desc>情侣空间</desc>
+<appkey>ac24ba4f25c741da8adeb1d0421a3376</appkey>
+<role_list>
+<role id=257> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mapi_add_feed</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>259</id>
+<name>quiz</name>
+<desc>爱情等测试</desc>
+<appkey>bc6d9e6637a14b33affe70abf6df6636</appkey>
+<role_list>
+<role id=258> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mapi_add_feed</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>mapi_update_feed</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>mapi_delete_feed</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_mapp_isopenspeapp.cgi</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mqzone_userinfo.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+<max_load>200</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>260</id>
+<name>douban</name>
+<desc>豆瓣读书</desc>
+<appkey>567415d763d34b7a94862224e9eb4455</appkey>
+<role_list>
+<role id=259> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mblog_add</name>
+<max_load>1000</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>261</id>
+<name>friendvistor</name>
+<desc>好友秀</desc>
+<appkey>0f01e8b1a54a4c46bdb120da6a976b63</appkey>
+<role_list>
+<role id=260> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_mtaotao_batchfirst</name>
+<max_load>2000</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>262</id>
+<name>vipshop</name>
+<desc>会员官方店</desc>
+<appkey>d7909ef3a0d24d44a2197a21193bdf5d</appkey>
+<role_list>
+<role id=261> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mmsgb_addanswer.cgi</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>mmsgb_delanswer.cgi</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>mmsgb_comment_answer.cgi</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>mmsgb_show.cgi</name>
+<max_load>20</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>263</id>
+<name>oss_scrip</name>
+<desc>安全旁路</desc>
+<appkey>35c5606aa19f4deb9f483d6f0acf3d07</appkey>
+<role_list>
+<role id=262> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mmsg_del_usermsg</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mapi_oss_del_feed</name>
+<max_load>2000</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>264</id>
+<name>yellowright</name>
+<desc>黄钻特权个性域名</desc>
+<appkey>ad8dddc1a8054cddad1d479f92b29914</appkey>
+<role_list>
+<role id=263> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mapi_update_feed</name>
+<max_load>5</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>265</id>
+<name>bailing</name>
+<desc>白领</desc>
+<appkey>6ec52670c5ae448b8d1e9436431c9816</appkey>
+<role_list>
+<role id=264> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mblog_get_content.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_categorylist</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_top</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_add</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_modify</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_del</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_delanswer</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_addanswer</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_get_data.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_rss.fcg</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mblog_get_onecomment.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_get_countlist.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_reply_comment</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_quote_by_blogid</name>
+<max_load>40</max_load>
+</api>
+<api>
+<name>mblog_get_readerlist</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_getbloglistbyblogid.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_batchmodflag_whitecollar</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mapi_add_feed</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mapi_update_feed</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mapi_delete_feed</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_mic_getmybailingfriendfeeds.cgi</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mmsg_send_usermsg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mmsg_get_usermsg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mmsg_del_usermsg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mmsg_get_msgboxinfo</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mmsg_read_usermsg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_blog_compete_userinfo.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mblog_active_space</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_memotion_getmsgdetail</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_memotion_delete</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_memotion_getmymsg</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_memotion_publish</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_memotion_addcomment</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_memotion_delcomment</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_memotion_addreply</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_memotion_delreply</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_memotion_getbatchfirst</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_memotion_getmsgbytagid</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_memotion_getmixlist</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_mic_getmybailingfriends_xml_passive.cgi</name>
+<max_load>800</max_load>
+</api>
+<api>
+<name>cgi_mic_getmybailingfriends_xml_active.cgi</name>
+<max_load>800</max_load>
+</api>
+<api>
+<name>cgi_mic_getmybailingfriends_xml_activemore.cgi</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_mic_bailing_default_xml_active.cgi</name>
+<max_load>800</max_load>
+</api>
+<api>
+<name>cgi_memotion_censor</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>266</id>
+<name>QQhuayuan</name>
+<desc>QQ花园</desc>
+<appkey>9f96410ae7ac4646a9bc2363d6ffd6b2</appkey>
+<role_list>
+<role id=265> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_mapp_issetupapp.cgi</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>267</id>
+<name>restaurant</name>
+<desc>餐厅</desc>
+<appkey>6f01bf8306a249569e467ba7baebf57f</appkey>
+<role_list>
+<role id=266> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_mapp_isopenspeapp.cgi</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_mqzone_userinfo.fcg</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>268</id>
+<name>qzonevideo</name>
+<desc>qzone看视频</desc>
+<appkey>9178488063154ad48be56f2c3bc53a5f</appkey>
+<role_list>
+<role id=267> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mblog_add</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+<max_load>2000</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+<max_load>2000</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+<max_load>40</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_info</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>269</id>
+<name>mobile</name>
+<desc>高端手机qzone</desc>
+<appkey>e6e630c52bb243f39fa77dbfba6e03e8</appkey>
+<role_list>
+<role id=268> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_blog_compete_userinfo.fcg</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mqzone_getportrait.fcg</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>cgi_mic_getmyfeeds.cgi</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mic_getmyfriendfeeds.cgi</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mqzone_visitor</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mapi_add_feed</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>mblog_get_content.fcg</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_commentlist.fcg</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mblog_addanswer</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mtaotao_publish</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mtaotao_update</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mtaotao_reply</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>cgi_mtaotao_delete</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mcgi_add_piccomment</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mcgi_del_piccomment</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mmsgb_addanswer.cgi</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mmsgb_delanswer.cgi</name>
+<max_load>50</max_load>
+</api>
+<api>
+<name>mblog_reply_comment</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_mqzone_show_qqfriends</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_mtaotao_getmymsg</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_mic_getusermorefeeds_xml.cgi</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>cgi_mtaotao_getreplies</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mmsgb_comment_answer.cgi</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mcgi_get_photoinfo</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mcgi_pcomment_xml</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mcgi_add_reply</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_mic_getqz_feeds.cgi</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mmsgb_get_one_answer.cgi</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mmsgb_getregard.cgi</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mmsgb_show.cgi</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mcgi_list_album</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mcgi_list_photo</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mblog_add</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mblog_quote_by_blogid</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mblog_get_readzone_3g</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_memotion_addcomment</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_memotion_addreply</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>cgi_memotion_forward</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mcgi_list_friendphoto</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mblog_get_replylist</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mblog_get_readzonefriend</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_memotion_getmymsg</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_memotion_getmsgdetail</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>270</id>
+<name>trip</name>
+<desc>爱旅游</desc>
+<appkey>4994ed69a1504819a708bf55aa6f5332</appkey>
+<role_list>
+<role id=269> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mblog_get_content.fcg</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>271</id>
+<name>yidong</name>
+<desc>楼一栋应用</desc>
+<appkey>04017120b52c43cbb6b1c7d87fd042c9</appkey>
+<role_list>
+<role id=270> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_memotion_getbatchfirst</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_mtaotao_batchfirst</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>272</id>
+<name>soso_icenter_keysub</name>
+<desc>搜搜的个人中心</desc>
+<appkey>0934745c3c6b4c8c98ecd686b1baf01c</appkey>
+<role_list>
+<role id=271> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mblog_add</name>
+<max_load>20</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>273</id>
+<name>gh_video</name>
+<desc>互娱公会系统视频子系统</desc>
+<appkey>8a85f45ad97045678af70d4a87c63714</appkey>
+<role_list>
+<role id=272> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_qzshare_unifiedget_urlinfo</name>
+<max_load>200</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>274</id>
+<name>QzoneMovie</name>
+<desc>QzoneMovie</desc>
+<appkey>ec7cb6c6c4f54dfebe45a1032e4b9d90</appkey>
+<role_list>
+<role id=273> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mapi_delete_feed</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mapi_add_feed</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mapi_update_feed</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>275</id>
+<name>soso_comic</name>
+<desc>搜搜漫画</desc>
+<appkey>d8f52e9a9f6043719f1c166a00b1146b</appkey>
+<role_list>
+<role id=274> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_qzshare_unifiedadd</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+<max_load>18000</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_mapp_isopenspeapp.cgi</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_mqzone_getportrait.fcg</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_mqzone_getnicklist.fcg</name>
+<max_load>1800</max_load>
+</api>
+<api>
+<name>cgi_mapp_issetupapp.cgi</name>
+<max_load>1800</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>276</id>
+<name>worldcup_guess</name>
+<desc>世界杯球迷中心竞猜</desc>
+<appkey>9a673957a23d46fab80dfa1b66c700cb</appkey>
+<role_list>
+<role id=275> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_qzshare_unifiedadd</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>277</id>
+<name>3g_microblog</name>
+<desc>3gmicroblog</desc>
+<appkey>243379244cf34ce59e5616c71d94b288</appkey>
+<role_list>
+<role id=276> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>cgi_memotion_signget</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>cgi_memotion_signset</name>
+<max_load>20</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>278</id>
+<name>oss</name>
+<desc>OSS</desc>
+<appkey>8b79507b77f74a079c5b7d69f490d77e</appkey>
+<role_list>
+<role id=277> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mcgi_del_picmark</name>
+<max_load>100</max_load>
+</api>
+<api>
+<name>mcgi_del_piccomment</name>
+<max_load>100</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>279</id>
+<name>photosearch</name>
+<desc>PhotoSearch</desc>
+<appkey>49c1fe34fc654e4ebc48809b21c3f0af</appkey>
+<role_list>
+<role id=278> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mcgi_get_albuminfo</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mcgi_get_photoinfo</name>
+<max_load>500</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>280</id>
+<name>soren-blog</name>
+<desc>soren-blog</desc>
+<appkey>447e4a927948408593b014df70883136</appkey>
+<role_list>
+<role id=279> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mblog_get_latest.fcg</name>
+<max_load>5000</max_load>
+</api>
+<api>
+<name>mblog_getbloglist.fcg</name>
+<max_load>5000</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>281</id>
+<name>hotrecommend</name>
+<desc>hotrecommend</desc>
+<appkey>e2bf0fb69a00487e9e3783d7cceafad8</appkey>
+<role_list>
+<role id=280> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mblog_modify_commend</name>
+<max_load>20</max_load>
+</api>
+</api_list>
+</app>
+<app>
+<id>282</id>
+<name>wapqqshow</name>
+<desc>wapqqshow</desc>
+<appkey>937244d20b284cbaa87ee420eb1e0109</appkey>
+<role_list>
+<role id=281> </role>
+</role_list>
+<default_max_load>10</default_max_load>
+<api_list> <api>
+<name>mblog_add</name>
+<max_load>50</max_load>
+</api>
+</api_list>
+</app>
+<app>
+			<id>328</id>
+			<name>mqzone</name>
+			<desc>mobile blog</desc>
+			<appkey>32c99043b1234d04ac75235c009d5295</appkey>
+			<!--appkey>9644d08572074019b544e9f53a87ee33</appkey --->
+			
+			<role_list>
+				<role id = 999> </role>
+			</role_list>
+
+			<!--每秒最大调用次数的默认值。
+			        未单列的API访问频率限制采用本值。-->
+            		<default_max_load> 200000 </default_max_load>
+                     
+						<api_list>
+							<api>
+								<name>cgi_mapp_issetupapp.cgi</name>
+									<max_load>5000</max_load>
+							</api>	
+							<api>
+								<name>cgi_mapp_setupapp.cgi</name>
+									<max_load>50</max_load>
+							</api>	
+						<api>
+<name>cgi_qzshare_unifiedadd</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_share</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel</name>
+<max_load>20</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_detail</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_mylist</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedadd_comm</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifiedget_comm</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>cgi_qzshare_unifieddel_comm</name>
+<max_load>150</max_load>
+</api>
+<api>
+<name>mblog_setcount</name>
+<max_load>3000</max_load>
+</api>
+<api>
+<name>cgi_mic_getmyfriendfeeds_xml_page.cgi</name>
+<max_load>12156</max_load>
+</api>
+<api>
+<name>cgi_memotion_publish</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>mblog_msg_static_get</name>
+<max_load>400</max_load>
+</api>
+<api>
+<name>cgi_mqzone_auth</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>mcgi_upload_pic</name>
+<max_load>200</max_load>
+</api>
+<api>
+<name>mcgi_get_albuminfo</name>
+<max_load>1000</max_load>
+</api>
+<api>
+<name>mcgi_list_photo</name>
+<max_load>400</max_load>
+</api>
+<api>
+<name>mcgi_get_photoinfo</name>
+<max_load>400</max_load>
+</api>
+<api>
+<name>mcgi_list_album</name>
+<max_load>500</max_load>
+</api>
+<api>
+<name>mcgi_view_album</name>
+<max_load>400</max_load>
+</api>
+<api>
+<name>cgi_memotion_forward</name>
+<max_load>800</max_load>
+</api>
+<api>
+<name>cgi_memotion_signget</name>
+<max_load>800</max_load>
+</api>
+<api>
+<name>cgi_memotion_signset</name>
+<max_load>200</max_load>
+</api>
+</api_list>
+		</app>
+	</app_list>
+	
+</APP_CONFIG>
+
+

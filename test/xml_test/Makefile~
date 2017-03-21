@@ -1,0 +1,5 @@
+TARGET = xml_test
+all:$(TARGET)
+
+$(TARGET):test.cpp Markup.cpp
+	g++ -Wall -Werror test.cpp Markup.cpp -o $@

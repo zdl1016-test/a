@@ -1,0 +1,518 @@
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <string.h>
+#include <errno.h>
+#include <sys/epoll.h>
+#include <assert.h>
+#include <string>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stropts.h>
+#include <asm/ioctls.h>
+#include <map>
+#include <vector>
+#include "stat_simple.h"
+
+using namespace std;
+
+#define MAX_EPOLL_FD_NUM            (1024*100)
+#define SVR_PORT                    8899
+#define MAX_LENGTH_CONNECT_QUEUE    1024 // 该参数最好是可配置的, apigw的配置的值是:2048
+#define CRLF    "\r\n"
+
+StatSimple g_stat("stat_epoll_svr", 100, StatSimple::ENUM_WORK_MODE_SVR);
+
+void bind_cpu();
+
+int make_socket_non_block(int sfd);
+int make_socket_non_block2(int sfd);
+int accept_sock(int listenfd, int epollfd);
+
+int main(int argc, char* argv[])
+{
+    int ret = 0;
+
+    if (argc < 2)
+    {
+        printf("Usage %s child_num\n", argv[0]);
+        return -1;
+    }
+
+    int listenfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (listenfd < 0)
+    {
+        printf("socket() error, error:%s", strerror(errno));
+        return -1;
+    }
+
+    int flag = 1;
+
+    // Allow socket descriptor to be reuseable  
+    ret = setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, 
+            (char*)&flag, sizeof(flag));
+    if (ret < 0)
+    {
+        printf("setsockopt(reuseaddr) error, error:%s", strerror(errno));
+        return -1;
+    }
+
+    //ret = make_socket_non_block(listenfd);
+    ret = make_socket_non_block2(listenfd);
+    if (ret < 0)
+    {
+        printf("make_socket_non_block() error, error:%s", strerror(errno));
+        return -1;
+    }
+
+    struct sockaddr_in svr_addr;
+    memset(&svr_addr, 0, sizeof(svr_addr));
+
+    // bind ip port
+    svr_addr.sin_family = AF_INET;
+    svr_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    svr_addr.sin_port = htons(SVR_PORT);
+
+    if (bind(listenfd, (sockaddr*)&svr_addr, sizeof(svr_addr)) < 0)
+    {
+        close(listenfd);
+        printf("bind error, error:%s", strerror(errno));
+        return -1;
+    }
+
+    if (listen(listenfd, MAX_LENGTH_CONNECT_QUEUE) < 0)
+    {
+        close(listenfd);
+        printf("listen error, error:%s", strerror(errno));
+        return -1;
+    }
+
+    printf("listen at port : %d ...\n", SVR_PORT);
+
+    if (g_stat.Init())
+    {
+        printf("warn !!! stat Init faild. msg : %s\n", g_stat.GetErrMsg());
+    }
+
+    int epollfd = epoll_create(MAX_EPOLL_FD_NUM);
+    if (epollfd == -1)
+    {
+        printf("epoll_crete faild. msg : %s\n", strerror(errno));
+        return -1;
+    }
+
+    // listen fd 加入epoll监听队列
+    struct epoll_event event;
+    event.data.fd = listenfd;
+    event.events = EPOLLIN | EPOLLHUP | EPOLLERR | EPOLLET; // eage trigger. 边缘触发, 比水平触发高级点
+
+    ret = epoll_ctl(epollfd, EPOLL_CTL_ADD, listenfd, &event);
+    if (ret == -1)
+    {
+        printf("epoll_ctl faild. LINE:%d, msg : %s\n", __LINE__, strerror(errno));
+        return -1;
+    }
+
+    // 分配epoll监听的结果存放的缓冲区
+    struct epoll_event *events;
+    events = (epoll_event*)malloc(MAX_EPOLL_FD_NUM * sizeof(epoll_event));
+
+    int nfds = 0;
+    //int timeout_ms = 10;
+    int timeout_ms = -1;
+
+    char recv_buf[512] = {0};
+    char send_buf[512] = {0};
+    char content_buf[512] = {0};
+    int send_buf_len = 0;
+    int recv_buf_len = 0;
+    for (;;)
+    {
+        // 等fd就绪, 直到超时, 返回就绪的fd数量
+        nfds = epoll_wait(epollfd, events, MAX_EPOLL_FD_NUM, timeout_ms);
+
+        if (nfds == -1)
+        {
+            // 中断, 继续
+            if (EINTR == errno)
+                continue;
+
+            // 出错
+            printf("epoll_wait faild. msg : %s\n", strerror(errno));
+            return -1;
+        }
+
+        for (int i=0; i<nfds; ++i)
+        {
+            if (events[i].events & EPOLLERR || // 本地socket出现问题
+                events[i].events & EPOLLHUP )  // fd对应的对端链接关闭
+            {
+                close(events[i].data.fd);
+                epoll_event ev;
+                // 第四个参数没有用, 但又不能为空, 2.6.9之前版本kernal的bug
+                // see : http://linux.die.net/man/2/epoll_ctl
+                if (epoll_ctl(epollfd, EPOLL_CTL_DEL, events[i].data.fd, &ev) < 0)
+                {
+                    printf("epoll_ctl (del) faild. LINE:%d, msg : %s\n", __LINE__, strerror(errno));
+                    return -1;
+                }
+
+                continue;
+            }
+            // read
+            else if (events[i].events & EPOLLIN)
+            {
+                // 监听fd, 有接入请求
+                if (events[i].data.fd == listenfd)
+                {
+                    ret = accept_sock(listenfd, epollfd);
+                    if (ret != 0)
+                    {
+                        printf("accept_sock error. \n");
+                        return -1;
+                    }
+                }
+                // 普通的fd, 读数据即可
+                else
+                {
+                    // 如果读数据读到0字节, 那么也有问题.
+                    int fd = events[i].data.fd;
+
+                    recv_buf_len = 0;
+                    // 循环读, 知道读完.
+                    for (;;)
+                    {
+                        ret = read(fd, &recv_buf[recv_buf_len], sizeof(recv_buf)-recv_buf_len);
+                        if (ret < 0)
+                        {
+                            if (errno == EINTR)
+                                continue;
+
+                            if (errno == EAGAIN) // 没有数据可读了 , ET模式, 必须读到EAGAIN再停止
+                                break;
+
+                            printf("read error. msg:%s", strerror(errno));
+                            break; 
+
+                            // 暂不退出吧... 要不要把fd 从epoll中删除
+                        }
+
+                        recv_buf_len += ret;
+                    }
+                    printf("recv : [%s]\n", recv_buf);
+
+                    // 读数据完毕, 开始监听写
+                    epoll_event ev;
+                    ev.data.fd = fd;
+                    ev.events = EPOLLOUT | EPOLLHUP | EPOLLERR | EPOLLET;
+
+                    ret = epoll_ctl(epollfd, EPOLL_CTL_MOD, fd, &ev);
+                    if (ret == -1)
+                    {
+                        printf("epoll_ctl faild. LINE:%d, msg : %s\n", __LINE__, strerror(errno));
+                        //close (connfd);
+                        //return -1;
+                    }
+                }
+            }
+            // write
+            else
+            {
+                int fd = events[i].data.fd;
+
+                snprintf(content_buf, sizeof(content_buf), "pid : %d, time : %u", getpid(), time(NULL));
+                snprintf(send_buf, sizeof(send_buf),
+                        "HTTP/1.1 200 OK" CRLF
+                        "Content-Type: text/html; charset=UTF-8" CRLF
+                        "Server: iterative_svr" CRLF
+                        "Content-Length: %d" CRLF
+                        CRLF
+                        "%s", strlen(content_buf), content_buf
+                        );
+
+                send_buf_len = strlen(send_buf);
+
+                // write
+                int send_total = 0;
+                while (send_total < send_buf_len)
+                {
+                    ret = write(fd, &send_buf[send_total], send_buf_len-send_total);
+                    if (ret < 0)
+                    {
+                        if (errno == EINTR)
+                        {
+                            continue;
+                        }
+
+                        // 表示fd当前不可写 (可能是内核缓冲区满了等)
+                        // 如果知道自己的写的数据量不大, 那么一般情况下是出问题了, 可以关闭socket了, 并从epoll中移除了
+                        // 如果自己发送的数据量较大, 那么每次写时还是少点写少点比较好, 也可以把内核缓冲区调大点.
+                        // 不过, 写大数据量时, 最好还是使用水平出发, 而不是边缘触发, 代码会简单点.
+                        if (errno == EAGAIN)
+                        {
+                            close (fd);
+                            fd = -1;
+                        }
+
+                        printf("write error, error:%s", strerror(errno));
+                        break;
+                    }
+
+                    send_total += ret;
+                }
+                
+                // 写数据完毕, 接下来有两个动作可做
+                // 1) 主动和client端断开链接 close fd, 并且把fd从epoll中删除 
+                //
+                // 2) 改变监听状态为监听读, 相当于和client端长连接.
+                //
+                // PS: 如果什么也不做, 就算client断开链接, epoll也不会告知, 导致这个fd成了僵尸
+
+
+                // 主动断开链接
+                epoll_event ev;
+                ret = epoll_ctl(epollfd, EPOLL_CTL_DEL, fd, &ev);
+                if (ret == -1)
+                {
+                    printf("epoll_ctl faild. LINE:%d, msg : %s\n", __LINE__, strerror(errno));
+                    //return -1;
+                }
+                close (fd);
+                fd = -1;
+            }
+        }
+    }
+
+    if (events)
+    {
+        free (events);
+        events = 0;
+    }
+
+    close(epollfd);
+    close(listenfd);
+
+    return 0;
+}
+
+int accept_sock(int listenfd, int epollfd)
+{
+    int ret = 0;
+    // eage trigger, 
+    // 必须循环把所有的数据client接完, 否则系统不会再次通知!!
+    while (1)
+    {
+
+        struct sockaddr_in cli_addr;
+        int cli_addr_len = sizeof(cli_addr);
+        int connfd = accept(listenfd, (struct sockaddr*)&cli_addr, (socklen_t*)&cli_addr_len);
+        if (connfd < 0)
+        {
+            // interupt
+            if (errno == EINTR)
+            {
+                continue;
+            }
+
+            if (errno == EWOULDBLOCK ) // EWOULDBLOCK == EAGAIN
+            {
+                 /* We have processed all incoming connections. */
+                break;
+            }
+
+            close(listenfd);
+            printf("accept error, error:%s", strerror(errno));
+            return -1;
+        }
+
+        make_socket_non_block(connfd);
+
+        // 把收到的fd再加入到epoll中
+        epoll_event ev;
+        ev.data.fd = connfd;
+        ev.events = EPOLLIN | EPOLLHUP | EPOLLERR | EPOLLET; // 我们作为svr, 首先等待client的主动链接, 我们不会主动给client发数据.
+        
+        ret = epoll_ctl(epollfd, EPOLL_CTL_ADD, connfd, &ev);
+        if (ret == -1)
+        {
+            printf("epoll_ctl faild. LINE:%d, msg : %s\n", __LINE__, strerror(errno));
+            close (connfd);
+            //return -1;
+        }
+    }
+
+    return 0;
+}
+
+// 绑定CPU
+void bind_cpu()
+{                                                                                                                                                                   
+    int cpu_num = sysconf(_SC_NPROCESSORS_CONF);
+
+    if (cpu_num < 2)
+    {
+        return;
+    }
+
+    cpu_set_t mask;
+
+    CPU_ZERO(&mask);
+
+    // 根据pid随机挑选一个cpu (除了cpu0)
+    int cpu_idx = getpid() % (cpu_num-1) + 1;
+
+    CPU_SET(cpu_idx, &mask); // 如果索引超过cpu的实际个数,简单忽略
+
+    // 开始绑定
+    if (sched_setaffinity(0, sizeof(mask), &mask) == -1) // 第一个参数是进程ID, 0表示当前进程
+    {   
+        printf("warning: could not set CPU affinity, msg:%s \n", strerror(errno));
+        return ;
+    } 
+    
+    printf("proc %d bind cpu : %d\n", getpid(), cpu_idx);
+    return;
+}
+int child_main(int listenfd)
+{
+    printf("child %d stated.\n", getpid());
+
+    bind_cpu();
+    int ret = 0;
+    int connfd = 0;
+    struct sockaddr_in cli_addr;
+    int cli_addr_len = sizeof(cli_addr);
+    char send_buf[512] = {0};
+    char recv_buf[512] = {0};
+    char content_buf[512] = {0};
+    int send_buf_len = 0;
+    int recv_buf_len = 0;
+    for(;;)
+    {
+        send_buf_len = 0;
+        recv_buf_len = 0;
+        // can be block
+        connfd = accept(listenfd, (struct sockaddr*)&cli_addr, (socklen_t*)&cli_addr_len);
+        if (connfd < 0)
+        {
+            if (errno == EINTR)
+            {
+                continue;
+            }
+
+            close(listenfd);
+            printf("accept error, error:%s", strerror(errno));
+            //return -1;
+        }
+
+        // read
+        // 由于tcp的数据没有边界, 由于是简单的测试, 没有约定协议,  我就读一次, 准备一个大点的buf, 否则读多次会阻塞...
+        // 如果是http协议的话, 就需要按照约定的协议读, 发现一次没有读完协议没有读完, 可以继续等待读, 反正对方会再发送... 
+        // gw就是读多次, 每读到一次就检查数据是否读完, 没读完就再等待. 直到3秒超时
+        for (;;)
+        {
+            ret = read(connfd, &recv_buf[recv_buf_len], sizeof(recv_buf)-recv_buf_len);
+
+            if (ret < 0 && errno == EINTR)
+            {
+                continue;
+            }
+        
+            recv_buf_len += ret;
+
+            // 这里可以对已收到的buf做协议解析, 如果没有读完, 就继续循环读
+
+            recv_buf[recv_buf_len] = '\0';
+            //printf("recv : [%s]\n", recv_buf);
+            break;
+        }
+        
+
+        //printf("will response ...\n");
+
+        snprintf(content_buf, sizeof(content_buf), "pid : %d, time : %u", getpid(), time(NULL));
+        snprintf(send_buf, sizeof(send_buf),
+                "HTTP/1.1 200 OK" CRLF
+                "Content-Type: text/html; charset=UTF-8" CRLF
+                "Server: iterative_svr" CRLF
+                "Content-Length: %d" CRLF
+                CRLF
+                "%s", strlen(content_buf), content_buf
+                );
+
+        send_buf_len = strlen(send_buf);
+
+        // write
+        int send_total = 0;
+        while (send_total < send_buf_len)
+        {
+            ret = write(connfd, &send_buf[send_total], send_buf_len-send_total);
+            if (ret < 0)
+            {
+                if (errno == EINTR)
+                {
+                    continue;
+                }
+                
+                close(listenfd);
+                close(connfd);
+                printf("write error, error:%s", strerror(errno));
+                //return -1;
+                break;
+            }
+
+            send_total += ret;
+        }
+
+        // 请求统计+1
+        g_stat.Inc(0);
+
+        close(connfd);
+    }
+
+}
+
+int make_socket_non_block(int sfd)
+{
+    int flags, s;
+
+    flags = fcntl (sfd, F_GETFL, 0);
+    if (flags == -1)
+    {
+        perror ("fcntl");
+        return -1;
+    }
+
+    flags |= O_NONBLOCK;
+    s = fcntl (sfd, F_SETFL, flags);
+    if (s == -1)
+    {
+        perror ("fcntl");
+        return -1;
+    }
+
+    return 0;
+}
+
+int make_socket_non_block2(int sfd)
+{
+    int flag = 1;
+    /*************************************************************/
+    /* Set socket to be nonblocking. All of the sockets for    */
+    /* the incoming connections will also be nonblocking since  */
+    /* they will inherit that state from the listening socket.   */
+    /*************************************************************/
+    int ret = ioctl(sfd, FIONBIO, (char*)&flag);
+    if (ret < 0)
+    {
+        printf("ioctl() error, error:%s", strerror(errno));
+        return -1;
+    }
+
+    return 0;
+}

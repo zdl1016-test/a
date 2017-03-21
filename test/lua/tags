@@ -1,0 +1,58 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INC	c_api_basic/Makefile	1;"	m
+INC	c_call_lua/Makefile	1;"	m
+INC	c_module/Makefile	1;"	m
+INC	stack/Makefile	1;"	m
+InVeryLongPath	lua-ctags-master/test/very-long-path/very-long-path/very-long-path/very_long_path.lua	3;"	e
+LIB	c_api_basic/Makefile	2;"	m
+LIB	c_call_lua/Makefile	2;"	m
+LIB	c_module/Makefile	2;"	m
+LIB	stack/Makefile	2;"	m
+OBJS	c_module/Makefile	3;"	m
+TARGET	c_module/Makefile	4;"	m
+XXXX	lua-ctags-master/test/simple.lua	3;"	f
+YYYY	lua-ctags-master/test/simple.lua	4;"	f
+a	ref_value.lua	5;"	f
+balance	class/class.lua	5;"	f
+balance	class/inherit_class.lua	5;"	f
+balance	class/multi_inherit_class.lua	3;"	f
+counter	c_module/mylib.cpp	69;"	f	file:
+cover	lua-ctags-master/src/lua_ctags.lua	5;"	e
+createClass	class/multi_inherit_class.lua	38;"	e
+dump	lua-ctags-master/src/lua_ctags.lua	106;"	e
+foo	debug/debug.lua	8;"	e
+generate	lua-ctags-master/src/lua_ctags.lua	74;"	e
+global	strict.lua	36;"	e
+globalFunction	lua-ctags-master/test/more_functions.lua	6;"	e
+height	c_call_lua/config.lua	2;"	f
+innerFunction	lua-ctags-master/test/more_functions.lua	16;"	e
+l_sin	c_module/mylib.cpp	17;"	f	file:
+l_split	c_module/mylib.cpp	25;"	f	file:
+l_split2	c_module/mylib.cpp	46;"	f	file:
+localFunction	lua-ctags-master/test/more_functions.lua	3;"	e
+luaopen_mylib	c_module/mylib.cpp	95;"	f
+main	c_api_basic/1.cpp	12;"	f
+main	c_call_lua/1.cpp	11;"	f
+main	lua-ctags-master/src/lua_ctags.lua	148;"	e
+main	stack/1.cpp	12;"	f
+mylib	c_module/mylib.cpp	86;"	v	typeref:struct:luaL_Reg	file:
+newCounter	c_module/mylib.cpp	78;"	f
+outerFunction	lua-ctags-master/test/more_functions.lua	15;"	e
+parseFunction	lua-ctags-master/src/lua_ctags.lua	78;"	e
+parseLuac	lua-ctags-master/src/lua_ctags.lua	41;"	e
+printUsage	lua-ctags-master/src/lua_ctags.lua	142;"	e
+print_tb	print_md.lua	6;"	e
+private	mymodule.lua	4;"	e
+qsort	lua-ctags-master/src/lua_ctags.lua	77;"	e
+removeNested	lua-ctags-master/src/lua_ctags.lua	4;"	e
+stack_dump	c_api_basic/1.cpp	57;"	f
+stack_dump	stack/1.cpp	87;"	f
+test	lua-ctags-master/src/lua_ctags.lua	105;"	e
+test	lua-ctags-master/test/simple.lua	7;"	e
+traceTable	metatable/__index3.lua	16;"	e
+width	c_call_lua/config.lua	1;"	f

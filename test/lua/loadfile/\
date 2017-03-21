@@ -1,0 +1,6 @@
+func, msg = loadfile("./inc.lua")
+inc_foo()
+print (func, msg)
+func()
+inc_foo()
+

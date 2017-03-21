@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctimer.h>
+
+int main()
+{
+    char buf[512];
+    printf("buf's addr [%x][%d]\n", (int)(char*)&buf[0],(int)(char*)&buf[0]);
+    printf("buf's addr [%x][%d]\n", (int)(char*)&buf[1],(int)(char*)&buf[1]);
+
+
+    return 0;
+}

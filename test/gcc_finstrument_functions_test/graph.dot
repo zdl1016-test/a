@@ -1,0 +1,10 @@
+digraph test {
+
+  main [shape=rectangle]
+  fun_2 [shape=ellipse]
+  fun_1 [shape=ellipse]
+  main -> main [label="4 calls" fontsize="10"]
+  main -> fun_2 [label="1 calls" fontsize="10"]
+  main -> fun_1 [label="1 calls" fontsize="10"]
+
+}

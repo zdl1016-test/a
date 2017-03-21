@@ -1,0 +1,564 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+AToUTF8	Markup.cpp	/^MCD_STR CMarkup::AToUTF8( MCD_CSTR pszANSI )$/;"	f	class:CMarkup
+AddAttrib	Markup.h	/^	bool AddAttrib( MCD_CSTR szAttrib, MCD_CSTR szValue ) { return x_SetAttrib(m_iPos,szAttrib,szValue); };$/;"	f	class:CMarkup
+AddAttrib	Markup.h	/^	bool AddAttrib( MCD_CSTR szAttrib, int nValue ) { return x_SetAttrib(m_iPos,szAttrib,nValue); };$/;"	f	class:CMarkup
+AddChildAttrib	Markup.h	/^	bool AddChildAttrib( MCD_CSTR szAttrib, MCD_CSTR szValue ) { return x_SetAttrib(m_iPosChild,szAttrib,szValue); };$/;"	f	class:CMarkup
+AddChildAttrib	Markup.h	/^	bool AddChildAttrib( MCD_CSTR szAttrib, int nValue ) { return x_SetAttrib(m_iPosChild,szAttrib,nValue); };$/;"	f	class:CMarkup
+AddChildElem	Markup.h	/^	bool AddChildElem( MCD_CSTR szName, MCD_CSTR szData=NULL, int nFlags=0 ) { return x_AddElem(szName,szData,nFlags|MNF_CHILD); };$/;"	f	class:CMarkup
+AddChildElem	Markup.h	/^	bool AddChildElem( MCD_CSTR szName, int nValue, int nFlags=0 ) { return x_AddElem(szName,nValue,nFlags|MNF_CHILD); };$/;"	f	class:CMarkup
+AddChildSubDoc	Markup.h	/^	bool AddChildSubDoc( MCD_CSTR szSubDoc ) { return x_AddSubDoc(szSubDoc,MNF_CHILD); };$/;"	f	class:CMarkup
+AddElem	Markup.h	/^	bool AddElem( MCD_CSTR szName, MCD_CSTR szData=NULL, int nFlags=0 ) { return x_AddElem(szName,szData,nFlags); };$/;"	f	class:CMarkup
+AddElem	Markup.h	/^	bool AddElem( MCD_CSTR szName, int nValue, int nFlags=0 ) { return x_AddElem(szName,nValue,nFlags); };$/;"	f	class:CMarkup
+AddNode	Markup.h	/^	bool AddNode( int nType, MCD_CSTR szText ) { return x_AddNode(nType,szText,0); };$/;"	f	class:CMarkup
+AddSubDoc	Markup.h	/^	bool AddSubDoc( MCD_CSTR szSubDoc ) { return x_AddSubDoc(szSubDoc,0); };$/;"	f	class:CMarkup
+AdjustStartTagLen	Markup.cpp	/^	void AdjustStartTagLen( int n ) { nStartTagLen += n; };$/;"	f	struct:ElemPos
+Alloc	Markup.cpp	/^	void Alloc( int nNewSize ) { TagPos* pLNew = new TagPos[nNewSize]; Copy(pLNew); nSize=nNewSize; };$/;"	f	struct:ElemStack
+AttribPredicateMatch	Markup.cpp	/^bool PathPos::AttribPredicateMatch( TokenPos& token )$/;"	f	class:PathPos
+BomTable	Markup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	v
+BomTableStruct	Markup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	s	file:
+CMarkup	Markup.h	/^	CMarkup( MCD_CSTR szDoc ) { x_InitMarkup(); SetDoc( szDoc ); };$/;"	f	class:CMarkup
+CMarkup	Markup.h	/^	CMarkup( const CMarkup& markup ) { x_InitMarkup(); *this = markup; };$/;"	f	class:CMarkup
+CMarkup	Markup.h	/^	CMarkup( int nFlags ) { x_InitMarkup(); SetDoc( NULL ); m_nDocFlags = nFlags; };$/;"	f	class:CMarkup
+CMarkup	Markup.h	/^	CMarkup() { x_InitMarkup(); SetDoc( NULL ); };$/;"	f	class:CMarkup
+CMarkup	Markup.h	/^class CMarkup$/;"	c
+CalcSlot	Markup.cpp	/^int ElemStack::CalcSlot( MCD_PCSZ pName, int n, bool bIC )$/;"	f	class:ElemStack
+CanConvert	Markup.cpp	/^bool TextEncoding::CanConvert( MCD_CSTR pszToEncoding, MCD_CSTR pszFromEncoding )$/;"	f	class:TextEncoding
+Clear	Markup.cpp	/^	void Clear() { m_nL=0; m_nR=-1; m_nNext=0; };$/;"	f	struct:TokenPos
+Clear	Markup.cpp	/^	void Clear() { m_nSegs=0; m_nSize=0; m_pSegs=NULL; };$/;"	f	struct:ElemPosTree
+ClearVirtualParent	Markup.cpp	/^	void ClearVirtualParent() { memset(this,0,sizeof(ElemPos)); };$/;"	f	struct:ElemPos
+ContentLen	Markup.cpp	/^	int ContentLen() const { return nLength - StartTagLen() - EndTagLen(); };$/;"	f	struct:ElemPos
+Copy	Markup.cpp	/^	void Copy( TagPos* pLNew ) { for(int n=0;n<nSize;++n) pLNew[n]=pL[n]; if (pL) delete [] pL; pL=pLNew; };$/;"	f	struct:ElemStack
+CopyElemPosTree	Markup.cpp	/^void ElemPosTree::CopyElemPosTree( ElemPosTree* pOtherTree, int n )$/;"	f	class:ElemPosTree
+CopySavedPosMaps	Markup.cpp	/^void SavedPosMapArray::CopySavedPosMaps( SavedPosMapArray* pOtherMaps )$/;"	f	class:SavedPosMapArray
+Current	Markup.cpp	/^	TagPos& Current() { return pL[iTop]; };$/;"	f	struct:ElemStack
+DecodeCharUTF16	Markup.cpp	/^int CMarkup::DecodeCharUTF16( const unsigned short*& pwszUTF16, const unsigned short* pszUTF16End\/*=NULL*\/ )$/;"	f	class:CMarkup
+DecodeCharUTF8	Markup.cpp	/^int CMarkup::DecodeCharUTF8( const char*& pszUTF8, const char* pszUTF8End\/*=NULL*\/ )$/;"	f	class:CMarkup
+DetectUTF8	Markup.cpp	/^bool CMarkup::DetectUTF8( const char* pText, int nTextLen, int* pnNonASCII\/*=NULL*\/, bool* bErrorAtEnd\/*=NULL*\/ )$/;"	f	class:CMarkup
+ELEM	Markup.cpp	1019;"	d	file:
+ElemPos	Markup.cpp	/^	ElemPos( const ElemPos& pos ) { *this = pos; };$/;"	f	struct:ElemPos
+ElemPos	Markup.cpp	/^	ElemPos() {};$/;"	f	struct:ElemPos
+ElemPos	Markup.cpp	/^struct ElemPos$/;"	s	file:
+ElemPosTree	Markup.cpp	/^	ElemPosTree() { Clear(); };$/;"	f	struct:ElemPosTree
+ElemPosTree	Markup.cpp	/^struct ElemPosTree$/;"	s	file:
+ElemStack	Markup.cpp	/^	ElemStack() { iTop=0; iUsed=0; iPar=0; nLevel=0; nSize=0; pL=NULL; Alloc(7); pL[0].Init(); InitTable(); };$/;"	f	struct:ElemStack
+ElemStack	Markup.cpp	/^struct ElemStack$/;"	s	file:
+EncodeCharUTF16	Markup.cpp	/^void CMarkup::EncodeCharUTF16( int nUChar, unsigned short* pwszUTF16, int& nUTF16Len )$/;"	f	class:CMarkup
+EncodeCharUTF8	Markup.cpp	/^void CMarkup::EncodeCharUTF8( int nUChar, char* pszUTF8, int& nUTF8Len )$/;"	f	class:CMarkup
+EncodingNameTable	Markup.cpp	/^MCD_PCSZ EncodingNameTable[155] =$/;"	v
+EndTagLen	Markup.cpp	/^	int EndTagLen() const { return nEndTagLen; };$/;"	f	struct:ElemPos
+EscapeText	Markup.cpp	/^MCD_STR CMarkup::EscapeText( MCD_CSTR szText, int nFlags )$/;"	f	class:CMarkup
+FINDNODEBAD	Markup.cpp	2302;"	d	file:
+FINDNODETYPE	Markup.cpp	2300;"	d	file:
+FINDNODETYPENAME	Markup.cpp	2301;"	d	file:
+FileAtTop	Markup.cpp	/^bool FilePos::FileAtTop()$/;"	f	class:FilePos
+FileCheckRaggedEnd	Markup.cpp	/^bool FilePos::FileCheckRaggedEnd( void* pBuffer )$/;"	f	class:FilePos
+FileClose	Markup.cpp	/^bool FilePos::FileClose()$/;"	f	class:FilePos
+FileErrorAddResult	Markup.cpp	/^bool FilePos::FileErrorAddResult()$/;"	f	class:FilePos
+FileFlush	Markup.cpp	/^bool FilePos::FileFlush( MCD_STR& strBuffer, int nWriteStrLen\/*=-1*\/, bool bFflush\/*=false*\/ )$/;"	f	class:FilePos
+FileGatherEnd	Markup.cpp	/^int FilePos::FileGatherEnd( MCD_STR& strMarkup )$/;"	f	class:FilePos
+FileGatherStart	Markup.cpp	/^void FilePos::FileGatherStart( int nStart )$/;"	f	class:FilePos
+FileOpen	Markup.cpp	/^bool FilePos::FileOpen( MCD_CSTR_FILENAME szFileName )$/;"	f	class:FilePos
+FilePos	Markup.cpp	/^	FilePos()$/;"	f	struct:FilePos
+FilePos	Markup.cpp	/^struct FilePos$/;"	s	file:
+FileRead	Markup.cpp	/^bool FilePos::FileRead( void* pBuffer )$/;"	f	class:FilePos
+FileReadNextBuffer	Markup.cpp	/^bool FilePos::FileReadNextBuffer()$/;"	f	class:FilePos
+FileReadText	Markup.cpp	/^bool FilePos::FileReadText( MCD_STR& strDoc )$/;"	f	class:FilePos
+FileSpecifyEncoding	Markup.cpp	/^void FilePos::FileSpecifyEncoding( MCD_STR* pstrEncoding )$/;"	f	class:FilePos
+FileWrite	Markup.cpp	/^bool FilePos::FileWrite( void* pBuffer, const void* pConstBuffer \/*=NULL*\/ )$/;"	f	class:FilePos
+FileWriteText	Markup.cpp	/^bool FilePos::FileWriteText( const MCD_STR& strDoc, int nWriteStrLen\/*=-1*\/ )$/;"	f	class:FilePos
+FindAny	Markup.cpp	/^	bool FindAny()$/;"	f	struct:TokenPos
+FindAttrib	Markup.cpp	/^bool TokenPos::FindAttrib( MCD_PCSZ pAttrib, int n\/*=0*\/ )$/;"	f	class:TokenPos
+FindChildElem	Markup.cpp	/^bool CMarkup::FindChildElem( MCD_CSTR szName )$/;"	f	class:CMarkup
+FindElem	Markup.cpp	/^bool CMarkup::FindElem( MCD_CSTR szName )$/;"	f	class:CMarkup
+FindName	Markup.cpp	/^	bool FindName()$/;"	f	struct:TokenPos
+FindNode	Markup.cpp	/^int CMarkup::FindNode( int nType )$/;"	f	class:CMarkup
+FindRaggedEnd	Markup.cpp	/^bool TextEncoding::FindRaggedEnd( int& nTruncBeforeBytes )$/;"	f	class:TextEncoding
+ForwardUntil	Markup.cpp	/^	void ForwardUntil( MCD_PCSZ szStopChars ) { while ( m_pDocText[m_nNext] && ! MCD_PSZCHR(szStopChars,m_pDocText[m_nNext]) ) m_nNext += MCD_CLEN(&m_pDocText[m_nNext]); }$/;"	f	struct:TokenPos
+GetAttrib	Markup.h	/^	MCD_STR GetAttrib( MCD_CSTR szAttrib ) const { return x_GetAttrib(m_iPos,szAttrib); };$/;"	f	class:CMarkup
+GetAttribName	Markup.cpp	/^MCD_STR CMarkup::GetAttribName( int n ) const$/;"	f	class:CMarkup
+GetChar	Markup.cpp	/^	MCD_CHAR GetChar() { return p[i]; };$/;"	f	struct:PathPos
+GetChildAttrib	Markup.h	/^	MCD_STR GetChildAttrib( MCD_CSTR szAttrib ) const { return x_GetAttrib(m_iPosChild,szAttrib); };$/;"	f	class:CMarkup
+GetChildData	Markup.h	/^	MCD_STR GetChildData() { return x_GetData(m_iPosChild); };$/;"	f	class:CMarkup
+GetChildSubDoc	Markup.h	/^	MCD_STR GetChildSubDoc() { return x_GetSubDoc(m_iPosChild); };$/;"	f	class:CMarkup
+GetChildTagName	Markup.h	/^	MCD_STR GetChildTagName() const { return x_GetTagName(m_iPosChild); };$/;"	f	class:CMarkup
+GetData	Markup.h	/^	MCD_STR GetData() { return x_GetData(m_iPos); };$/;"	f	class:CMarkup
+GetDeclaredEncoding	Markup.cpp	/^MCD_STR CMarkup::GetDeclaredEncoding( MCD_CSTR szDoc )$/;"	f	class:CMarkup
+GetDoc	Markup.h	/^	const MCD_STR& GetDoc() const { return m_strDoc; };$/;"	f	class:CMarkup
+GetDocFlags	Markup.h	/^	int GetDocFlags() const { return m_nDocFlags; };$/;"	f	class:CMarkup
+GetElemContent	Markup.h	/^	MCD_STR GetElemContent() const { return x_GetElemContent(m_iPos); };$/;"	f	class:CMarkup
+GetEncodingCodePage	Markup.cpp	/^int CMarkup::GetEncodingCodePage( MCD_CSTR pszEncoding )$/;"	f	class:CMarkup
+GetError	Markup.cpp	/^MCD_STR CMarkup::GetError() const$/;"	f	class:CMarkup
+GetMap	Markup.cpp	/^bool SavedPosMapArray::GetMap( SavedPosMap*& pMap, int nMap, int nMapSize \/*=7*\/ )$/;"	f	class:SavedPosMapArray
+GetNodeType	Markup.h	/^	int GetNodeType() { return m_nNodeType; };$/;"	f	class:CMarkup
+GetNumAndInc	Markup.cpp	/^	int GetNumAndInc() { int n=0; while (p[i]>='0'&&p[i]<='9') n=n*10+(int)p[i++]-(int)'0'; return n; };$/;"	f	struct:PathPos
+GetPathAttribName	Markup.cpp	/^	MCD_PCSZ GetPathAttribName() { if (iPathAttribName) return &p[iPathAttribName]; return NULL; };$/;"	f	struct:PathPos
+GetPtr	Markup.cpp	/^	MCD_PCSZ GetPtr() { return &p[i]; };$/;"	f	struct:PathPos
+GetRefElemPosAt	Markup.cpp	/^	ElemPos& GetRefElemPosAt(int i) const { return m_pSegs[i>>PA_SEGBITS][i&PA_SEGMASK]; };$/;"	f	struct:ElemPosTree
+GetRefTagPosAt	Markup.cpp	/^	TagPos& GetRefTagPosAt( int i ) { return pL[i]; };$/;"	f	struct:ElemStack
+GetResult	Markup.h	/^	const MCD_STR& GetResult() const { return m_strResult; };$/;"	f	class:CMarkup
+GetSize	Markup.cpp	/^	int GetSize() const { return m_nSize; };$/;"	f	struct:ElemPosTree
+GetSubDoc	Markup.h	/^	MCD_STR GetSubDoc() { return x_GetSubDoc(m_iPos); };$/;"	f	class:CMarkup
+GetTagName	Markup.cpp	/^MCD_STR CMarkup::GetTagName() const$/;"	f	class:CMarkup
+GetTokenPtr	Markup.cpp	/^	MCD_PCSZ GetTokenPtr() const { return &m_pDocText[m_nL]; };$/;"	f	struct:TokenPos
+GetTokenText	Markup.cpp	/^	MCD_STR GetTokenText() const { return MCD_STR( GetTokenPtr(), Length() ); };$/;"	f	struct:TokenPos
+GetTypeAndInc	Markup.cpp	/^	int GetTypeAndInc() { i=-1; if (p) { if (p[0]=='\/') { if (p[1]=='\/') i=2; else i=1; } else if (p[0]) i=0; } nPathType=i+1; return nPathType; };$/;"	f	struct:PathPos
+GetValAndInc	Markup.cpp	/^	MCD_PCSZ GetValAndInc() { ++i; MCD_CHAR cEnd=']'; if (p[i]=='\\''||p[i]=='\\"') cEnd=p[i++]; int iVal=i; IncWord(cEnd); nLen=i-iVal; if (cEnd!=']') ++i; return &p[iVal]; };$/;"	f	struct:PathPos
+GetValOrWordLen	Markup.cpp	/^	int GetValOrWordLen() { return nLen; };$/;"	f	struct:PathPos
+GetWordAndInc	Markup.cpp	/^	MCD_PCSZ GetWordAndInc() { int iWord=i; IncWord(); nLen=i-iWord; return &p[iWord]; };$/;"	f	struct:PathPos
+GrowElemPosTree	Markup.cpp	/^void ElemPosTree::GrowElemPosTree( int nNewSize )$/;"	f	class:ElemPosTree
+IConv	Markup.cpp	/^int TextEncoding::IConv( void* pTo, int nToCharSize, int nFromCharSize )$/;"	f	class:TextEncoding
+IConvName	Markup.cpp	/^const char* TextEncoding::IConvName( char* szEncoding, MCD_CSTR pszEncoding )$/;"	f	class:TextEncoding
+Inc	Markup.cpp	/^	void Inc( int n ) { i+=n; };$/;"	f	struct:PathPos
+IncChar	Markup.cpp	/^	void IncChar() { ++i; };$/;"	f	struct:PathPos
+IncCount	Markup.cpp	/^	void IncCount() { if (nCount) ++nCount; };$/;"	f	struct:TagPos
+IncWord	Markup.cpp	/^	void IncWord( MCD_CHAR c ) { while (p[i]&&p[i]!=c) i+=MCD_CLEN(&p[i]); };$/;"	f	struct:PathPos
+IncWord	Markup.cpp	/^	void IncWord() { while (p[i]&&!MCD_PSZCHR(MCD_T(" =\/[]"),p[i])) i+=MCD_CLEN(&p[i]); };$/;"	f	struct:PathPos
+Init	Markup.cpp	/^	void Init( int i=0, int n=1 ) { nCount=1; nTagNames=n; iNext=i; iPrev=0; nSlot=-1; iSlotPrev=0; iSlotNext=0; };$/;"	f	struct:TagPos
+InitTable	Markup.cpp	/^	void InitTable() { memset(anTable,0,sizeof(int)*LS_TABLESIZE); };$/;"	f	struct:ElemStack
+InsertChildElem	Markup.h	/^	bool InsertChildElem( MCD_CSTR szName, MCD_CSTR szData=NULL, int nFlags=0 ) { return x_AddElem(szName,szData,nFlags|MNF_INSERT|MNF_CHILD); };$/;"	f	class:CMarkup
+InsertChildElem	Markup.h	/^	bool InsertChildElem( MCD_CSTR szName, int nValue, int nFlags=0 ) { return x_AddElem(szName,nValue,nFlags|MNF_INSERT|MNF_CHILD); };$/;"	f	class:CMarkup
+InsertChildSubDoc	Markup.h	/^	bool InsertChildSubDoc( MCD_CSTR szSubDoc ) { return x_AddSubDoc(szSubDoc,MNF_CHILD|MNF_INSERT); };$/;"	f	class:CMarkup
+InsertElem	Markup.h	/^	bool InsertElem( MCD_CSTR szName, MCD_CSTR szData=NULL, int nFlags=0 ) { return x_AddElem(szName,szData,nFlags|MNF_INSERT); };$/;"	f	class:CMarkup
+InsertElem	Markup.h	/^	bool InsertElem( MCD_CSTR szName, int nValue, int nFlags=0 ) { return x_AddElem(szName,nValue,nFlags|MNF_INSERT); };$/;"	f	class:CMarkup
+InsertNode	Markup.h	/^	bool InsertNode( int nType, MCD_CSTR szText ) { return x_AddNode(nType,szText,MNF_INSERT); };$/;"	f	class:CMarkup
+InsertSubDoc	Markup.h	/^	bool InsertSubDoc( MCD_CSTR szSubDoc ) { return x_AddSubDoc(szSubDoc,MNF_INSERT); };$/;"	f	class:CMarkup
+IntoElem	Markup.cpp	/^bool CMarkup::IntoElem()$/;"	f	class:CMarkup
+IntoLevel	Markup.cpp	/^	void IntoLevel() { iPar = iTop; ++nLevel; };$/;"	f	struct:ElemStack
+IsAbsolutePath	Markup.cpp	/^	bool IsAbsolutePath() { return nPathType == 2; };$/;"	f	struct:PathPos
+IsAnywherePath	Markup.cpp	/^	bool IsAnywherePath() { return nPathType == 3; };$/;"	f	struct:PathPos
+IsAtPathEnd	Markup.cpp	/^	bool IsAtPathEnd() { return ((!p[i])||(iPathAttribName&&i+2>=iPathAttribName))?true:false; }; $/;"	f	struct:PathPos
+IsEmptyElement	Markup.cpp	/^	bool IsEmptyElement() { return (StartTagLen()==nLength)?true:false; };$/;"	f	struct:ElemPos
+IsPath	Markup.cpp	/^	bool IsPath() { return nPathType > 0; };$/;"	f	struct:PathPos
+IsUnparsed	Markup.cpp	/^	bool IsUnparsed() { return EndTagLen() == 1; };$/;"	f	struct:ElemPos
+IsWellFormed	Markup.cpp	/^bool CMarkup::IsWellFormed()$/;"	f	class:CMarkup
+LS_TABLESIZE	Markup.cpp	/^	enum { LS_TABLESIZE = 23 };$/;"	e	enum:ElemStack::<anonymous>	file:
+Length	Markup.cpp	/^	int Length() const { return m_nR - m_nL + 1; };$/;"	f	struct:TokenPos
+Level	Markup.cpp	/^    int Level() const { return nFlags & 0xffff; };$/;"	f	struct:ElemPos
+Load	Markup.cpp	/^bool CMarkup::Load( MCD_CSTR_FILENAME szFileName )$/;"	f	class:CMarkup
+MARKUP_FILEBLOCKSIZE	Markup.h	57;"	d
+MARKUP_ICONV	Markup.h	37;"	d
+MARKUP_MBCS	Markup.h	44;"	d
+MARKUP_SETDEBUGSTATE	Markup.h	407;"	d
+MARKUP_SETDEBUGSTATE	Markup.h	409;"	d
+MARKUP_SIZEOFWCHAR	Markup.h	48;"	d
+MARKUP_SIZEOFWCHAR	Markup.h	50;"	d
+MARKUP_STL	Markup.h	34;"	d
+MARKUP_WCHAR	Markup.h	41;"	d
+MARKUP_WINCONV	Markup.h	54;"	d
+MCD_2PCSZ	Markup.h	150;"	d
+MCD_2PCSZ	Markup.h	170;"	d
+MCD_ACP	Markup.h	62;"	d
+MCD_BLDAPPEND	Markup.h	165;"	d
+MCD_BLDAPPEND	Markup.h	184;"	d
+MCD_BLDAPPEND1	Markup.h	166;"	d
+MCD_BLDAPPEND1	Markup.h	185;"	d
+MCD_BLDAPPENDN	Markup.h	164;"	d
+MCD_BLDAPPENDN	Markup.h	183;"	d
+MCD_BLDCHECK	Markup.h	162;"	d
+MCD_BLDCHECK	Markup.h	181;"	d
+MCD_BLDRELEASE	Markup.h	163;"	d
+MCD_BLDRELEASE	Markup.h	182;"	d
+MCD_BLDRESERVE	Markup.h	161;"	d
+MCD_BLDRESERVE	Markup.h	180;"	d
+MCD_CHAR	Markup.h	101;"	d
+MCD_CHAR	Markup.h	67;"	d
+MCD_CLEN	Markup.h	127;"	d
+MCD_CLEN	Markup.h	129;"	d
+MCD_CLEN	Markup.h	133;"	d
+MCD_CLEN	Markup.h	99;"	d
+MCD_CSTR	Markup.h	/^	MCD_CSTR( MCD_PCSZ p ) { pcsz=p; };$/;"	f	struct:MCD_CSTR
+MCD_CSTR	Markup.h	/^	MCD_CSTR( const MCD_STR& s ) { pcsz = MCD_2PCSZ(s); };$/;"	f	struct:MCD_CSTR
+MCD_CSTR	Markup.h	/^	MCD_CSTR() { pcsz=NULL; };$/;"	f	struct:MCD_CSTR
+MCD_CSTR	Markup.h	/^struct MCD_CSTR$/;"	s
+MCD_CSTR_FILENAME	Markup.h	/^	MCD_CSTR_FILENAME( MCD_PCSZ_FILENAME p ) { pcsz=p; };$/;"	f	struct:MCD_CSTR_FILENAME
+MCD_CSTR_FILENAME	Markup.h	/^	MCD_CSTR_FILENAME( const std::string& s ) { pcsz = s.c_str(); };$/;"	f	struct:MCD_CSTR_FILENAME
+MCD_CSTR_FILENAME	Markup.h	/^	MCD_CSTR_FILENAME() { pcsz=NULL; };$/;"	f	struct:MCD_CSTR_FILENAME
+MCD_CSTR_FILENAME	Markup.h	/^struct MCD_CSTR_FILENAME$/;"	s
+MCD_CSTR_FILENAME	Markup.h	214;"	d
+MCD_ENC	Markup.h	125;"	d
+MCD_ENC	Markup.h	132;"	d
+MCD_ENC	Markup.h	95;"	d
+MCD_ENC	Markup.h	97;"	d
+MCD_FOPEN	Markup.h	114;"	d
+MCD_FOPEN	Markup.h	121;"	d
+MCD_FOPEN	Markup.h	201;"	d
+MCD_FOPEN	Markup.h	202;"	d
+MCD_FOPEN	Markup.h	80;"	d
+MCD_FOPEN	Markup.h	91;"	d
+MCD_FSEEK	Markup.h	220;"	d
+MCD_FSEEK	Markup.h	228;"	d
+MCD_FSEEK	Markup.h	232;"	d
+MCD_FTELL	Markup.h	221;"	d
+MCD_FTELL	Markup.h	229;"	d
+MCD_FTELL	Markup.h	233;"	d
+MCD_GETBUFFER	Markup.h	159;"	d
+MCD_GETBUFFER	Markup.h	178;"	d
+MCD_INTFILEOFFSET	Markup.h	222;"	d
+MCD_INTFILEOFFSET	Markup.h	230;"	d
+MCD_INTFILEOFFSET	Markup.h	234;"	d
+MCD_PCSZ	Markup.h	102;"	d
+MCD_PCSZ	Markup.h	68;"	d
+MCD_PCSZ_FILENAME	Markup.h	204;"	d
+MCD_PCSZ_FILENAME	Markup.h	216;"	d
+MCD_PSZCAT	Markup.h	112;"	d
+MCD_PSZCAT	Markup.h	119;"	d
+MCD_PSZCAT	Markup.h	78;"	d
+MCD_PSZCAT	Markup.h	89;"	d
+MCD_PSZCHR	Markup.h	104;"	d
+MCD_PSZCHR	Markup.h	70;"	d
+MCD_PSZCPY	Markup.h	110;"	d
+MCD_PSZCPY	Markup.h	117;"	d
+MCD_PSZCPY	Markup.h	76;"	d
+MCD_PSZCPY	Markup.h	87;"	d
+MCD_PSZLEN	Markup.h	103;"	d
+MCD_PSZLEN	Markup.h	69;"	d
+MCD_PSZNCMP	Markup.h	107;"	d
+MCD_PSZNCMP	Markup.h	73;"	d
+MCD_PSZNCPY	Markup.h	111;"	d
+MCD_PSZNCPY	Markup.h	118;"	d
+MCD_PSZNCPY	Markup.h	77;"	d
+MCD_PSZNCPY	Markup.h	88;"	d
+MCD_PSZSTR	Markup.h	105;"	d
+MCD_PSZSTR	Markup.h	71;"	d
+MCD_PSZTOL	Markup.h	106;"	d
+MCD_PSZTOL	Markup.h	72;"	d
+MCD_RELEASEBUFFER	Markup.h	160;"	d
+MCD_RELEASEBUFFER	Markup.h	179;"	d
+MCD_SPRINTF	Markup.h	113;"	d
+MCD_SPRINTF	Markup.h	120;"	d
+MCD_SPRINTF	Markup.h	79;"	d
+MCD_SPRINTF	Markup.h	90;"	d
+MCD_SSZ	Markup.h	109;"	d
+MCD_SSZ	Markup.h	116;"	d
+MCD_SSZ	Markup.h	75;"	d
+MCD_SSZ	Markup.h	83;"	d
+MCD_SSZ	Markup.h	85;"	d
+MCD_STR	Markup.h	146;"	d
+MCD_STR	Markup.h	148;"	d
+MCD_STR	Markup.h	169;"	d
+MCD_STRASSIGN	Markup.h	156;"	d
+MCD_STRASSIGN	Markup.h	176;"	d
+MCD_STRCAPACITY	Markup.h	157;"	d
+MCD_STRCAPACITY	Markup.h	177;"	d
+MCD_STRCLEAR	Markup.h	152;"	d
+MCD_STRCLEAR	Markup.h	172;"	d
+MCD_STRCLEARSIZE	Markup.h	153;"	d
+MCD_STRCLEARSIZE	Markup.h	173;"	d
+MCD_STRERROR	Markup.h	137;"	d
+MCD_STRINSERTREPLACE	Markup.h	158;"	d
+MCD_STRISEMPTY	Markup.h	154;"	d
+MCD_STRISEMPTY	Markup.h	174;"	d
+MCD_STRLENGTH	Markup.h	151;"	d
+MCD_STRLENGTH	Markup.h	171;"	d
+MCD_STRMID	Markup.h	155;"	d
+MCD_STRMID	Markup.h	175;"	d
+MCD_STRTOINT	Markup.h	187;"	d
+MCD_T	Markup.h	123;"	d
+MCD_T	Markup.h	93;"	d
+MCD_T_FILENAME	Markup.h	203;"	d
+MCD_T_FILENAME	Markup.h	215;"	d
+MCD_UTF16	Markup.h	64;"	d
+MCD_UTF32	Markup.h	65;"	d
+MCD_UTF8	Markup.h	63;"	d
+MDF_APPENDFILE	Markup.h	/^		MDF_APPENDFILE = 64,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_IGNORECASE	Markup.h	/^		MDF_IGNORECASE = 8,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_READFILE	Markup.h	/^		MDF_READFILE = 16,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_UTF16BEFILE	Markup.h	/^		MDF_UTF16BEFILE = 128$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_UTF16LEFILE	Markup.h	/^		MDF_UTF16LEFILE = 1,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_UTF8PREAMBLE	Markup.h	/^		MDF_UTF8PREAMBLE = 4,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_WRITEFILE	Markup.h	/^		MDF_WRITEFILE = 32,$/;"	e	enum:CMarkup::MarkupDocFlags
+MNF_CHILD	Markup.h	/^		MNF_CHILD      = 0x004000$/;"	e	enum:CMarkup::MarkupNodeFlagsInternal
+MNF_DELETED	Markup.cpp	/^	MNF_DELETED    = 0x020000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_EMPTY	Markup.cpp	/^	MNF_EMPTY      = 0x010000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_ESCAPEQUOTES	Markup.h	/^		MNF_ESCAPEQUOTES  = 0x100,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_FIRST	Markup.cpp	/^	MNF_FIRST      = 0x080000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_ILLDATA	Markup.h	/^		MNF_ILLDATA    = 0x200000$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_ILLFORMED	Markup.cpp	/^	MNF_ILLFORMED  = 0x800000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_INSERT	Markup.h	/^		MNF_INSERT     = 0x002000,$/;"	e	enum:CMarkup::MarkupNodeFlagsInternal
+MNF_NONENDED	Markup.h	/^		MNF_NONENDED   = 0x100000,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_PUBLIC	Markup.cpp	/^	MNF_PUBLIC     = 0x300000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_QUOTED	Markup.cpp	/^	MNF_QUOTED     = 0x008000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_REPLACE	Markup.cpp	/^	MNF_REPLACE    = 0x001000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_USER	Markup.cpp	/^	MNF_USER      = 0xf000000$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_WITHCDATA	Markup.h	/^		MNF_WITHCDATA      = 0x01,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_WITHNOEND	Markup.h	/^		MNF_WITHNOEND      = 0x10,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_WITHNOLINES	Markup.h	/^		MNF_WITHNOLINES    = 0x02,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_WITHREFS	Markup.h	/^		MNF_WITHREFS       = 0x08,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_WITHXHTMLSPACE	Markup.h	/^		MNF_WITHXHTMLSPACE = 0x04,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNT_CDATA_SECTION	Markup.h	/^		MNT_CDATA_SECTION			= 8,    \/\/ 0x0008$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_COMMENT	Markup.h	/^		MNT_COMMENT					= 32,   \/\/ 0x0020$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_DOCUMENT_TYPE	Markup.h	/^		MNT_DOCUMENT_TYPE			= 64,   \/\/ 0x0040$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_ELEMENT	Markup.h	/^		MNT_ELEMENT					= 1,    \/\/ 0x0001$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_EXCLUDE_WHITESPACE	Markup.h	/^		MNT_EXCLUDE_WHITESPACE		= 123,  \/\/ 0x007b$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_LONE_END_TAG	Markup.h	/^		MNT_LONE_END_TAG			= 128,  \/\/ 0x0080$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_NODE_ERROR	Markup.h	/^		MNT_NODE_ERROR              = 32768 \/\/ 0x8000$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_PROCESSING_INSTRUCTION	Markup.h	/^		MNT_PROCESSING_INSTRUCTION	= 16,   \/\/ 0x0010$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_TEXT	Markup.h	/^		MNT_TEXT					= 2,    \/\/ 0x0002$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_TEXT_AND_WHITESPACE	Markup.h	/^		MNT_TEXT_AND_WHITESPACE     = 6,    \/\/ 0x0006$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_WHITESPACE	Markup.h	/^		MNT_WHITESPACE				= 4,    \/\/ 0x0004$/;"	e	enum:CMarkup::MarkupNodeType
+MRC_COUNT	Markup.cpp	/^	MRC_COUNT    = 1,$/;"	e	enum:MarkupResultCode	file:
+MRC_ENCODING	Markup.cpp	/^	MRC_ENCODING = 8,$/;"	e	enum:MarkupResultCode	file:
+MRC_LENGTH	Markup.cpp	/^	MRC_LENGTH   = 16,$/;"	e	enum:MarkupResultCode	file:
+MRC_MODIFY	Markup.cpp	/^	MRC_MODIFY   = 32,$/;"	e	enum:MarkupResultCode	file:
+MRC_MSG	Markup.cpp	/^	MRC_MSG      = 64$/;"	e	enum:MarkupResultCode	file:
+MRC_NUMBER	Markup.cpp	/^	MRC_NUMBER   = 4,$/;"	e	enum:MarkupResultCode	file:
+MRC_TYPE	Markup.cpp	/^	MRC_TYPE     = 2,$/;"	e	enum:MarkupResultCode	file:
+MarkupDocFlags	Markup.h	/^	enum MarkupDocFlags$/;"	g	class:CMarkup
+MarkupNodeFlags	Markup.h	/^	enum MarkupNodeFlags$/;"	g	class:CMarkup
+MarkupNodeFlagsInternal	Markup.h	/^	enum MarkupNodeFlagsInternal$/;"	g	class:CMarkup
+MarkupNodeFlagsInternal2	Markup.cpp	/^enum MarkupNodeFlagsInternal2$/;"	g	file:
+MarkupNodeType	Markup.h	/^	enum MarkupNodeType$/;"	g	class:CMarkup
+MarkupResultCode	Markup.cpp	/^enum MarkupResultCode$/;"	g	file:
+Match	Markup.cpp	/^	bool Match( MCD_CSTR szName )$/;"	f	struct:TokenPos
+NextParent	Markup.cpp	/^	TagPos& NextParent( int& i ) { int iCur=i; i=pL[i].iParent; return pL[iCur]; };$/;"	f	struct:ElemStack
+NodePos	Markup.cpp	/^	NodePos( int n ) { nNodeFlags=n; nNodeType=0; nStart=0; nLength=0; };$/;"	f	struct:NodePos
+NodePos	Markup.cpp	/^	NodePos() {};$/;"	f	struct:NodePos
+NodePos	Markup.cpp	/^struct NodePos$/;"	s	file:
+OutOfElem	Markup.cpp	/^bool CMarkup::OutOfElem()$/;"	f	class:CMarkup
+OutOfLevel	Markup.cpp	/^	void OutOfLevel() { if (iPar!=iTop) Pop(); iPar = pL[iTop].iParent; --nLevel; };$/;"	f	struct:ElemStack
+PA_SEGBITS	Markup.cpp	/^	enum { PA_SEGBITS = 16, PA_SEGMASK = 0xffff };$/;"	e	enum:ElemPosTree::<anonymous>	file:
+PA_SEGMASK	Markup.cpp	/^	enum { PA_SEGBITS = 16, PA_SEGMASK = 0xffff };$/;"	e	enum:ElemPosTree::<anonymous>	file:
+ParseNode	Markup.cpp	/^int TokenPos::ParseNode( NodePos& node )$/;"	f	class:TokenPos
+ParsePath	Markup.cpp	/^bool PathPos::ParsePath()$/;"	f	class:PathPos
+PathPos	Markup.cpp	/^	PathPos( MCD_PCSZ pszPath, bool b ) { p=pszPath; bReader=b; i=0; iPathAttribName=0; iSave=0; nPathType=0; if (!ParsePath()) nPathType=-1; };$/;"	f	struct:PathPos
+PathPos	Markup.cpp	/^struct PathPos$/;"	s	file:
+PerformConversion	Markup.cpp	/^int TextEncoding::PerformConversion( void* pTo, MCD_CSTR pszToEncoding\/*=NULL*\/ )$/;"	f	class:TextEncoding
+Pop	Markup.cpp	/^	void Pop() { iTop = iPar; while (iUsed && pL[iUsed].iParent==iPar) { if (pL[iUsed].nSlot!=-1) Unslot(pL[iUsed]); --iUsed; } };$/;"	f	struct:ElemStack
+PopOutOfLevel	Markup.cpp	/^	void PopOutOfLevel() { --iTop; };$/;"	f	struct:ElemStack
+PredefEntityTable	Markup.cpp	/^MCD_PCSZ PredefEntityTable[130] =$/;"	v
+Push	Markup.cpp	/^	void Push( MCD_PCSZ pName, int n ) { ++iUsed; if (iUsed==nSize) Alloc(nSize*2); pL[iUsed].SetTagName(pName,n); pL[iUsed].iParent=iPar; iTop=iUsed; };$/;"	f	struct:ElemStack
+PushIntoLevel	Markup.cpp	/^	void PushIntoLevel( MCD_PCSZ pName, int n ) { ++iTop; if (iTop==nSize) Alloc(nSize*2); pL[iTop].SetTagName(pName,n); };$/;"	f	struct:ElemStack
+PushTagAndCount	Markup.cpp	/^void ElemStack::PushTagAndCount( TokenPos& token )$/;"	f	class:ElemStack
+ReadTextFile	Markup.cpp	/^bool CMarkup::ReadTextFile( MCD_CSTR_FILENAME szFileName, MCD_STR& strDoc, MCD_STR* pstrResult, int* pnDocFlags, MCD_STR* pstrEncoding )$/;"	f	class:CMarkup
+Release	Markup.cpp	/^	void Release() { for (int n=0;n<SegsUsed();++n) delete[] (char*)m_pSegs[n]; if (m_pSegs) delete[] (char*)m_pSegs; };$/;"	f	struct:ElemPosTree
+ReleaseElemPosTree	Markup.cpp	/^	void ReleaseElemPosTree() { Release(); Clear(); };$/;"	f	struct:ElemPosTree
+ReleaseMaps	Markup.cpp	/^	void ReleaseMaps() { SavedPosMap**p = m_pMaps; if (p) { while (*p) delete *p++; delete[] m_pMaps; m_pMaps=NULL; } };$/;"	f	struct:SavedPosMapArray
+RemoveChildElem	Markup.cpp	/^bool CMarkup::RemoveChildElem()$/;"	f	class:CMarkup
+RemoveElem	Markup.cpp	/^bool CMarkup::RemoveElem()$/;"	f	class:CMarkup
+RemoveNode	Markup.cpp	/^bool CMarkup::RemoveNode()$/;"	f	class:CMarkup
+ResetChildPos	Markup.h	/^	void ResetChildPos() { x_SetPos(m_iPosParent,m_iPos,0); };$/;"	f	class:CMarkup
+ResetMainPos	Markup.h	/^	void ResetMainPos() { x_SetPos(m_iPosParent,0,0); };$/;"	f	class:CMarkup
+ResetPos	Markup.h	/^	void ResetPos() { x_SetPos(0,0,0); };$/;"	f	class:CMarkup
+RestorePos	Markup.cpp	/^bool CMarkup::RestorePos( MCD_CSTR szPosName \/*=""*\/, int nMap \/*=0*\/ )$/;"	f	class:CMarkup
+RevertOffset	Markup.cpp	/^	void RevertOffset() { i=iSave; };$/;"	f	struct:PathPos
+RevertOffsetAsName	Markup.cpp	/^	void RevertOffsetAsName() { i=iSave; nPathType=1; };$/;"	f	struct:PathPos
+SPM_CHILD	Markup.cpp	/^	enum { SPM_MAIN = 1, SPM_CHILD = 2, SPM_USED = 4, SPM_LAST = 8 };$/;"	e	enum:SavedPos::<anonymous>	file:
+SPM_LAST	Markup.cpp	/^	enum { SPM_MAIN = 1, SPM_CHILD = 2, SPM_USED = 4, SPM_LAST = 8 };$/;"	e	enum:SavedPos::<anonymous>	file:
+SPM_MAIN	Markup.cpp	/^	enum { SPM_MAIN = 1, SPM_CHILD = 2, SPM_USED = 4, SPM_LAST = 8 };$/;"	e	enum:SavedPos::<anonymous>	file:
+SPM_USED	Markup.cpp	/^	enum { SPM_MAIN = 1, SPM_CHILD = 2, SPM_USED = 4, SPM_LAST = 8 };$/;"	e	enum:SavedPos::<anonymous>	file:
+Save	Markup.cpp	/^bool CMarkup::Save( MCD_CSTR_FILENAME szFileName )$/;"	f	class:CMarkup
+SaveOffset	Markup.cpp	/^	void SaveOffset() { iSave=i; };$/;"	f	struct:PathPos
+SavePos	Markup.cpp	/^bool CMarkup::SavePos( MCD_CSTR szPosName \/*=""*\/, int nMap \/*=0*\/ )$/;"	f	class:CMarkup
+SavedPos	Markup.cpp	/^	SavedPos() { nSavedPosFlags=0; iPos=0; };$/;"	f	struct:SavedPos
+SavedPos	Markup.cpp	/^struct SavedPos$/;"	s	file:
+SavedPosMap	Markup.cpp	/^	SavedPosMap( int nSize ) { nMapSize=nSize; pTable = new SavedPos*[nSize]; memset(pTable,0,nSize*sizeof(SavedPos*)); };$/;"	f	struct:SavedPosMap
+SavedPosMap	Markup.cpp	/^struct SavedPosMap$/;"	s	file:
+SavedPosMapArray	Markup.cpp	/^	SavedPosMapArray() { m_pMaps = NULL; };$/;"	f	struct:SavedPosMapArray
+SavedPosMapArray	Markup.cpp	/^struct SavedPosMapArray$/;"	s	file:
+SegsUsed	Markup.cpp	/^	int SegsUsed() const { return ((m_nSize-1)>>PA_SEGBITS) + 1; };$/;"	f	struct:ElemPosTree
+SetAttrib	Markup.h	/^	bool SetAttrib( MCD_CSTR szAttrib, MCD_CSTR szValue, int nFlags=0 ) { return x_SetAttrib(m_iPos,szAttrib,szValue,nFlags); };$/;"	f	class:CMarkup
+SetAttrib	Markup.h	/^	bool SetAttrib( MCD_CSTR szAttrib, int nValue, int nFlags=0 ) { return x_SetAttrib(m_iPos,szAttrib,nValue,nFlags); };$/;"	f	class:CMarkup
+SetChildAttrib	Markup.h	/^	bool SetChildAttrib( MCD_CSTR szAttrib, MCD_CSTR szValue, int nFlags=0 ) { return x_SetAttrib(m_iPosChild,szAttrib,szValue,nFlags); };$/;"	f	class:CMarkup
+SetChildAttrib	Markup.h	/^	bool SetChildAttrib( MCD_CSTR szAttrib, int nValue, int nFlags=0 ) { return x_SetAttrib(m_iPosChild,szAttrib,nValue,nFlags); };$/;"	f	class:CMarkup
+SetChildData	Markup.h	/^	bool SetChildData( MCD_CSTR szData, int nFlags=0 ) { return x_SetData(m_iPosChild,szData,nFlags); };$/;"	f	class:CMarkup
+SetChildData	Markup.h	/^	bool SetChildData( int nValue ) { return x_SetData(m_iPosChild,nValue); };$/;"	f	class:CMarkup
+SetData	Markup.h	/^	bool SetData( MCD_CSTR szData, int nFlags=0 ) { return x_SetData(m_iPos,szData,nFlags); };$/;"	f	class:CMarkup
+SetData	Markup.h	/^	bool SetData( int nValue ) { return x_SetData(m_iPos,nValue); };$/;"	f	class:CMarkup
+SetDoc	Markup.cpp	/^bool CMarkup::SetDoc( MCD_PCSZ pDoc )$/;"	f	class:CMarkup
+SetDoc	Markup.cpp	/^bool CMarkup::SetDoc( const MCD_STR& strDoc )$/;"	f	class:CMarkup
+SetDocFlags	Markup.h	/^	void SetDocFlags( int nFlags ) { m_nDocFlags = (nFlags & ~(MDF_READFILE|MDF_WRITEFILE|MDF_APPENDFILE)); };$/;"	f	class:CMarkup
+SetElemContent	Markup.h	/^	bool SetElemContent( MCD_CSTR szContent ) { return x_SetElemContent(szContent); };$/;"	f	class:CMarkup
+SetEndTagLen	Markup.cpp	/^	void SetEndTagLen( int n ) { nEndTagLen = n; };$/;"	f	struct:ElemPos
+SetEndTagLenUnparsed	Markup.cpp	/^	void SetEndTagLenUnparsed() { SetEndTagLen(1); };$/;"	f	struct:ElemPos
+SetLevel	Markup.cpp	/^    void SetLevel( int nLev ) { nFlags = (nFlags & ~0xffff) | nLev; };$/;"	f	struct:ElemPos
+SetMapSize	Markup.cpp	/^bool CMarkup::SetMapSize( int nSize, int nMap \/*=0*\/ )$/;"	f	class:CMarkup
+SetStartTagLen	Markup.cpp	/^	void SetStartTagLen( int n ) { nStartTagLen = n; };$/;"	f	struct:ElemPos
+SetTagName	Markup.cpp	/^	void SetTagName( MCD_PCSZ pName, int n ) { MCD_STRASSIGN(strTagName,pName,n); };$/;"	f	struct:TagPos
+Slot	Markup.cpp	/^	void Slot( int n ) { pL[iUsed].nSlot=n; int i=anTable[n]; anTable[n]=iUsed; pL[iUsed].iSlotNext=i; if (i) pL[i].iSlotPrev=iUsed; };$/;"	f	struct:ElemStack
+StartAfter	Markup.cpp	/^	int StartAfter() const { return nStart + nLength; };$/;"	f	struct:ElemPos
+StartContent	Markup.cpp	/^	int StartContent() const { return nStart + StartTagLen(); };$/;"	f	struct:ElemPos
+StartTagLen	Markup.cpp	/^	int StartTagLen() const { return nStartTagLen; };$/;"	f	struct:ElemPos
+StrNIACmp	Markup.cpp	/^	static int StrNIACmp( MCD_PCSZ p1, MCD_PCSZ p2, int n )$/;"	f	struct:TokenPos
+TARGET	Makefile	/^TARGET = xml_test$/;"	m
+THIS_FILE	Markup.cpp	/^static char THIS_FILE[]=__FILE__;$/;"	v	file:
+THIS_FILE	Markup.cpp	33;"	d	file:
+TagPos	Markup.cpp	/^	TagPos() { Init(); };$/;"	f	struct:TagPos
+TagPos	Markup.cpp	/^struct TagPos$/;"	s	file:
+TextEncoding	Markup.cpp	/^	TextEncoding( MCD_CSTR pszFromEncoding, const void* pFromBuffer, int nFromBufferLen )$/;"	f	struct:TextEncoding
+TextEncoding	Markup.cpp	/^struct TextEncoding$/;"	s	file:
+TokenPos	Markup.cpp	/^	TokenPos( MCD_CSTR sz, int n, FilePos* p=NULL ) { Clear(); m_pDocText=sz; m_nTokenFlags=n; m_pReaderFilePos=p; };$/;"	f	struct:TokenPos
+TokenPos	Markup.cpp	/^struct TokenPos$/;"	s	file:
+UTF16To8	Markup.cpp	/^int CMarkup::UTF16To8( char* pszUTF8, const unsigned short* pwszUTF16, int nUTF8Count )$/;"	f	class:CMarkup
+UTF8To16	Markup.cpp	/^int CMarkup::UTF8To16( unsigned short* pwszUTF16, const char* pszUTF8, int nUTF8Count )$/;"	f	class:CMarkup
+UTF8ToA	Markup.cpp	/^MCD_STR CMarkup::UTF8ToA( MCD_CSTR pszUTF8, int* pnFailed\/*=NULL*\/ )$/;"	f	class:CMarkup
+UnescapeText	Markup.cpp	/^MCD_STR CMarkup::UnescapeText( MCD_CSTR szText, int nTextLength \/*=-1*\/ )$/;"	f	class:CMarkup
+Unslot	Markup.cpp	/^	void Unslot( TagPos& lp ) { int n=lp.iSlotNext,p=lp.iSlotPrev; if (n) pL[n].iSlotPrev=p; if (p) pL[p].iSlotNext=n; else anTable[lp.nSlot]=n; };$/;"	f	struct:ElemStack
+ValidPath	Markup.cpp	/^	bool ValidPath() { return nPathType != -1; };$/;"	f	struct:PathPos
+WhitespaceToTag	Markup.cpp	/^	int WhitespaceToTag( int n ) { m_nNext = n; if (FindAny()&&m_pDocText[m_nNext]!='<') { m_nNext=n; m_nR=n-1; } return m_nNext; };$/;"	f	struct:TokenPos
+WriteTextFile	Markup.cpp	/^bool CMarkup::WriteTextFile( MCD_CSTR_FILENAME szFileName, const MCD_STR& strDoc, MCD_STR* pstrResult, int* pnDocFlags, MCD_STR* pstrEncoding )$/;"	f	class:CMarkup
+_MARKUP_H_INCLUDED_	Markup.h	10;"	d
+anTable	Markup.cpp	/^	int anTable[LS_TABLESIZE];$/;"	m	struct:ElemStack	file:
+bReader	Markup.cpp	/^	bool bReader;$/;"	m	struct:PathPos	file:
+genxml	test.cpp	/^void genxml()$/;"	f
+i	Markup.cpp	/^	int i;$/;"	m	struct:PathPos	file:
+iElemChild	Markup.cpp	/^	int iElemChild; \/\/ first child$/;"	m	struct:ElemPos	file:
+iElemNext	Markup.cpp	/^	int iElemNext; \/\/ next sibling$/;"	m	struct:ElemPos	file:
+iElemParent	Markup.cpp	/^	int iElemParent;$/;"	m	struct:ElemPos	file:
+iElemPrev	Markup.cpp	/^	int iElemPrev; \/\/ if this is first, iElemPrev points to last$/;"	m	struct:ElemPos	file:
+iNext	Markup.cpp	/^	int iNext;$/;"	m	struct:TagPos	file:
+iPar	Markup.cpp	/^	int iPar;$/;"	m	struct:ElemStack	file:
+iParent	Markup.cpp	/^	int iParent;$/;"	m	struct:TagPos	file:
+iPathAttribName	Markup.cpp	/^	int iPathAttribName;$/;"	m	struct:PathPos	file:
+iPos	Markup.cpp	/^	int iPos;$/;"	m	struct:SavedPos	file:
+iPrev	Markup.cpp	/^	int iPrev;$/;"	m	struct:TagPos	file:
+iSave	Markup.cpp	/^	int iSave;$/;"	m	struct:PathPos	file:
+iSlotNext	Markup.cpp	/^	int iSlotNext;$/;"	m	struct:TagPos	file:
+iSlotPrev	Markup.cpp	/^	int iSlotPrev;$/;"	m	struct:TagPos	file:
+iTop	Markup.cpp	/^	int iTop;$/;"	m	struct:ElemStack	file:
+iUsed	Markup.cpp	/^	int iUsed;$/;"	m	struct:ElemStack	file:
+m_elemstack	Markup.cpp	/^	ElemStack m_elemstack;$/;"	m	struct:FilePos	file:
+m_fp	Markup.cpp	/^	FILE* m_fp;$/;"	m	struct:FilePos	file:
+m_iPos	Markup.h	/^	int m_iPos;$/;"	m	class:CMarkup
+m_iPosChild	Markup.h	/^	int m_iPosChild;$/;"	m	class:CMarkup
+m_iPosDeleted	Markup.h	/^	int m_iPosDeleted;$/;"	m	class:CMarkup
+m_iPosFree	Markup.h	/^	int m_iPosFree;$/;"	m	class:CMarkup
+m_iPosParent	Markup.h	/^	int m_iPosParent;$/;"	m	class:CMarkup
+m_nBlockSizeBasis	Markup.cpp	/^	int m_nBlockSizeBasis;$/;"	m	struct:FilePos	file:
+m_nDocFlags	Markup.cpp	/^	int m_nDocFlags;$/;"	m	struct:FilePos	file:
+m_nDocFlags	Markup.h	/^	int m_nDocFlags;$/;"	m	class:CMarkup
+m_nFailedChars	Markup.cpp	/^	int m_nFailedChars;$/;"	m	struct:TextEncoding	file:
+m_nFileByteLen	Markup.cpp	/^	MCD_INTFILEOFFSET m_nFileByteLen;$/;"	m	struct:FilePos	file:
+m_nFileByteOffset	Markup.cpp	/^	MCD_INTFILEOFFSET m_nFileByteOffset;$/;"	m	struct:FilePos	file:
+m_nFileCharUnitSize	Markup.cpp	/^	int m_nFileCharUnitSize;$/;"	m	struct:FilePos	file:
+m_nFromLen	Markup.cpp	/^	int m_nFromLen;$/;"	m	struct:TextEncoding	file:
+m_nL	Markup.cpp	/^	int m_nL;$/;"	m	struct:TokenPos	file:
+m_nNext	Markup.cpp	/^	int m_nNext;$/;"	m	struct:TokenPos	file:
+m_nNodeLength	Markup.h	/^	int m_nNodeLength;$/;"	m	class:CMarkup
+m_nNodeOffset	Markup.h	/^	int m_nNodeOffset;$/;"	m	class:CMarkup
+m_nNodeType	Markup.h	/^	int m_nNodeType;$/;"	m	class:CMarkup
+m_nOpFileByteLen	Markup.cpp	/^	int m_nOpFileByteLen;$/;"	m	struct:FilePos	file:
+m_nOpFileTextLen	Markup.cpp	/^	int m_nOpFileTextLen;$/;"	m	struct:FilePos	file:
+m_nPreSpaceLength	Markup.cpp	/^	int m_nPreSpaceLength;$/;"	m	struct:TokenPos	file:
+m_nPreSpaceStart	Markup.cpp	/^	int m_nPreSpaceStart;$/;"	m	struct:TokenPos	file:
+m_nR	Markup.cpp	/^	int m_nR;$/;"	m	struct:TokenPos	file:
+m_nReadBufferRemoved	Markup.cpp	/^	int m_nReadBufferRemoved;$/;"	m	struct:FilePos	file:
+m_nReadBufferStart	Markup.cpp	/^	int m_nReadBufferStart;$/;"	m	struct:FilePos	file:
+m_nReadGatherStart	Markup.cpp	/^	int m_nReadGatherStart;$/;"	m	struct:FilePos	file:
+m_nSegs	Markup.cpp	/^	int m_nSegs;$/;"	m	struct:ElemPosTree	file:
+m_nSize	Markup.cpp	/^	int m_nSize;$/;"	m	struct:ElemPosTree	file:
+m_nToCount	Markup.cpp	/^	int m_nToCount;$/;"	m	struct:TextEncoding	file:
+m_nTokenFlags	Markup.cpp	/^	int m_nTokenFlags;$/;"	m	struct:TokenPos	file:
+m_pDebugCur	Markup.h	/^	MCD_PCSZ m_pDebugCur;$/;"	m	class:CMarkup
+m_pDebugPos	Markup.h	/^	MCD_PCSZ m_pDebugPos;$/;"	m	class:CMarkup
+m_pDocText	Markup.cpp	/^	MCD_PCSZ m_pDocText;$/;"	m	struct:TokenPos	file:
+m_pElemPosTree	Markup.h	/^	ElemPosTree* m_pElemPosTree;$/;"	m	class:CMarkup
+m_pFilePos	Markup.h	/^	FilePos* m_pFilePos;$/;"	m	class:CMarkup
+m_pFrom	Markup.cpp	/^	const void* m_pFrom;$/;"	m	struct:TextEncoding	file:
+m_pMaps	Markup.cpp	/^	SavedPosMap** m_pMaps; \/\/ NULL terminated array$/;"	m	struct:SavedPosMapArray	file:
+m_pReaderFilePos	Markup.cpp	/^	FilePos* m_pReaderFilePos;$/;"	m	struct:TokenPos	file:
+m_pSavedPosMaps	Markup.h	/^	SavedPosMapArray* m_pSavedPosMaps;$/;"	m	class:CMarkup
+m_pSegs	Markup.cpp	/^	ElemPos** m_pSegs;$/;"	m	struct:ElemPosTree	file:
+m_pstrBuffer	Markup.cpp	/^	MCD_STR* m_pstrBuffer;$/;"	m	struct:FilePos	file:
+m_strDoc	Markup.h	/^	MCD_STR m_strDoc;$/;"	m	class:CMarkup
+m_strEncoding	Markup.cpp	/^	MCD_STR m_strEncoding;$/;"	m	struct:FilePos	file:
+m_strFromEncoding	Markup.cpp	/^	MCD_STR m_strFromEncoding;$/;"	m	struct:TextEncoding	file:
+m_strIOResult	Markup.cpp	/^	MCD_STR m_strIOResult;$/;"	m	struct:FilePos	file:
+m_strReadGatherMarkup	Markup.cpp	/^	MCD_STR m_strReadGatherMarkup;$/;"	m	struct:FilePos	file:
+m_strResult	Markup.h	/^	MCD_STR m_strResult;$/;"	m	class:CMarkup
+m_strToEncoding	Markup.cpp	/^	MCD_STR m_strToEncoding;$/;"	m	struct:TextEncoding	file:
+main	test.cpp	/^int main()$/;"	f
+nBomFlag	Markup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	m	struct:BomTableStruct	file:
+nBomLen	Markup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	m	struct:BomTableStruct	file:
+nCount	Markup.cpp	/^	int nCount;$/;"	m	struct:TagPos	file:
+nEndTagLen	Markup.cpp	/^	unsigned int nEndTagLen : 10; \/\/ 1K limit for end tag$/;"	m	struct:ElemPos	file:
+nFlags	Markup.cpp	/^    int nFlags; \/\/ 16 bits flags, 16 bits level 65536 depth limit$/;"	m	struct:ElemPos	file:
+nLen	Markup.cpp	/^	int nLen;$/;"	m	struct:PathPos	file:
+nLength	Markup.cpp	/^	int nLength;$/;"	m	struct:ElemPos	file:
+nLength	Markup.cpp	/^	int nLength;$/;"	m	struct:NodePos	file:
+nLevel	Markup.cpp	/^	int nLevel;$/;"	m	struct:ElemStack	file:
+nMapSize	Markup.cpp	/^	int nMapSize;$/;"	m	struct:SavedPosMap	file:
+nNodeFlags	Markup.cpp	/^	int nNodeFlags;$/;"	m	struct:NodePos	file:
+nNodeType	Markup.cpp	/^	int nNodeType;$/;"	m	struct:NodePos	file:
+nPathType	Markup.cpp	/^	int nPathType; \/\/ -1 invalid, 0 empty, 1 name, 2 absolute path, 3 anywhere path$/;"	m	struct:PathPos	file:
+nSavedPosFlags	Markup.cpp	/^	int nSavedPosFlags;$/;"	m	struct:SavedPos	file:
+nSize	Markup.cpp	/^	int nSize;$/;"	m	struct:ElemStack	file:
+nSlot	Markup.cpp	/^	int nSlot;$/;"	m	struct:TagPos	file:
+nStart	Markup.cpp	/^	int nStart;$/;"	m	struct:ElemPos	file:
+nStart	Markup.cpp	/^	int nStart;$/;"	m	struct:NodePos	file:
+nStartTagLen	Markup.cpp	/^	unsigned int nStartTagLen : 22; \/\/ 4MB limit for start tag$/;"	m	struct:ElemPos	file:
+nTagNames	Markup.cpp	/^	int nTagNames;$/;"	m	struct:TagPos	file:
+navigatexml	test.cpp	/^void navigatexml()$/;"	f
+navigatexml_findelem	test.cpp	/^void navigatexml_findelem()$/;"	f
+new	Markup.cpp	36;"	d	file:
+operator =	Markup.cpp	/^void CMarkup::operator=( const CMarkup& markup )$/;"	f	class:CMarkup
+operator MCD_PCSZ	Markup.h	/^	operator MCD_PCSZ() const { return pcsz; };$/;"	f	struct:MCD_CSTR
+operator MCD_PCSZ_FILENAME	Markup.h	/^	operator MCD_PCSZ_FILENAME() const { return pcsz; };$/;"	f	struct:MCD_CSTR_FILENAME
+p	Markup.cpp	/^	MCD_PCSZ p;$/;"	m	struct:PathPos	file:
+pL	Markup.cpp	/^	TagPos* pL;$/;"	m	struct:ElemStack	file:
+pTable	Markup.cpp	/^	SavedPos** pTable;$/;"	m	struct:SavedPosMap	file:
+pcsz	Markup.h	/^	MCD_PCSZ pcsz;$/;"	m	struct:MCD_CSTR
+pcsz	Markup.h	/^	MCD_PCSZ_FILENAME pcsz;$/;"	m	struct:MCD_CSTR_FILENAME
+pszBom	Markup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	m	struct:BomTableStruct	file:
+pszBomEnc	Markup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	m	struct:BomTableStruct	file:
+strMeta	Markup.cpp	/^	MCD_STR strMeta;$/;"	m	struct:NodePos	file:
+strName	Markup.cpp	/^	MCD_STR strName;$/;"	m	struct:SavedPos	file:
+strTagName	Markup.cpp	/^	MCD_STR strTagName;$/;"	m	struct:TagPos	file:
+x_ATTRIBQUOTE	Markup.cpp	43;"	d	file:
+x_AddElem	Markup.cpp	/^bool CMarkup::x_AddElem( MCD_PCSZ pName, MCD_PCSZ pValue, int nFlags )$/;"	f	class:CMarkup
+x_AddElem	Markup.cpp	/^bool CMarkup::x_AddElem( MCD_PCSZ pName, int nValue, int nFlags )$/;"	f	class:CMarkup
+x_AddNode	Markup.cpp	/^bool CMarkup::x_AddNode( int nNodeType, MCD_PCSZ pText, int nNodeFlags )$/;"	f	class:CMarkup
+x_AddResult	Markup.cpp	/^void x_AddResult( MCD_STR& strResult, MCD_CSTR pszID, MCD_CSTR pszVal = NULL, int nResultCode = 0, int n = -1, int n2 = -1 )$/;"	f
+x_AddSubDoc	Markup.cpp	/^bool CMarkup::x_AddSubDoc( MCD_PCSZ pSubDoc, int nFlags )$/;"	f	class:CMarkup
+x_Adjust	Markup.cpp	/^void CMarkup::x_Adjust( int iPos, int nShift, bool bAfterPos \/*=false*\/ )$/;"	f	class:CMarkup
+x_AdjustForNode	Markup.cpp	/^void CMarkup::x_AdjustForNode( int iPosParent, int iPos, int nShift )$/;"	f	class:CMarkup
+x_AllocElemPos	Markup.cpp	/^bool CMarkup::x_AllocElemPos( int nNewSize \/*=0*\/ )$/;"	f	class:CMarkup
+x_CheckSavedPos	Markup.cpp	/^void CMarkup::x_CheckSavedPos()$/;"	f	class:CMarkup
+x_CreateNode	Markup.cpp	/^bool CMarkup::x_CreateNode( MCD_STR& strNode, int nNodeType, MCD_PCSZ pText )$/;"	f	class:CMarkup
+x_DocChange	Markup.cpp	/^void CMarkup::x_DocChange( int nLeft, int nReplace, const MCD_STR& strInsert )$/;"	f	class:CMarkup
+x_EOL	Markup.cpp	41;"	d	file:
+x_EOLLEN	Markup.cpp	42;"	d	file:
+x_EncodeCDATASection	Markup.cpp	/^MCD_STR CMarkup::x_EncodeCDATASection( MCD_PCSZ szData )$/;"	f	class:CMarkup
+x_EndianSwapRequired	Markup.cpp	/^bool x_EndianSwapRequired( int nDocFlags )$/;"	f
+x_EndianSwapUTF16	Markup.cpp	/^void x_EndianSwapUTF16( unsigned short* pBuffer, int nCharLen )$/;"	f
+x_FindElem	Markup.cpp	/^int CMarkup::x_FindElem( int iPosParent, int iPos, PathPos& path ) const$/;"	f	class:CMarkup
+x_GetAttrib	Markup.cpp	/^MCD_STR CMarkup::x_GetAttrib( int iPos, MCD_PCSZ pAttrib ) const$/;"	f	class:CMarkup
+x_GetData	Markup.cpp	/^MCD_STR CMarkup::x_GetData( int iPos )$/;"	f	class:CMarkup
+x_GetElemContent	Markup.cpp	/^MCD_STR CMarkup::x_GetElemContent( int iPos ) const$/;"	f	class:CMarkup
+x_GetEncodingCodePage	Markup.cpp	/^int x_GetEncodingCodePage( MCD_CSTR pszEncoding )$/;"	f
+x_GetFreePos	Markup.cpp	/^int CMarkup::x_GetFreePos()$/;"	f	class:CMarkup
+x_GetParent	Markup.cpp	/^int CMarkup::x_GetParent( int i )$/;"	f	class:CMarkup
+x_GetPath	Markup.cpp	/^MCD_STR CMarkup::x_GetPath( int iPos ) const$/;"	f	class:CMarkup
+x_GetSubDoc	Markup.cpp	/^MCD_STR CMarkup::x_GetSubDoc( int iPos )$/;"	f	class:CMarkup
+x_GetTagName	Markup.cpp	/^MCD_STR CMarkup::x_GetTagName( int iPos ) const$/;"	f	class:CMarkup
+x_Hash	Markup.cpp	/^int x_Hash( MCD_PCSZ p, int nSize )$/;"	f
+x_InitMarkup	Markup.cpp	/^void CMarkup::x_InitMarkup()$/;"	f	class:CMarkup
+x_InsertNew	Markup.cpp	/^int CMarkup::x_InsertNew( int iPosParent, int& iPosRel, NodePos& node )$/;"	f	class:CMarkup
+x_IntToStr	Markup.cpp	/^MCD_STR x_IntToStr( int n )$/;"	f
+x_LinkElem	Markup.cpp	/^void CMarkup::x_LinkElem( int iPosParent, int iPosBefore, int iPos )$/;"	f	class:CMarkup
+x_NoDefaultChar	Markup.cpp	/^bool x_NoDefaultChar( int nCP )$/;"	f
+x_ParseDoc	Markup.cpp	/^bool CMarkup::x_ParseDoc()$/;"	f	class:CMarkup
+x_ParseElem	Markup.cpp	/^int CMarkup::x_ParseElem( int iPosParent, TokenPos& token )$/;"	f	class:CMarkup
+x_ReleasePos	Markup.cpp	/^int CMarkup::x_ReleasePos( int iPos )$/;"	f	class:CMarkup
+x_ReleaseSubDoc	Markup.cpp	/^int CMarkup::x_ReleaseSubDoc( int iPos )$/;"	f	class:CMarkup
+x_RemoveElem	Markup.cpp	/^int CMarkup::x_RemoveElem( int iPos )$/;"	f	class:CMarkup
+x_RemoveNode	Markup.cpp	/^void CMarkup::x_RemoveNode( int iPosParent, int& iPos, int& nNodeType, int& nNodeOffset, int& nNodeLength )$/;"	f	class:CMarkup
+x_SetAttrib	Markup.cpp	/^bool CMarkup::x_SetAttrib( int iPos, MCD_PCSZ pAttrib, MCD_PCSZ pValue, int nFlags \/*=0*\/ )$/;"	f	class:CMarkup
+x_SetAttrib	Markup.cpp	/^bool CMarkup::x_SetAttrib( int iPos, MCD_PCSZ pAttrib, int nValue, int nFlags \/*=0*\/ )$/;"	f	class:CMarkup
+x_SetData	Markup.cpp	/^bool CMarkup::x_SetData( int iPos, MCD_PCSZ szData, int nFlags )$/;"	f	class:CMarkup
+x_SetData	Markup.cpp	/^bool CMarkup::x_SetData( int iPos, int nValue )$/;"	f	class:CMarkup
+x_SetDebugState	Markup.cpp	/^void CMarkup::x_SetDebugState()$/;"	f	class:CMarkup
+x_SetElemContent	Markup.cpp	/^bool CMarkup::x_SetElemContent( MCD_PCSZ szContent )$/;"	f	class:CMarkup
+x_SetPos	Markup.cpp	/^void CMarkup::x_SetPos( int iPosParent, int iPos, int iPosChild )$/;"	f	class:CMarkup
+x_StrInsertReplace	Markup.cpp	/^void x_StrInsertReplace( MCD_STR& str, int nLeft, int nReplace, const MCD_STR& strInsert )$/;"	f
+x_UnlinkElem	Markup.cpp	/^int CMarkup::x_UnlinkElem( int iPos )$/;"	f	class:CMarkup
+x_UnlinkPrevElem	Markup.cpp	/^int CMarkup::x_UnlinkPrevElem( int iPosParent, int iPosBefore, int iPos )$/;"	f	class:CMarkup
+~CMarkup	Markup.cpp	/^CMarkup::~CMarkup()$/;"	f	class:CMarkup
+~ElemPosTree	Markup.cpp	/^	~ElemPosTree() { Release(); };$/;"	f	struct:ElemPosTree
+~ElemStack	Markup.cpp	/^	~ElemStack() { if (pL) delete [] pL; };$/;"	f	struct:ElemStack
+~SavedPosMap	Markup.cpp	/^	~SavedPosMap() { if (pTable) { for (int n=0;n<nMapSize;++n) if (pTable[n]) delete[] pTable[n]; delete[] pTable; } };$/;"	f	struct:SavedPosMap
+~SavedPosMapArray	Markup.cpp	/^	~SavedPosMapArray() { ReleaseMaps(); };$/;"	f	struct:SavedPosMapArray

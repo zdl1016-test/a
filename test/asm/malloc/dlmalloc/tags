@@ -1,0 +1,810 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABORT	malloc.cpp	624;"	d	file:
+ABORT_ON_ASSERT_FAILURE	malloc.cpp	627;"	d	file:
+ACQUIRE_LOCK	malloc.cpp	1891;"	d	file:
+ACQUIRE_LOCK	malloc.cpp	1968;"	d	file:
+ACQUIRE_LOCK	malloc.cpp	1975;"	d	file:
+ACQUIRE_LOCK	malloc.cpp	2004;"	d	file:
+ACQUIRE_MALLOC_GLOBAL_LOCK	malloc.cpp	1808;"	d	file:
+ACQUIRE_MALLOC_GLOBAL_LOCK	malloc.cpp	2038;"	d	file:
+BitScanForward	malloc.cpp	1543;"	d	file:
+BitScanReverse	malloc.cpp	1544;"	d	file:
+CA	bss.cpp	/^    CA(){a1 = 1;}$/;"	f	struct:CA	access:public	signature:()
+CA	bss.cpp	/^struct CA$/;"	s	file:
+CA::CA	bss.cpp	/^    CA(){a1 = 1;}$/;"	f	struct:CA	access:public	signature:()
+CA::a1	bss.cpp	/^    int a1;$/;"	m	struct:CA	file:	access:public
+CA::a2	bss.cpp	/^    int a2;$/;"	m	struct:CA	file:	access:public
+CALL_DIRECT_MMAP	malloc.cpp	1739;"	d	file:
+CALL_DIRECT_MMAP	malloc.cpp	1741;"	d	file:
+CALL_DIRECT_MMAP	malloc.cpp	1749;"	d	file:
+CALL_MMAP	malloc.cpp	1729;"	d	file:
+CALL_MMAP	malloc.cpp	1731;"	d	file:
+CALL_MMAP	malloc.cpp	1750;"	d	file:
+CALL_MORECORE	malloc.cpp	1714;"	d	file:
+CALL_MORECORE	malloc.cpp	1716;"	d	file:
+CALL_MORECORE	malloc.cpp	1719;"	d	file:
+CALL_MREMAP	malloc.cpp	1759;"	d	file:
+CALL_MREMAP	malloc.cpp	1761;"	d	file:
+CALL_MREMAP	malloc.cpp	1764;"	d	file:
+CALL_MUNMAP	malloc.cpp	1734;"	d	file:
+CALL_MUNMAP	malloc.cpp	1736;"	d	file:
+CALL_MUNMAP	malloc.cpp	1751;"	d	file:
+CAS_LOCK	malloc.cpp	1828;"	d	file:
+CAS_LOCK	malloc.cpp	1854;"	d	file:
+CAS_LOCK	malloc.cpp	1858;"	d	file:
+CHUNK_ALIGN_MASK	align.cpp	22;"	d	file:
+CHUNK_ALIGN_MASK	malloc.cpp	1615;"	d	file:
+CHUNK_OVERHEAD	malloc.cpp	2203;"	d	file:
+CHUNK_OVERHEAD	malloc.cpp	2205;"	d	file:
+CINUSE_BIT	malloc.cpp	2247;"	d	file:
+CLEAR_LOCK	malloc.cpp	1829;"	d	file:
+CLEAR_LOCK	malloc.cpp	1855;"	d	file:
+CLEAR_LOCK	malloc.cpp	1859;"	d	file:
+CMFAIL	malloc.cpp	1636;"	d	file:
+CORRUPTION_ERROR_ACTION	malloc.cpp	2773;"	d	file:
+CORRUPTION_ERROR_ACTION	malloc.cpp	2779;"	d	file:
+CURRENT_THREAD	malloc.cpp	1900;"	d	file:
+CURRENT_THREAD	malloc.cpp	1909;"	d	file:
+DEBUG	malloc.cpp	1454;"	d	file:
+DEFAULT_GRANULARITY	malloc.cpp	673;"	d	file:
+DEFAULT_GRANULARITY	malloc.cpp	675;"	d	file:
+DEFAULT_MMAP_THRESHOLD	malloc.cpp	687;"	d	file:
+DEFAULT_MMAP_THRESHOLD	malloc.cpp	689;"	d	file:
+DEFAULT_TRIM_THRESHOLD	malloc.cpp	680;"	d	file:
+DEFAULT_TRIM_THRESHOLD	malloc.cpp	682;"	d	file:
+DESTROY_LOCK	malloc.cpp	1807;"	d	file:
+DESTROY_LOCK	malloc.cpp	1893;"	d	file:
+DESTROY_LOCK	malloc.cpp	1970;"	d	file:
+DESTROY_LOCK	malloc.cpp	1979;"	d	file:
+DESTROY_LOCK	malloc.cpp	2008;"	d	file:
+DIRECT_MMAP	malloc.cpp	1748;"	d	file:
+DIRECT_MMAP_DEFAULT	malloc.cpp	1662;"	d	file:
+DIRECT_MMAP_DEFAULT	malloc.cpp	1699;"	d	file:
+DLMALLOC_EXPORT	malloc.cpp	530;"	d	file:
+DLMALLOC_VERSION	malloc.cpp	526;"	d	file:
+EQ_OWNER	malloc.cpp	1901;"	d	file:
+EQ_OWNER	malloc.cpp	1910;"	d	file:
+EXTERN_BIT	malloc.cpp	1771;"	d	file:
+FENCEPOST_HEAD	malloc.cpp	2253;"	d	file:
+FLAG4_BIT	malloc.cpp	2248;"	d	file:
+FLAG_BITS	malloc.cpp	2250;"	d	file:
+FOOTERS	malloc.cpp	621;"	d	file:
+FORCEINLINE	malloc.cpp	786;"	d	file:
+FORCEINLINE	malloc.cpp	788;"	d	file:
+FORCEINLINE	malloc.cpp	804;"	d	file:
+FORCEINLINE	malloc.cpp	808;"	d	file:
+FOUR_SIZE_T_SIZES	align.cpp	16;"	d	file:
+FOUR_SIZE_T_SIZES	malloc.cpp	1610;"	d	file:
+HALF_MAX_SIZE_T	align.cpp	18;"	d	file:
+HALF_MAX_SIZE_T	malloc.cpp	1612;"	d	file:
+HAVE_MMAP	malloc.cpp	546;"	d	file:
+HAVE_MMAP	malloc.cpp	572;"	d	file:
+HAVE_MMAP	malloc.cpp	640;"	d	file:
+HAVE_MORECORE	malloc.cpp	547;"	d	file:
+HAVE_MORECORE	malloc.cpp	571;"	d	file:
+HAVE_MORECORE	malloc.cpp	658;"	d	file:
+HAVE_MORECORE	malloc.cpp	660;"	d	file:
+HAVE_MREMAP	malloc.cpp	647;"	d	file:
+HAVE_MREMAP	malloc.cpp	650;"	d	file:
+INITIAL_LOCK	malloc.cpp	1806;"	d	file:
+INITIAL_LOCK	malloc.cpp	1892;"	d	file:
+INITIAL_LOCK	malloc.cpp	1969;"	d	file:
+INITIAL_LOCK	malloc.cpp	1978;"	d	file:
+INITIAL_LOCK	malloc.cpp	2007;"	d	file:
+INSECURE	malloc.cpp	634;"	d	file:
+INUSE_BITS	malloc.cpp	2249;"	d	file:
+LACKS_ERRNO_H	malloc.cpp	554;"	d	file:
+LACKS_FCNTL_H	malloc.cpp	538;"	d	file:
+LACKS_SCHED_H	malloc.cpp	555;"	d	file:
+LACKS_STRINGS_H	malloc.cpp	552;"	d	file:
+LACKS_STRING_H	malloc.cpp	551;"	d	file:
+LACKS_SYS_MMAN_H	malloc.cpp	550;"	d	file:
+LACKS_SYS_PARAM_H	malloc.cpp	549;"	d	file:
+LACKS_SYS_TYPES_H	malloc.cpp	553;"	d	file:
+LACKS_UNISTD_H	malloc.cpp	548;"	d	file:
+LOCK_AT_FORK	malloc.cpp	1528;"	d	file:
+MALLINFO_FIELD_TYPE	malloc.cpp	709;"	d	file:
+MALLINFO_FIELD_TYPE	malloc.h	80;"	d
+MALLOC_280_H	malloc.h	24;"	d
+MALLOC_ALIGNMENT	align.cpp	20;"	d	file:
+MALLOC_ALIGNMENT	malloc.cpp	575;"	d	file:
+MALLOC_ALIGNMENT	malloc.cpp	618;"	d	file:
+MALLOC_FAILURE_ACTION	malloc.cpp	557;"	d	file:
+MALLOC_FAILURE_ACTION	malloc.cpp	654;"	d	file:
+MALLOC_INSPECT_ALL	malloc.cpp	637;"	d	file:
+MAP_ANONYMOUS	malloc.cpp	1644;"	d	file:
+MAX_RELEASE_CHECK_RATE	malloc.cpp	694;"	d	file:
+MAX_RELEASE_CHECK_RATE	malloc.cpp	696;"	d	file:
+MAX_REQUEST	malloc.cpp	2224;"	d	file:
+MAX_SIZE_T	align.cpp	3;"	d	file:
+MAX_SIZE_T	malloc.cpp	585;"	d	file:
+MAX_SMALL_REQUEST	malloc.cpp	2577;"	d	file:
+MAX_SMALL_SIZE	malloc.cpp	2576;"	d	file:
+MCHUNK_SIZE	malloc.cpp	2200;"	d	file:
+MFAIL	malloc.cpp	1635;"	d	file:
+MIN_CHUNK_SIZE	malloc.cpp	2214;"	d	file:
+MIN_LARGE_SIZE	malloc.cpp	2575;"	d	file:
+MIN_REQUEST	malloc.cpp	2225;"	d	file:
+MIN_SMALL_INDEX	malloc.cpp	2827;"	d	file:
+MLOCK_T	malloc.cpp	1888;"	d	file:
+MLOCK_T	malloc.cpp	1919;"	d	file:
+MLOCK_T	malloc.cpp	1974;"	d	file:
+MLOCK_T	malloc.cpp	2003;"	d	file:
+MMAP	malloc.cpp	1746;"	d	file:
+MMAP_CHUNK_OVERHEAD	malloc.cpp	2209;"	d	file:
+MMAP_CLEARS	malloc.cpp	561;"	d	file:
+MMAP_CLEARS	malloc.cpp	563;"	d	file:
+MMAP_CLEARS	malloc.cpp	643;"	d	file:
+MMAP_DEFAULT	malloc.cpp	1648;"	d	file:
+MMAP_DEFAULT	malloc.cpp	1656;"	d	file:
+MMAP_DEFAULT	malloc.cpp	1697;"	d	file:
+MMAP_FLAGS	malloc.cpp	1647;"	d	file:
+MMAP_FLAGS	malloc.cpp	1654;"	d	file:
+MMAP_FOOT_PAD	malloc.cpp	2211;"	d	file:
+MMAP_PROT	malloc.cpp	1642;"	d	file:
+MORECORE_CONTIGUOUS	malloc.cpp	664;"	d	file:
+MORECORE_CONTIGUOUS	malloc.cpp	668;"	d	file:
+MORECORE_DEFAULT	malloc.cpp	666;"	d	file:
+MREMAP_DEFAULT	malloc.cpp	1705;"	d	file:
+MSPACES	malloc.cpp	612;"	d	file:
+MSPACES	malloc.cpp	614;"	d	file:
+MSPACES	malloc.h	44;"	d
+MSPACES	malloc.h	46;"	d
+MUNMAP	malloc.cpp	1747;"	d	file:
+MUNMAP_DEFAULT	malloc.cpp	1641;"	d	file:
+MUNMAP_DEFAULT	malloc.cpp	1698;"	d	file:
+M_GRANULARITY	malloc.cpp	726;"	d	file:
+M_GRANULARITY	malloc.h	222;"	d
+M_MMAP_THRESHOLD	malloc.cpp	727;"	d	file:
+M_MMAP_THRESHOLD	malloc.h	223;"	d
+M_TRIM_THRESHOLD	malloc.cpp	725;"	d	file:
+M_TRIM_THRESHOLD	malloc.h	221;"	d
+NEED_GLOBAL_LOCK_INIT	malloc.cpp	1980;"	d	file:
+NOINLINE	malloc.cpp	793;"	d	file:
+NOINLINE	malloc.cpp	795;"	d	file:
+NOINLINE	malloc.cpp	797;"	d	file:
+NO_MALLINFO	malloc.cpp	706;"	d	file:
+NO_MALLINFO	malloc.h	39;"	d
+NO_MALLOC_STATS	malloc.cpp	712;"	d	file:
+NO_SEGMENT_TRAVERSAL	malloc.cpp	715;"	d	file:
+NSMALLBINS	malloc.cpp	2570;"	d	file:
+NTREEBINS	malloc.cpp	2571;"	d	file:
+ONLY_MSPACES	malloc.cpp	608;"	d	file:
+ONLY_MSPACES	malloc.h	34;"	d
+ONLY_MSPACES	malloc.h	36;"	d
+PINUSE_BIT	malloc.cpp	2246;"	d	file:
+POSTACTION	malloc.cpp	2744;"	d	file:
+POSTACTION	malloc.cpp	2752;"	d	file:
+PREACTION	malloc.cpp	2743;"	d	file:
+PREACTION	malloc.cpp	2748;"	d	file:
+PROCEED_ON_ERROR	malloc.cpp	630;"	d	file:
+PTHREAD_MUTEX_RECURSIVE	malloc.cpp	2015;"	d	file:
+RELEASE_LOCK	malloc.cpp	1890;"	d	file:
+RELEASE_LOCK	malloc.cpp	1966;"	d	file:
+RELEASE_LOCK	malloc.cpp	1976;"	d	file:
+RELEASE_LOCK	malloc.cpp	2005;"	d	file:
+RELEASE_MALLOC_GLOBAL_LOCK	malloc.cpp	1809;"	d	file:
+RELEASE_MALLOC_GLOBAL_LOCK	malloc.cpp	2042;"	d	file:
+RTCHECK	malloc.cpp	3034;"	d	file:
+RTCHECK	malloc.cpp	3036;"	d	file:
+RTCHECK	malloc.cpp	3039;"	d	file:
+SIX_SIZE_T_SIZES	align.cpp	17;"	d	file:
+SIX_SIZE_T_SIZES	malloc.cpp	1611;"	d	file:
+SIZE_T_BITSIZE	align.cpp	7;"	d	file:
+SIZE_T_BITSIZE	malloc.cpp	1601;"	d	file:
+SIZE_T_FOUR	align.cpp	14;"	d	file:
+SIZE_T_FOUR	malloc.cpp	1608;"	d	file:
+SIZE_T_ONE	align.cpp	12;"	d	file:
+SIZE_T_ONE	malloc.cpp	1606;"	d	file:
+SIZE_T_SIZE	align.cpp	6;"	d	file:
+SIZE_T_SIZE	malloc.cpp	1600;"	d	file:
+SIZE_T_TWO	align.cpp	13;"	d	file:
+SIZE_T_TWO	malloc.cpp	1607;"	d	file:
+SIZE_T_ZERO	align.cpp	11;"	d	file:
+SIZE_T_ZERO	malloc.cpp	1605;"	d	file:
+SLEEP_EX_DURATION	malloc.cpp	1866;"	d	file:
+SMALLBIN_SHIFT	malloc.cpp	2572;"	d	file:
+SMALLBIN_WIDTH	malloc.cpp	2573;"	d	file:
+SPINS_PER_YIELD	malloc.cpp	1864;"	d	file:
+SPIN_LOCK_YIELD	malloc.cpp	1867;"	d	file:
+SPIN_LOCK_YIELD	malloc.cpp	1869;"	d	file:
+SPIN_LOCK_YIELD	malloc.cpp	1871;"	d	file:
+SPIN_LOCK_YIELD	malloc.cpp	1873;"	d	file:
+STRUCT_MALLINFO_DECLARED	malloc.cpp	762;"	d	file:
+STRUCT_MALLINFO_DECLARED	malloc.h	83;"	d
+SYS_ALLOC_PADDING	malloc.cpp	2686;"	d	file:
+THREAD_ID_T	malloc.cpp	1899;"	d	file:
+THREAD_ID_T	malloc.cpp	1908;"	d	file:
+TOP_FOOT_SIZE	malloc.cpp	2730;"	d	file:
+TREEBIN_SHIFT	malloc.cpp	2574;"	d	file:
+TRY_LOCK	malloc.cpp	1889;"	d	file:
+TRY_LOCK	malloc.cpp	1967;"	d	file:
+TRY_LOCK	malloc.cpp	1977;"	d	file:
+TRY_LOCK	malloc.cpp	2006;"	d	file:
+TWO_SIZE_T_SIZES	align.cpp	15;"	d	file:
+TWO_SIZE_T_SIZES	malloc.cpp	1609;"	d	file:
+USAGE_ERROR_ACTION	malloc.cpp	2774;"	d	file:
+USAGE_ERROR_ACTION	malloc.cpp	2783;"	d	file:
+USE_BUILTIN_FFS	malloc.cpp	700;"	d	file:
+USE_DEV_RANDOM	malloc.cpp	703;"	d	file:
+USE_DL_PREFIX	malloc.cpp	815;"	d	file:
+USE_DL_PREFIX	malloc.h	26;"	d
+USE_LOCKS	malloc.cpp	588;"	d	file:
+USE_LOCK_BIT	malloc.cpp	1805;"	d	file:
+USE_LOCK_BIT	malloc.cpp	2035;"	d	file:
+USE_MMAP_BIT	malloc.cpp	1726;"	d	file:
+USE_MMAP_BIT	malloc.cpp	1744;"	d	file:
+USE_NONCONTIGUOUS_BIT	malloc.cpp	1768;"	d	file:
+USE_SPIN_LOCKS	malloc.cpp	598;"	d	file:
+USE_SPIN_LOCKS	malloc.cpp	604;"	d	file:
+WIN32	malloc.cpp	535;"	d	file:
+WIN32	malloc.cpp	539;"	d	file:
+WIN32_LEAN_AND_MEAN	malloc.cpp	543;"	d	file:
+_BitScanForward	malloc.cpp	/^unsigned char _BitScanForward(unsigned long *index, unsigned long mask);$/;"	p	file:	signature:(unsigned long *index, unsigned long mask)
+_BitScanReverse	malloc.cpp	/^unsigned char _BitScanReverse(unsigned long *index, unsigned long mask);$/;"	p	file:	signature:(unsigned long *index, unsigned long mask)
+_GNU_SOURCE	malloc.cpp	648;"	d	file:
+_InterlockedCompareExchange	malloc.cpp	/^LONG __cdecl _InterlockedCompareExchange(LONG volatile *Dest, LONG Exchange, LONG Comp);$/;"	p	file:	signature:(LONG volatile *Dest, LONG Exchange, LONG Comp)
+_InterlockedExchange	malloc.cpp	/^LONG __cdecl _InterlockedExchange(LONG volatile *Target, LONG Value);$/;"	p	file:	signature:(LONG volatile *Target, LONG Value)
+_SC_PAGE_SIZE	malloc.cpp	1554;"	d	file:
+_STRUCT_MALLINFO	malloc.cpp	761;"	d	file:
+__USE_GNU	malloc.cpp	1474;"	d	file:
+__USE_GNU	malloc.cpp	1476;"	d	file:
+_gm_	malloc.cpp	/^static struct malloc_state _gm_;$/;"	v	typeref:struct:malloc_state	file:
+a1	bss.cpp	/^    int a1;$/;"	m	struct:CA	file:	access:public
+a1	bss.cpp	/^int a1;$/;"	v
+a2	bss.cpp	/^    int a2;$/;"	m	struct:CA	file:	access:public
+a2	bss.cpp	/^int a2;$/;"	v
+add_segment	malloc.cpp	/^static void add_segment(mstate m, char* tbase, size_t tsize, flag_t mmapped) {$/;"	f	file:	signature:(mstate m, char* tbase, size_t tsize, flag_t mmapped)
+align_as_chunk	malloc.cpp	2221;"	d	file:
+align_offset	align.cpp	24;"	d	file:
+align_offset	malloc.cpp	1621;"	d	file:
+arena	malloc.cpp	/^  MALLINFO_FIELD_TYPE arena;    \/* non-mmapped space allocated from system *\/$/;"	m	struct:mallinfo	file:	access:public
+arena	malloc.h	/^  MALLINFO_FIELD_TYPE arena;    \/* non-mmapped space allocated from system *\/$/;"	m	struct:mallinfo	access:public
+assert	malloc.cpp	1445;"	d	file:
+assert	malloc.cpp	1446;"	d	file:
+assert	malloc.cpp	1452;"	d	file:
+base	malloc.cpp	/^  char*        base;             \/* base address *\/$/;"	m	struct:malloc_segment	file:	access:public
+bin_find	malloc.cpp	/^static int    bin_find(mstate m, mchunkptr x);$/;"	p	file:	signature:(mstate m, mchunkptr x)
+bin_find	malloc.cpp	/^static int bin_find(mstate m, mchunkptr x) {$/;"	f	file:	signature:(mstate m, mchunkptr x)
+bindex_t	malloc.cpp	/^typedef unsigned int bindex_t;         \/* Described below *\/$/;"	t	file:
+binmap_t	malloc.cpp	/^typedef unsigned int binmap_t;         \/* Described below *\/$/;"	t	file:
+bit_for_tree_index	malloc.cpp	2898;"	d	file:
+bk	malloc.cpp	/^  struct malloc_chunk* bk;$/;"	m	struct:malloc_chunk	typeref:struct:malloc_chunk::malloc_chunk	file:	access:public
+bk	malloc.cpp	/^  struct malloc_tree_chunk* bk;$/;"	m	struct:malloc_tree_chunk	typeref:struct:malloc_tree_chunk::malloc_tree_chunk	file:	access:public
+c	malloc.cpp	/^  unsigned int c;$/;"	m	struct:malloc_recursive_lock	file:	access:public
+ca	bss.cpp	/^CA ca;$/;"	v
+calloc_must_clear	malloc.cpp	2297;"	d	file:
+calloc_must_clear	malloc.cpp	2299;"	d	file:
+change_mparam	malloc.cpp	/^static int change_mparam(int param_number, int value) {$/;"	f	file:	signature:(int param_number, int value)
+check_free_chunk	malloc.cpp	2793;"	d	file:
+check_free_chunk	malloc.cpp	2801;"	d	file:
+check_inuse_chunk	malloc.cpp	2794;"	d	file:
+check_inuse_chunk	malloc.cpp	2802;"	d	file:
+check_malloc_state	malloc.cpp	2797;"	d	file:
+check_malloc_state	malloc.cpp	2806;"	d	file:
+check_malloced_chunk	malloc.cpp	2795;"	d	file:
+check_malloced_chunk	malloc.cpp	2804;"	d	file:
+check_mmapped_chunk	malloc.cpp	2796;"	d	file:
+check_mmapped_chunk	malloc.cpp	2805;"	d	file:
+check_top_chunk	malloc.cpp	2798;"	d	file:
+check_top_chunk	malloc.cpp	2803;"	d	file:
+child	malloc.cpp	/^  struct malloc_tree_chunk* child[2];$/;"	m	struct:malloc_tree_chunk	typeref:struct:malloc_tree_chunk::malloc_tree_chunk	file:	access:public
+chunk2mem	malloc.cpp	2218;"	d	file:
+chunk_minus_offset	malloc.cpp	2270;"	d	file:
+chunk_plus_offset	malloc.cpp	2269;"	d	file:
+chunksize	malloc.cpp	2262;"	d	file:
+cinuse	malloc.cpp	2256;"	d	file:
+clear_flag4	malloc.cpp	2266;"	d	file:
+clear_pinuse	malloc.cpp	2264;"	d	file:
+clear_smallmap	malloc.cpp	2919;"	d	file:
+clear_treemap	malloc.cpp	2923;"	d	file:
+compute_bit2idx	malloc.cpp	2938;"	d	file:
+compute_bit2idx	malloc.cpp	2946;"	d	file:
+compute_bit2idx	malloc.cpp	2954;"	d	file:
+compute_bit2idx	malloc.cpp	2962;"	d	file:
+compute_bit2idx	malloc.cpp	2965;"	d	file:
+compute_tree_index	malloc.cpp	2835;"	d	file:
+compute_tree_index	malloc.cpp	2849;"	d	file:
+compute_tree_index	malloc.cpp	2863;"	d	file:
+compute_tree_index	malloc.cpp	2878;"	d	file:
+create_mspace	malloc.cpp	/^DLMALLOC_EXPORT mspace create_mspace(size_t capacity, int locked);$/;"	p	file:	signature:(size_t capacity, int locked)
+create_mspace	malloc.cpp	/^mspace create_mspace(size_t capacity, int locked) {$/;"	f	signature:(size_t capacity, int locked)
+create_mspace	malloc.h	/^mspace create_mspace(size_t capacity, int locked);$/;"	p	signature:(size_t capacity, int locked)
+create_mspace_with_base	malloc.cpp	/^DLMALLOC_EXPORT mspace create_mspace_with_base(void* base, size_t capacity, int locked);$/;"	p	file:	signature:(void* base, size_t capacity, int locked)
+create_mspace_with_base	malloc.cpp	/^mspace create_mspace_with_base(void* base, size_t capacity, int locked) {$/;"	f	signature:(void* base, size_t capacity, int locked)
+create_mspace_with_base	malloc.h	/^mspace create_mspace_with_base(void* base, size_t capacity, int locked);$/;"	p	signature:(void* base, size_t capacity, int locked)
+default_mflags	malloc.cpp	/^  flag_t default_mflags;$/;"	m	struct:malloc_params	file:	access:public
+destroy_mspace	malloc.cpp	/^DLMALLOC_EXPORT size_t destroy_mspace(mspace msp);$/;"	p	file:	signature:(mspace msp)
+destroy_mspace	malloc.cpp	/^size_t destroy_mspace(mspace msp) {$/;"	f	signature:(mspace msp)
+destroy_mspace	malloc.h	/^size_t destroy_mspace(mspace msp);$/;"	p	signature:(mspace msp)
+dev_zero_fd	malloc.cpp	/^static int dev_zero_fd = -1; \/* Cached file descriptor for \/dev\/zero. *\/$/;"	v	file:
+disable_contiguous	malloc.cpp	2661;"	d	file:
+disable_lock	malloc.cpp	2647;"	d	file:
+disable_lock	malloc.cpp	2649;"	d	file:
+disable_mmap	malloc.cpp	2655;"	d	file:
+disable_mmap	malloc.cpp	2657;"	d	file:
+dispose_chunk	malloc.cpp	/^static void dispose_chunk(mstate m, mchunkptr p, size_t psize) {$/;"	f	file:	signature:(mstate m, mchunkptr p, size_t psize)
+dlbulk_free	malloc.cpp	/^DLMALLOC_EXPORT size_t  dlbulk_free(void**, size_t n_elements);$/;"	p	file:	signature:(void**, size_t n_elements)
+dlbulk_free	malloc.cpp	/^size_t dlbulk_free(void* array[], size_t nelem) {$/;"	f	signature:(void* array[], size_t nelem)
+dlbulk_free	malloc.cpp	839;"	d	file:
+dlbulk_free	malloc.h	/^size_t  dlbulk_free(void**, size_t n_elements);$/;"	p	signature:(void**, size_t n_elements)
+dlbulk_free	malloc.h	73;"	d
+dlcalloc	malloc.cpp	/^DLMALLOC_EXPORT void* dlcalloc(size_t, size_t);$/;"	p	file:	signature:(size_t, size_t)
+dlcalloc	malloc.cpp	/^void* dlcalloc(size_t n_elements, size_t elem_size) {$/;"	f	signature:(size_t n_elements, size_t elem_size)
+dlcalloc	malloc.cpp	818;"	d	file:
+dlcalloc	malloc.h	/^void* dlcalloc(size_t, size_t);$/;"	p	signature:(size_t, size_t)
+dlcalloc	malloc.h	53;"	d
+dlfree	malloc.cpp	/^DLMALLOC_EXPORT void  dlfree(void*);$/;"	p	file:	signature:(void*)
+dlfree	malloc.cpp	/^void dlfree(void* mem) {$/;"	f	signature:(void* mem)
+dlfree	malloc.cpp	819;"	d	file:
+dlfree	malloc.h	/^void  dlfree(void*);$/;"	p	signature:(void*)
+dlfree	malloc.h	54;"	d
+dlindependent_calloc	malloc.cpp	/^DLMALLOC_EXPORT void** dlindependent_calloc(size_t, size_t, void**);$/;"	p	file:	signature:(size_t, size_t, void**)
+dlindependent_calloc	malloc.cpp	/^void** dlindependent_calloc(size_t n_elements, size_t elem_size,$/;"	f	signature:(size_t n_elements, size_t elem_size, void* chunks[])
+dlindependent_calloc	malloc.cpp	837;"	d	file:
+dlindependent_calloc	malloc.h	/^void** dlindependent_calloc(size_t, size_t, void**);$/;"	p	signature:(size_t, size_t, void**)
+dlindependent_calloc	malloc.h	71;"	d
+dlindependent_comalloc	malloc.cpp	/^DLMALLOC_EXPORT void** dlindependent_comalloc(size_t, size_t*, void**);$/;"	p	file:	signature:(size_t, size_t*, void**)
+dlindependent_comalloc	malloc.cpp	/^void** dlindependent_comalloc(size_t n_elements, size_t sizes[],$/;"	f	signature:(size_t n_elements, size_t sizes[], void* chunks[])
+dlindependent_comalloc	malloc.cpp	838;"	d	file:
+dlindependent_comalloc	malloc.h	/^void** dlindependent_comalloc(size_t, size_t*, void**);$/;"	p	signature:(size_t, size_t*, void**)
+dlindependent_comalloc	malloc.h	72;"	d
+dlmallinfo	malloc.cpp	/^DLMALLOC_EXPORT struct mallinfo dlmallinfo(void);$/;"	p	file:	signature:(void)
+dlmallinfo	malloc.cpp	/^struct mallinfo dlmallinfo(void) {$/;"	f	signature:(void)
+dlmallinfo	malloc.cpp	827;"	d	file:
+dlmallinfo	malloc.h	/^struct mallinfo dlmallinfo(void);$/;"	p	signature:(void)
+dlmallinfo	malloc.h	61;"	d
+dlmalloc	malloc.cpp	/^DLMALLOC_EXPORT void* dlmalloc(size_t);$/;"	p	file:	signature:(size_t)
+dlmalloc	malloc.cpp	/^void* dlmalloc(size_t bytes) {$/;"	f	signature:(size_t bytes)
+dlmalloc	malloc.cpp	820;"	d	file:
+dlmalloc	malloc.h	/^void* dlmalloc(size_t);$/;"	p	signature:(size_t)
+dlmalloc	malloc.h	55;"	d
+dlmalloc_footprint	malloc.cpp	/^DLMALLOC_EXPORT size_t dlmalloc_footprint(void);$/;"	p	file:	signature:(void)
+dlmalloc_footprint	malloc.cpp	/^size_t dlmalloc_footprint(void) {$/;"	f	signature:(void)
+dlmalloc_footprint	malloc.cpp	832;"	d	file:
+dlmalloc_footprint	malloc.h	/^size_t dlmalloc_footprint(void);$/;"	p	signature:(void)
+dlmalloc_footprint	malloc.h	66;"	d
+dlmalloc_footprint_limit	malloc.cpp	/^DLMALLOC_EXPORT size_t dlmalloc_footprint_limit();$/;"	p	file:	signature:()
+dlmalloc_footprint_limit	malloc.cpp	/^size_t dlmalloc_footprint_limit(void) {$/;"	f	signature:(void)
+dlmalloc_footprint_limit	malloc.cpp	834;"	d	file:
+dlmalloc_footprint_limit	malloc.h	/^size_t dlmalloc_footprint_limit(void);$/;"	p	signature:(void)
+dlmalloc_footprint_limit	malloc.h	68;"	d
+dlmalloc_inspect_all	malloc.cpp	/^DLMALLOC_EXPORT void dlmalloc_inspect_all(void(*handler)(void*, void *, size_t, void*),$/;"	p	file:	signature:(void(*handler)(void*, void *, size_t, void*), void* arg)
+dlmalloc_inspect_all	malloc.cpp	/^void dlmalloc_inspect_all(void(*handler)(void *start,$/;"	f	signature:(void(*handler)(void *start, void *end, size_t used_bytes, void* callback_arg), void* arg)
+dlmalloc_inspect_all	malloc.cpp	836;"	d	file:
+dlmalloc_inspect_all	malloc.h	/^void dlmalloc_inspect_all(void(*handler)(void*, void *, size_t, void*),$/;"	p	signature:(void(*handler)(void*, void *, size_t, void*), void* arg)
+dlmalloc_inspect_all	malloc.h	70;"	d
+dlmalloc_max_footprint	malloc.cpp	/^DLMALLOC_EXPORT size_t dlmalloc_max_footprint(void);$/;"	p	file:	signature:(void)
+dlmalloc_max_footprint	malloc.cpp	/^size_t dlmalloc_max_footprint(void) {$/;"	f	signature:(void)
+dlmalloc_max_footprint	malloc.cpp	833;"	d	file:
+dlmalloc_max_footprint	malloc.h	/^size_t dlmalloc_max_footprint(void);$/;"	p	signature:(void)
+dlmalloc_max_footprint	malloc.h	67;"	d
+dlmalloc_set_footprint_limit	malloc.cpp	/^DLMALLOC_EXPORT size_t dlmalloc_set_footprint_limit(size_t bytes);$/;"	p	file:	signature:(size_t bytes)
+dlmalloc_set_footprint_limit	malloc.cpp	/^size_t dlmalloc_set_footprint_limit(size_t bytes) {$/;"	f	signature:(size_t bytes)
+dlmalloc_set_footprint_limit	malloc.cpp	835;"	d	file:
+dlmalloc_set_footprint_limit	malloc.h	/^size_t dlmalloc_set_footprint_limit(size_t bytes);$/;"	p	signature:(size_t bytes)
+dlmalloc_set_footprint_limit	malloc.h	69;"	d
+dlmalloc_stats	malloc.cpp	/^DLMALLOC_EXPORT void  dlmalloc_stats(void);$/;"	p	file:	signature:(void)
+dlmalloc_stats	malloc.cpp	/^void dlmalloc_stats() {$/;"	f	signature:()
+dlmalloc_stats	malloc.cpp	830;"	d	file:
+dlmalloc_stats	malloc.h	/^void  dlmalloc_stats(void);$/;"	p	signature:(void)
+dlmalloc_stats	malloc.h	64;"	d
+dlmalloc_trim	malloc.cpp	/^DLMALLOC_EXPORT int  dlmalloc_trim(size_t);$/;"	p	file:	signature:(size_t)
+dlmalloc_trim	malloc.cpp	/^int dlmalloc_trim(size_t pad) {$/;"	f	signature:(size_t pad)
+dlmalloc_trim	malloc.cpp	829;"	d	file:
+dlmalloc_trim	malloc.h	/^int  dlmalloc_trim(size_t);$/;"	p	signature:(size_t)
+dlmalloc_trim	malloc.h	63;"	d
+dlmalloc_usable_size	malloc.cpp	/^size_t dlmalloc_usable_size(void* mem) {$/;"	f	signature:(void* mem)
+dlmalloc_usable_size	malloc.cpp	/^size_t dlmalloc_usable_size(void*);$/;"	p	file:	signature:(void*)
+dlmalloc_usable_size	malloc.cpp	831;"	d	file:
+dlmalloc_usable_size	malloc.h	/^size_t dlmalloc_usable_size(const void*);$/;"	p	signature:(const void*)
+dlmalloc_usable_size	malloc.h	65;"	d
+dlmallopt	malloc.cpp	/^DLMALLOC_EXPORT int dlmallopt(int, int);$/;"	p	file:	signature:(int, int)
+dlmallopt	malloc.cpp	/^int dlmallopt(int param_number, int value) {$/;"	f	signature:(int param_number, int value)
+dlmallopt	malloc.cpp	828;"	d	file:
+dlmallopt	malloc.h	/^int dlmallopt(int, int);$/;"	p	signature:(int, int)
+dlmallopt	malloc.h	62;"	d
+dlmemalign	malloc.cpp	/^DLMALLOC_EXPORT void* dlmemalign(size_t, size_t);$/;"	p	file:	signature:(size_t, size_t)
+dlmemalign	malloc.cpp	/^void* dlmemalign(size_t alignment, size_t bytes) {$/;"	f	signature:(size_t alignment, size_t bytes)
+dlmemalign	malloc.cpp	821;"	d	file:
+dlmemalign	malloc.h	/^void* dlmemalign(size_t, size_t);$/;"	p	signature:(size_t, size_t)
+dlmemalign	malloc.h	56;"	d
+dlposix_memalign	malloc.cpp	/^DLMALLOC_EXPORT int dlposix_memalign(void**, size_t, size_t);$/;"	p	file:	signature:(void**, size_t, size_t)
+dlposix_memalign	malloc.cpp	/^int dlposix_memalign(void** pp, size_t alignment, size_t bytes) {$/;"	f	signature:(void** pp, size_t alignment, size_t bytes)
+dlposix_memalign	malloc.cpp	822;"	d	file:
+dlposix_memalign	malloc.h	/^int dlposix_memalign(void**, size_t, size_t);$/;"	p	signature:(void**, size_t, size_t)
+dlposix_memalign	malloc.h	57;"	d
+dlpvalloc	malloc.cpp	/^DLMALLOC_EXPORT void*  dlpvalloc(size_t);$/;"	p	file:	signature:(size_t)
+dlpvalloc	malloc.cpp	/^void* dlpvalloc(size_t bytes) {$/;"	f	signature:(size_t bytes)
+dlpvalloc	malloc.cpp	826;"	d	file:
+dlpvalloc	malloc.h	/^void*  dlpvalloc(size_t);$/;"	p	signature:(size_t)
+dlpvalloc	malloc.h	60;"	d
+dlrealloc	malloc.cpp	/^DLMALLOC_EXPORT void* dlrealloc(void*, size_t);$/;"	p	file:	signature:(void*, size_t)
+dlrealloc	malloc.cpp	/^void* dlrealloc(void* oldmem, size_t bytes) {$/;"	f	signature:(void* oldmem, size_t bytes)
+dlrealloc	malloc.cpp	823;"	d	file:
+dlrealloc	malloc.h	/^void* dlrealloc(void*, size_t);$/;"	p	signature:(void*, size_t)
+dlrealloc	malloc.h	58;"	d
+dlrealloc_in_place	malloc.cpp	/^DLMALLOC_EXPORT void* dlrealloc_in_place(void*, size_t);$/;"	p	file:	signature:(void*, size_t)
+dlrealloc_in_place	malloc.cpp	/^void* dlrealloc_in_place(void* oldmem, size_t bytes) {$/;"	f	signature:(void* oldmem, size_t bytes)
+dlrealloc_in_place	malloc.cpp	824;"	d	file:
+dlrealloc_in_place	malloc.h	/^void* dlrealloc_in_place(void*, size_t);$/;"	p	signature:(void*, size_t)
+dlvalloc	malloc.cpp	/^DLMALLOC_EXPORT void* dlvalloc(size_t);$/;"	p	file:	signature:(size_t)
+dlvalloc	malloc.cpp	/^void* dlvalloc(size_t bytes) {$/;"	f	signature:(size_t bytes)
+dlvalloc	malloc.cpp	825;"	d	file:
+dlvalloc	malloc.h	/^void* dlvalloc(size_t);$/;"	p	signature:(size_t)
+dlvalloc	malloc.h	59;"	d
+do_check_any_chunk	malloc.cpp	/^static void   do_check_any_chunk(mstate m, mchunkptr p);$/;"	p	file:	signature:(mstate m, mchunkptr p)
+do_check_any_chunk	malloc.cpp	/^static void do_check_any_chunk(mstate m, mchunkptr p) {$/;"	f	file:	signature:(mstate m, mchunkptr p)
+do_check_free_chunk	malloc.cpp	/^static void   do_check_free_chunk(mstate m, mchunkptr p);$/;"	p	file:	signature:(mstate m, mchunkptr p)
+do_check_free_chunk	malloc.cpp	/^static void do_check_free_chunk(mstate m, mchunkptr p) {$/;"	f	file:	signature:(mstate m, mchunkptr p)
+do_check_inuse_chunk	malloc.cpp	/^static void   do_check_inuse_chunk(mstate m, mchunkptr p);$/;"	p	file:	signature:(mstate m, mchunkptr p)
+do_check_inuse_chunk	malloc.cpp	/^static void do_check_inuse_chunk(mstate m, mchunkptr p) {$/;"	f	file:	signature:(mstate m, mchunkptr p)
+do_check_malloc_state	malloc.cpp	/^static void   do_check_malloc_state(mstate m);$/;"	p	file:	signature:(mstate m)
+do_check_malloc_state	malloc.cpp	/^static void do_check_malloc_state(mstate m) {$/;"	f	file:	signature:(mstate m)
+do_check_malloced_chunk	malloc.cpp	/^static void   do_check_malloced_chunk(mstate m, void* mem, size_t s);$/;"	p	file:	signature:(mstate m, void* mem, size_t s)
+do_check_malloced_chunk	malloc.cpp	/^static void do_check_malloced_chunk(mstate m, void* mem, size_t s) {$/;"	f	file:	signature:(mstate m, void* mem, size_t s)
+do_check_mmapped_chunk	malloc.cpp	/^static void   do_check_mmapped_chunk(mstate m, mchunkptr p);$/;"	p	file:	signature:(mstate m, mchunkptr p)
+do_check_mmapped_chunk	malloc.cpp	/^static void do_check_mmapped_chunk(mstate m, mchunkptr p) {$/;"	f	file:	signature:(mstate m, mchunkptr p)
+do_check_smallbin	malloc.cpp	/^static void   do_check_smallbin(mstate m, bindex_t i);$/;"	p	file:	signature:(mstate m, bindex_t i)
+do_check_smallbin	malloc.cpp	/^static void do_check_smallbin(mstate m, bindex_t i) {$/;"	f	file:	signature:(mstate m, bindex_t i)
+do_check_top_chunk	malloc.cpp	/^static void   do_check_top_chunk(mstate m, mchunkptr p);$/;"	p	file:	signature:(mstate m, mchunkptr p)
+do_check_top_chunk	malloc.cpp	/^static void do_check_top_chunk(mstate m, mchunkptr p) {$/;"	f	file:	signature:(mstate m, mchunkptr p)
+do_check_tree	malloc.cpp	/^static void   do_check_tree(mstate m, tchunkptr t);$/;"	p	file:	signature:(mstate m, tchunkptr t)
+do_check_tree	malloc.cpp	/^static void do_check_tree(mstate m, tchunkptr t) {$/;"	f	file:	signature:(mstate m, tchunkptr t)
+do_check_treebin	malloc.cpp	/^static void   do_check_treebin(mstate m, bindex_t i);$/;"	p	file:	signature:(mstate m, bindex_t i)
+do_check_treebin	malloc.cpp	/^static void do_check_treebin(mstate m, bindex_t i) {$/;"	f	file:	signature:(mstate m, bindex_t i)
+dv	malloc.cpp	/^  mchunkptr  dv;$/;"	m	struct:malloc_state	file:	access:public
+dvsize	malloc.cpp	/^  size_t     dvsize;$/;"	m	struct:malloc_state	file:	access:public
+enable_lock	malloc.cpp	2645;"	d	file:
+enable_mmap	malloc.cpp	2653;"	d	file:
+ensure_initialization	malloc.cpp	2627;"	d	file:
+extp	malloc.cpp	/^  void*      extp;      \/* Unused but available for extensions *\/$/;"	m	struct:malloc_state	file:	access:public
+exts	malloc.cpp	/^  size_t     exts;$/;"	m	struct:malloc_state	file:	access:public
+fd	malloc.cpp	/^  struct malloc_chunk* fd;         \/* double links -- used only if free. *\/$/;"	m	struct:malloc_chunk	typeref:struct:malloc_chunk::malloc_chunk	file:	access:public
+fd	malloc.cpp	/^  struct malloc_tree_chunk* fd;$/;"	m	struct:malloc_tree_chunk	typeref:struct:malloc_tree_chunk::malloc_tree_chunk	file:	access:public
+flag4inuse	malloc.cpp	2258;"	d	file:
+flag_t	malloc.cpp	/^typedef unsigned int flag_t;           \/* The type of various bit flag sets *\/$/;"	t	file:
+fm	malloc.cpp	4786;"	d	file:
+footprint	malloc.cpp	/^  size_t     footprint;$/;"	m	struct:malloc_state	file:	access:public
+footprint_limit	malloc.cpp	/^  size_t     footprint_limit; \/* zero means no limit *\/$/;"	m	struct:malloc_state	file:	access:public
+fordblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE fordblks; \/* total free space *\/$/;"	m	struct:mallinfo	file:	access:public
+fordblks	malloc.h	/^  MALLINFO_FIELD_TYPE fordblks; \/* total free space *\/$/;"	m	struct:mallinfo	access:public
+fsmblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE fsmblks;  \/* always 0 *\/$/;"	m	struct:mallinfo	file:	access:public
+fsmblks	malloc.h	/^  MALLINFO_FIELD_TYPE fsmblks;  \/* always 0 *\/$/;"	m	struct:mallinfo	access:public
+get_foot	malloc.cpp	2280;"	d	file:
+get_mstate_for	malloc.cpp	3070;"	d	file:
+getpagesize	malloc.cpp	/^       extern size_t getpagesize();$/;"	p	file:	signature:()
+gm	malloc.cpp	2633;"	d	file:
+granularity	malloc.cpp	/^  size_t granularity;$/;"	m	struct:malloc_params	file:	access:public
+granularity_align	malloc.cpp	2673;"	d	file:
+has_segment_link	malloc.cpp	/^static int has_segment_link(mstate m, msegmentptr ss) {$/;"	f	file:	signature:(mstate m, msegmentptr ss)
+hblkhd	malloc.cpp	/^  MALLINFO_FIELD_TYPE hblkhd;   \/* space in mmapped regions *\/$/;"	m	struct:mallinfo	file:	access:public
+hblkhd	malloc.h	/^  MALLINFO_FIELD_TYPE hblkhd;   \/* space in mmapped regions *\/$/;"	m	struct:mallinfo	access:public
+hblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE hblks;    \/* always 0 *\/$/;"	m	struct:mallinfo	file:	access:public
+hblks	malloc.h	/^  MALLINFO_FIELD_TYPE hblks;    \/* always 0 *\/$/;"	m	struct:mallinfo	access:public
+head	malloc.cpp	/^  size_t                    head;$/;"	m	struct:malloc_tree_chunk	file:	access:public
+head	malloc.cpp	/^  size_t               head;       \/* Size and inuse bits. *\/$/;"	m	struct:malloc_chunk	file:	access:public
+ialloc	malloc.cpp	/^static void** ialloc(mstate m,$/;"	f	file:	signature:(mstate m, size_t n_elements, size_t* sizes, int opts, void* chunks[])
+idx2bit	malloc.cpp	2915;"	d	file:
+index	malloc.cpp	/^  bindex_t                  index;$/;"	m	struct:malloc_tree_chunk	file:	access:public
+init_bins	malloc.cpp	/^static void init_bins(mstate m) {$/;"	f	file:	signature:(mstate m)
+init_malloc_global_mutex	malloc.cpp	/^static void init_malloc_global_mutex() {$/;"	f	file:	signature:()
+init_mparams	malloc.cpp	/^static int init_mparams(void) {$/;"	f	file:	signature:(void)
+init_top	malloc.cpp	/^static void init_top(mstate m, mchunkptr p, size_t psize) {$/;"	f	file:	signature:(mstate m, mchunkptr p, size_t psize)
+init_user_mstate	malloc.cpp	/^static mstate init_user_mstate(char* tbase, size_t tsize) {$/;"	f	file:	signature:(char* tbase, size_t tsize)
+insert_chunk	malloc.cpp	3786;"	d	file:
+insert_large_chunk	malloc.cpp	3645;"	d	file:
+insert_small_chunk	malloc.cpp	3567;"	d	file:
+interlockedcompareexchange	malloc.cpp	1518;"	d	file:
+interlockedcompareexchange	malloc.cpp	1521;"	d	file:
+interlockedexchange	malloc.cpp	1519;"	d	file:
+interlockedexchange	malloc.cpp	1522;"	d	file:
+internal_bulk_free	malloc.cpp	/^static size_t internal_bulk_free(mstate m, void* array[], size_t nelem) {$/;"	f	file:	signature:(mstate m, void* array[], size_t nelem)
+internal_free	malloc.cpp	3799;"	d	file:
+internal_free	malloc.cpp	3804;"	d	file:
+internal_free	malloc.cpp	3808;"	d	file:
+internal_inspect_all	malloc.cpp	/^static void internal_inspect_all(mstate m,$/;"	f	file:	signature:(mstate m, void(*handler)(void *start, void *end, size_t used_bytes, void* callback_arg), void* arg)
+internal_mallinfo	malloc.cpp	/^static struct mallinfo internal_mallinfo(mstate m) {$/;"	f	file:	signature:(mstate m)
+internal_malloc	malloc.cpp	3798;"	d	file:
+internal_malloc	malloc.cpp	3802;"	d	file:
+internal_malloc	malloc.cpp	3807;"	d	file:
+internal_malloc_stats	malloc.cpp	/^static void internal_malloc_stats(mstate m) {$/;"	f	file:	signature:(mstate m)
+internal_memalign	malloc.cpp	/^static void* internal_memalign(mstate m, size_t alignment, size_t bytes) {$/;"	f	file:	signature:(mstate m, size_t alignment, size_t bytes)
+is_aligned	malloc.cpp	1618;"	d	file:
+is_extern_segment	malloc.cpp	2477;"	d	file:
+is_global	malloc.cpp	2634;"	d	file:
+is_granularity_aligned	malloc.cpp	2690;"	d	file:
+is_initialized	malloc.cpp	2638;"	d	file:
+is_inuse	malloc.cpp	2259;"	d	file:
+is_mmapped	malloc.cpp	2260;"	d	file:
+is_mmapped_segment	malloc.cpp	2476;"	d	file:
+is_page_aligned	align.cpp	28;"	d	file:
+is_page_aligned	malloc.cpp	2688;"	d	file:
+is_small	malloc.cpp	2824;"	d	file:
+keepcost	malloc.cpp	/^  MALLINFO_FIELD_TYPE keepcost; \/* releasable (via malloc_trim) space *\/$/;"	m	struct:mallinfo	file:	access:public
+keepcost	malloc.h	/^  MALLINFO_FIELD_TYPE keepcost; \/* releasable (via malloc_trim) space *\/$/;"	m	struct:mallinfo	access:public
+least_addr	malloc.cpp	/^  char*      least_addr;$/;"	m	struct:malloc_state	file:	access:public
+least_bit	malloc.cpp	2927;"	d	file:
+left_bits	malloc.cpp	2930;"	d	file:
+leftmost_child	malloc.cpp	2410;"	d	file:
+leftshift_for_tree_index	malloc.cpp	2902;"	d	file:
+magic	malloc.cpp	/^  size_t     magic;$/;"	m	struct:malloc_state	file:	access:public
+magic	malloc.cpp	/^  size_t magic;$/;"	m	struct:malloc_params	file:	access:public
+main	1.cpp	/^int main()$/;"	f	signature:()
+main	align.cpp	/^int main()$/;"	f	signature:()
+main	bss.cpp	/^int main()$/;"	f	signature:()
+mallinfo	malloc.cpp	/^struct mallinfo {$/;"	s	file:
+mallinfo	malloc.h	/^struct mallinfo {$/;"	s
+mallinfo::arena	malloc.cpp	/^  MALLINFO_FIELD_TYPE arena;    \/* non-mmapped space allocated from system *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::arena	malloc.h	/^  MALLINFO_FIELD_TYPE arena;    \/* non-mmapped space allocated from system *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::fordblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE fordblks; \/* total free space *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::fordblks	malloc.h	/^  MALLINFO_FIELD_TYPE fordblks; \/* total free space *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::fsmblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE fsmblks;  \/* always 0 *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::fsmblks	malloc.h	/^  MALLINFO_FIELD_TYPE fsmblks;  \/* always 0 *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::hblkhd	malloc.cpp	/^  MALLINFO_FIELD_TYPE hblkhd;   \/* space in mmapped regions *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::hblkhd	malloc.h	/^  MALLINFO_FIELD_TYPE hblkhd;   \/* space in mmapped regions *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::hblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE hblks;    \/* always 0 *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::hblks	malloc.h	/^  MALLINFO_FIELD_TYPE hblks;    \/* always 0 *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::keepcost	malloc.cpp	/^  MALLINFO_FIELD_TYPE keepcost; \/* releasable (via malloc_trim) space *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::keepcost	malloc.h	/^  MALLINFO_FIELD_TYPE keepcost; \/* releasable (via malloc_trim) space *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::ordblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE ordblks;  \/* number of free chunks *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::ordblks	malloc.h	/^  MALLINFO_FIELD_TYPE ordblks;  \/* number of free chunks *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::smblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE smblks;   \/* always 0 *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::smblks	malloc.h	/^  MALLINFO_FIELD_TYPE smblks;   \/* always 0 *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::uordblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE uordblks; \/* total allocated space *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::uordblks	malloc.h	/^  MALLINFO_FIELD_TYPE uordblks; \/* total allocated space *\/$/;"	m	struct:mallinfo	access:public
+mallinfo::usmblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE usmblks;  \/* maximum total allocated space *\/$/;"	m	struct:mallinfo	file:	access:public
+mallinfo::usmblks	malloc.h	/^  MALLINFO_FIELD_TYPE usmblks;  \/* maximum total allocated space *\/$/;"	m	struct:mallinfo	access:public
+malloc_chunk	malloc.cpp	/^struct malloc_chunk {$/;"	s	file:
+malloc_chunk::bk	malloc.cpp	/^  struct malloc_chunk* bk;$/;"	m	struct:malloc_chunk	typeref:struct:malloc_chunk::malloc_chunk	file:	access:public
+malloc_chunk::fd	malloc.cpp	/^  struct malloc_chunk* fd;         \/* double links -- used only if free. *\/$/;"	m	struct:malloc_chunk	typeref:struct:malloc_chunk::malloc_chunk	file:	access:public
+malloc_chunk::head	malloc.cpp	/^  size_t               head;       \/* Size and inuse bits. *\/$/;"	m	struct:malloc_chunk	file:	access:public
+malloc_chunk::prev_foot	malloc.cpp	/^  size_t               prev_foot;  \/* Size of previous chunk (if free).  *\/$/;"	m	struct:malloc_chunk	file:	access:public
+malloc_corruption_error_count	malloc.cpp	/^int malloc_corruption_error_count;$/;"	v
+malloc_getpagesize	malloc.cpp	1558;"	d	file:
+malloc_getpagesize	malloc.cpp	1562;"	d	file:
+malloc_getpagesize	malloc.cpp	1565;"	d	file:
+malloc_getpagesize	malloc.cpp	1571;"	d	file:
+malloc_getpagesize	malloc.cpp	1575;"	d	file:
+malloc_getpagesize	malloc.cpp	1577;"	d	file:
+malloc_getpagesize	malloc.cpp	1581;"	d	file:
+malloc_getpagesize	malloc.cpp	1584;"	d	file:
+malloc_getpagesize	malloc.cpp	1586;"	d	file:
+malloc_global_mutex	malloc.cpp	/^static MLOCK_T malloc_global_mutex = 0;$/;"	v	file:
+malloc_global_mutex	malloc.cpp	/^static MLOCK_T malloc_global_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+malloc_global_mutex	malloc.cpp	/^static MLOCK_T malloc_global_mutex = { 0, 0, (THREAD_ID_T)0};$/;"	v	file:
+malloc_global_mutex	malloc.cpp	/^static MLOCK_T malloc_global_mutex;$/;"	v	file:
+malloc_global_mutex_status	malloc.cpp	/^static volatile LONG malloc_global_mutex_status;$/;"	v	file:
+malloc_params	malloc.cpp	/^struct malloc_params {$/;"	s	file:
+malloc_params::default_mflags	malloc.cpp	/^  flag_t default_mflags;$/;"	m	struct:malloc_params	file:	access:public
+malloc_params::granularity	malloc.cpp	/^  size_t granularity;$/;"	m	struct:malloc_params	file:	access:public
+malloc_params::magic	malloc.cpp	/^  size_t magic;$/;"	m	struct:malloc_params	file:	access:public
+malloc_params::mmap_threshold	malloc.cpp	/^  size_t mmap_threshold;$/;"	m	struct:malloc_params	file:	access:public
+malloc_params::page_size	malloc.cpp	/^  size_t page_size;$/;"	m	struct:malloc_params	file:	access:public
+malloc_params::trim_threshold	malloc.cpp	/^  size_t trim_threshold;$/;"	m	struct:malloc_params	file:	access:public
+malloc_recursive_lock	malloc.cpp	/^struct malloc_recursive_lock {$/;"	s	file:
+malloc_recursive_lock::c	malloc.cpp	/^  unsigned int c;$/;"	m	struct:malloc_recursive_lock	file:	access:public
+malloc_recursive_lock::sl	malloc.cpp	/^  int sl;$/;"	m	struct:malloc_recursive_lock	file:	access:public
+malloc_recursive_lock::threadid	malloc.cpp	/^  THREAD_ID_T threadid;$/;"	m	struct:malloc_recursive_lock	file:	access:public
+malloc_segment	malloc.cpp	/^struct malloc_segment {$/;"	s	file:
+malloc_segment::base	malloc.cpp	/^  char*        base;             \/* base address *\/$/;"	m	struct:malloc_segment	file:	access:public
+malloc_segment::next	malloc.cpp	/^  struct malloc_segment* next;   \/* ptr to next segment *\/$/;"	m	struct:malloc_segment	typeref:struct:malloc_segment::malloc_segment	file:	access:public
+malloc_segment::sflags	malloc.cpp	/^  flag_t       sflags;           \/* mmap and extern flag *\/$/;"	m	struct:malloc_segment	file:	access:public
+malloc_segment::size	malloc.cpp	/^  size_t       size;             \/* allocated size *\/$/;"	m	struct:malloc_segment	file:	access:public
+malloc_state	malloc.cpp	/^struct malloc_state {$/;"	s	file:
+malloc_state::dv	malloc.cpp	/^  mchunkptr  dv;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::dvsize	malloc.cpp	/^  size_t     dvsize;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::extp	malloc.cpp	/^  void*      extp;      \/* Unused but available for extensions *\/$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::exts	malloc.cpp	/^  size_t     exts;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::footprint	malloc.cpp	/^  size_t     footprint;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::footprint_limit	malloc.cpp	/^  size_t     footprint_limit; \/* zero means no limit *\/$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::least_addr	malloc.cpp	/^  char*      least_addr;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::magic	malloc.cpp	/^  size_t     magic;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::max_footprint	malloc.cpp	/^  size_t     max_footprint;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::mflags	malloc.cpp	/^  flag_t     mflags;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::mutex	malloc.cpp	/^  MLOCK_T    mutex;     \/* locate lock among fields that rarely change *\/$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::release_checks	malloc.cpp	/^  size_t     release_checks;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::seg	malloc.cpp	/^  msegment   seg;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::smallbins	malloc.cpp	/^  mchunkptr  smallbins[(NSMALLBINS+1)*2];$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::smallmap	malloc.cpp	/^  binmap_t   smallmap;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::top	malloc.cpp	/^  mchunkptr  top;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::topsize	malloc.cpp	/^  size_t     topsize;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::treebins	malloc.cpp	/^  tbinptr    treebins[NTREEBINS];$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::treemap	malloc.cpp	/^  binmap_t   treemap;$/;"	m	struct:malloc_state	file:	access:public
+malloc_state::trim_check	malloc.cpp	/^  size_t     trim_check;$/;"	m	struct:malloc_state	file:	access:public
+malloc_tree_chunk	malloc.cpp	/^struct malloc_tree_chunk {$/;"	s	file:
+malloc_tree_chunk::bk	malloc.cpp	/^  struct malloc_tree_chunk* bk;$/;"	m	struct:malloc_tree_chunk	typeref:struct:malloc_tree_chunk::malloc_tree_chunk	file:	access:public
+malloc_tree_chunk::child	malloc.cpp	/^  struct malloc_tree_chunk* child[2];$/;"	m	struct:malloc_tree_chunk	typeref:struct:malloc_tree_chunk::malloc_tree_chunk	file:	access:public
+malloc_tree_chunk::fd	malloc.cpp	/^  struct malloc_tree_chunk* fd;$/;"	m	struct:malloc_tree_chunk	typeref:struct:malloc_tree_chunk::malloc_tree_chunk	file:	access:public
+malloc_tree_chunk::head	malloc.cpp	/^  size_t                    head;$/;"	m	struct:malloc_tree_chunk	file:	access:public
+malloc_tree_chunk::index	malloc.cpp	/^  bindex_t                  index;$/;"	m	struct:malloc_tree_chunk	file:	access:public
+malloc_tree_chunk::parent	malloc.cpp	/^  struct malloc_tree_chunk* parent;$/;"	m	struct:malloc_tree_chunk	typeref:struct:malloc_tree_chunk::malloc_tree_chunk	file:	access:public
+malloc_tree_chunk::prev_foot	malloc.cpp	/^  size_t                    prev_foot;$/;"	m	struct:malloc_tree_chunk	file:	access:public
+mark_inuse_foot	malloc.cpp	3046;"	d	file:
+mark_inuse_foot	malloc.cpp	3067;"	d	file:
+mark_smallmap	malloc.cpp	2918;"	d	file:
+mark_treemap	malloc.cpp	2922;"	d	file:
+max_footprint	malloc.cpp	/^  size_t     max_footprint;$/;"	m	struct:malloc_state	file:	access:public
+mchunk	malloc.cpp	/^typedef struct malloc_chunk  mchunk;$/;"	t	typeref:struct:malloc_chunk	file:
+mchunkptr	malloc.cpp	/^typedef struct malloc_chunk* mchunkptr;$/;"	t	typeref:struct:malloc_chunk	file:
+mem2chunk	malloc.cpp	2219;"	d	file:
+mflags	malloc.cpp	/^  flag_t     mflags;$/;"	m	struct:malloc_state	file:	access:public
+minsize_for_tree_index	malloc.cpp	2907;"	d	file:
+mmap_align	malloc.cpp	2680;"	d	file:
+mmap_align	malloc.cpp	2682;"	d	file:
+mmap_alloc	malloc.cpp	/^static void* mmap_alloc(mstate m, size_t nb) {$/;"	f	file:	signature:(mstate m, size_t nb)
+mmap_resize	malloc.cpp	/^static mchunkptr mmap_resize(mstate m, mchunkptr oldp, size_t nb, int flags) {$/;"	f	file:	signature:(mstate m, mchunkptr oldp, size_t nb, int flags)
+mmap_threshold	malloc.cpp	/^  size_t mmap_threshold;$/;"	m	struct:malloc_params	file:	access:public
+mparams	malloc.cpp	/^static struct malloc_params mparams;$/;"	v	typeref:struct:malloc_params	file:
+msegment	malloc.cpp	/^typedef struct malloc_segment  msegment;$/;"	t	typeref:struct:malloc_segment	file:
+msegmentptr	malloc.cpp	/^typedef struct malloc_segment* msegmentptr;$/;"	t	typeref:struct:malloc_segment	file:
+mspace	malloc.cpp	/^typedef void* mspace;$/;"	t	file:
+mspace	malloc.h	/^typedef void* mspace;$/;"	t
+mspace_bulk_free	malloc.cpp	/^size_t mspace_bulk_free(mspace msp, void* array[], size_t nelem) {$/;"	f	signature:(mspace msp, void* array[], size_t nelem)
+mspace_bulk_free	malloc.h	/^size_t mspace_bulk_free(mspace msp, void**, size_t n_elements);$/;"	p	signature:(mspace msp, void**, size_t n_elements)
+mspace_calloc	malloc.cpp	/^DLMALLOC_EXPORT void* mspace_calloc(mspace msp, size_t n_elements, size_t elem_size);$/;"	p	file:	signature:(mspace msp, size_t n_elements, size_t elem_size)
+mspace_calloc	malloc.cpp	/^void* mspace_calloc(mspace msp, size_t n_elements, size_t elem_size) {$/;"	f	signature:(mspace msp, size_t n_elements, size_t elem_size)
+mspace_calloc	malloc.h	/^void* mspace_calloc(mspace msp, size_t n_elements, size_t elem_size);$/;"	p	signature:(mspace msp, size_t n_elements, size_t elem_size)
+mspace_footprint	malloc.cpp	/^DLMALLOC_EXPORT size_t mspace_footprint(mspace msp);$/;"	p	file:	signature:(mspace msp)
+mspace_footprint	malloc.cpp	/^size_t mspace_footprint(mspace msp) {$/;"	f	signature:(mspace msp)
+mspace_footprint	malloc.h	/^size_t mspace_footprint(mspace msp);$/;"	p	signature:(mspace msp)
+mspace_footprint_limit	malloc.cpp	/^size_t mspace_footprint_limit(mspace msp) {$/;"	f	signature:(mspace msp)
+mspace_footprint_limit	malloc.h	/^size_t mspace_footprint_limit(mspace msp);$/;"	p	signature:(mspace msp)
+mspace_free	malloc.cpp	/^DLMALLOC_EXPORT void mspace_free(mspace msp, void* mem);$/;"	p	file:	signature:(mspace msp, void* mem)
+mspace_free	malloc.cpp	/^void mspace_free(mspace msp, void* mem) {$/;"	f	signature:(mspace msp, void* mem)
+mspace_free	malloc.h	/^void mspace_free(mspace msp, void* mem);$/;"	p	signature:(mspace msp, void* mem)
+mspace_independent_calloc	malloc.cpp	/^DLMALLOC_EXPORT void** mspace_independent_calloc(mspace msp, size_t n_elements,$/;"	p	file:	signature:(mspace msp, size_t n_elements, size_t elem_size, void* chunks[])
+mspace_independent_calloc	malloc.cpp	/^void** mspace_independent_calloc(mspace msp, size_t n_elements,$/;"	f	signature:(mspace msp, size_t n_elements, size_t elem_size, void* chunks[])
+mspace_independent_calloc	malloc.h	/^void** mspace_independent_calloc(mspace msp, size_t n_elements,$/;"	p	signature:(mspace msp, size_t n_elements, size_t elem_size, void* chunks[])
+mspace_independent_comalloc	malloc.cpp	/^DLMALLOC_EXPORT void** mspace_independent_comalloc(mspace msp, size_t n_elements,$/;"	p	file:	signature:(mspace msp, size_t n_elements, size_t sizes[], void* chunks[])
+mspace_independent_comalloc	malloc.cpp	/^void** mspace_independent_comalloc(mspace msp, size_t n_elements,$/;"	f	signature:(mspace msp, size_t n_elements, size_t sizes[], void* chunks[])
+mspace_independent_comalloc	malloc.h	/^void** mspace_independent_comalloc(mspace msp, size_t n_elements,$/;"	p	signature:(mspace msp, size_t n_elements, size_t sizes[], void* chunks[])
+mspace_inspect_all	malloc.cpp	/^void mspace_inspect_all(mspace msp,$/;"	f	signature:(mspace msp, void(*handler)(void *start, void *end, size_t used_bytes, void* callback_arg), void* arg)
+mspace_inspect_all	malloc.h	/^void mspace_inspect_all(mspace msp, $/;"	p	signature:(mspace msp, void(*handler)(void *, void *, size_t, void*), void* arg)
+mspace_mallinfo	malloc.cpp	/^DLMALLOC_EXPORT struct mallinfo mspace_mallinfo(mspace msp);$/;"	p	file:	signature:(mspace msp)
+mspace_mallinfo	malloc.cpp	/^struct mallinfo mspace_mallinfo(mspace msp) {$/;"	f	signature:(mspace msp)
+mspace_mallinfo	malloc.h	/^struct mallinfo mspace_mallinfo(mspace msp);$/;"	p	signature:(mspace msp)
+mspace_malloc	malloc.cpp	/^DLMALLOC_EXPORT void* mspace_malloc(mspace msp, size_t bytes);$/;"	p	file:	signature:(mspace msp, size_t bytes)
+mspace_malloc	malloc.cpp	/^void* mspace_malloc(mspace msp, size_t bytes) {$/;"	f	signature:(mspace msp, size_t bytes)
+mspace_malloc	malloc.h	/^void* mspace_malloc(mspace msp, size_t bytes);$/;"	p	signature:(mspace msp, size_t bytes)
+mspace_malloc_stats	malloc.cpp	/^DLMALLOC_EXPORT void mspace_malloc_stats(mspace msp);$/;"	p	file:	signature:(mspace msp)
+mspace_malloc_stats	malloc.cpp	/^void mspace_malloc_stats(mspace msp) {$/;"	f	signature:(mspace msp)
+mspace_malloc_stats	malloc.h	/^void mspace_malloc_stats(mspace msp);$/;"	p	signature:(mspace msp)
+mspace_mallopt	malloc.cpp	/^DLMALLOC_EXPORT int mspace_mallopt(int, int);$/;"	p	file:	signature:(int, int)
+mspace_mallopt	malloc.cpp	/^int mspace_mallopt(int param_number, int value) {$/;"	f	signature:(int param_number, int value)
+mspace_mallopt	malloc.h	/^int mspace_mallopt(int, int);$/;"	p	signature:(int, int)
+mspace_max_footprint	malloc.cpp	/^DLMALLOC_EXPORT size_t mspace_max_footprint(mspace msp);$/;"	p	file:	signature:(mspace msp)
+mspace_max_footprint	malloc.cpp	/^size_t mspace_max_footprint(mspace msp) {$/;"	f	signature:(mspace msp)
+mspace_max_footprint	malloc.h	/^size_t mspace_max_footprint(mspace msp);$/;"	p	signature:(mspace msp)
+mspace_memalign	malloc.cpp	/^DLMALLOC_EXPORT void* mspace_memalign(mspace msp, size_t alignment, size_t bytes);$/;"	p	file:	signature:(mspace msp, size_t alignment, size_t bytes)
+mspace_memalign	malloc.cpp	/^void* mspace_memalign(mspace msp, size_t alignment, size_t bytes) {$/;"	f	signature:(mspace msp, size_t alignment, size_t bytes)
+mspace_memalign	malloc.h	/^void* mspace_memalign(mspace msp, size_t alignment, size_t bytes);$/;"	p	signature:(mspace msp, size_t alignment, size_t bytes)
+mspace_realloc	malloc.cpp	/^DLMALLOC_EXPORT void* mspace_realloc(mspace msp, void* mem, size_t newsize);$/;"	p	file:	signature:(mspace msp, void* mem, size_t newsize)
+mspace_realloc	malloc.cpp	/^void* mspace_realloc(mspace msp, void* oldmem, size_t bytes) {$/;"	f	signature:(mspace msp, void* oldmem, size_t bytes)
+mspace_realloc	malloc.h	/^void* mspace_realloc(mspace msp, void* mem, size_t newsize);$/;"	p	signature:(mspace msp, void* mem, size_t newsize)
+mspace_realloc_in_place	malloc.cpp	/^void* mspace_realloc_in_place(mspace msp, void* oldmem, size_t bytes) {$/;"	f	signature:(mspace msp, void* oldmem, size_t bytes)
+mspace_realloc_in_place	malloc.h	/^void* mspace_realloc_in_place(mspace msp, void* mem, size_t newsize);$/;"	p	signature:(mspace msp, void* mem, size_t newsize)
+mspace_set_footprint_limit	malloc.cpp	/^size_t mspace_set_footprint_limit(mspace msp, size_t bytes) {$/;"	f	signature:(mspace msp, size_t bytes)
+mspace_set_footprint_limit	malloc.h	/^size_t mspace_set_footprint_limit(mspace msp, size_t bytes);$/;"	p	signature:(mspace msp, size_t bytes)
+mspace_track_large_chunks	malloc.cpp	/^DLMALLOC_EXPORT int mspace_track_large_chunks(mspace msp, int enable);$/;"	p	file:	signature:(mspace msp, int enable)
+mspace_track_large_chunks	malloc.cpp	/^int mspace_track_large_chunks(mspace msp, int enable) {$/;"	f	signature:(mspace msp, int enable)
+mspace_track_large_chunks	malloc.h	/^int mspace_track_large_chunks(mspace msp, int enable);$/;"	p	signature:(mspace msp, int enable)
+mspace_trim	malloc.cpp	/^DLMALLOC_EXPORT int mspace_trim(mspace msp, size_t pad);$/;"	p	file:	signature:(mspace msp, size_t pad)
+mspace_trim	malloc.cpp	/^int mspace_trim(mspace msp, size_t pad) {$/;"	f	signature:(mspace msp, size_t pad)
+mspace_trim	malloc.h	/^int mspace_trim(mspace msp, size_t pad);$/;"	p	signature:(mspace msp, size_t pad)
+mspace_usable_size	malloc.cpp	/^DLMALLOC_EXPORT size_t mspace_usable_size(const void* mem);$/;"	p	file:	signature:(const void* mem)
+mspace_usable_size	malloc.cpp	/^size_t mspace_usable_size(const void* mem) {$/;"	f	signature:(const void* mem)
+mspace_usable_size	malloc.h	/^size_t mspace_usable_size(const void* mem);$/;"	p	signature:(const void* mem)
+mstate	malloc.cpp	/^typedef struct malloc_state*    mstate;$/;"	t	typeref:struct:malloc_state	file:
+mutex	malloc.cpp	/^  MLOCK_T    mutex;     \/* locate lock among fields that rarely change *\/$/;"	m	struct:malloc_state	file:	access:public
+next	malloc.cpp	/^  struct malloc_segment* next;   \/* ptr to next segment *\/$/;"	m	struct:malloc_segment	typeref:struct:malloc_segment::malloc_segment	file:	access:public
+next_chunk	malloc.cpp	2273;"	d	file:
+next_pinuse	malloc.cpp	2277;"	d	file:
+ok_address	malloc.cpp	3009;"	d	file:
+ok_address	malloc.cpp	3018;"	d	file:
+ok_inuse	malloc.cpp	3013;"	d	file:
+ok_inuse	malloc.cpp	3020;"	d	file:
+ok_magic	malloc.cpp	3026;"	d	file:
+ok_magic	malloc.cpp	3028;"	d	file:
+ok_next	malloc.cpp	3011;"	d	file:
+ok_next	malloc.cpp	3019;"	d	file:
+ok_pinuse	malloc.cpp	3015;"	d	file:
+ok_pinuse	malloc.cpp	3021;"	d	file:
+ordblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE ordblks;  \/* number of free chunks *\/$/;"	m	struct:mallinfo	file:	access:public
+ordblks	malloc.h	/^  MALLINFO_FIELD_TYPE ordblks;  \/* number of free chunks *\/$/;"	m	struct:mallinfo	access:public
+overhead_for	malloc.cpp	2292;"	d	file:
+pad_request	malloc.cpp	2228;"	d	file:
+page_align	malloc.cpp	2669;"	d	file:
+page_size	malloc.cpp	/^  size_t page_size;$/;"	m	struct:malloc_params	file:	access:public
+parent	malloc.cpp	/^  struct malloc_tree_chunk* parent;$/;"	m	struct:malloc_tree_chunk	typeref:struct:malloc_tree_chunk::malloc_tree_chunk	file:	access:public
+pinuse	malloc.cpp	2257;"	d	file:
+post_fork_child	malloc.cpp	/^static void post_fork_child(void)  { INITIAL_LOCK(&(gm)->mutex); }$/;"	f	file:	signature:(void)
+post_fork_parent	malloc.cpp	/^static void post_fork_parent(void) { RELEASE_LOCK(&(gm)->mutex); }$/;"	f	file:	signature:(void)
+pre_fork	malloc.cpp	/^static void pre_fork(void)         { ACQUIRE_LOCK(&(gm)->mutex); }$/;"	f	file:	signature:(void)
+prepend_alloc	malloc.cpp	/^static void* prepend_alloc(mstate m, char* newbase, char* oldbase,$/;"	f	file:	signature:(mstate m, char* newbase, char* oldbase, size_t nb)
+prev_chunk	malloc.cpp	2274;"	d	file:
+prev_foot	malloc.cpp	/^  size_t                    prev_foot;$/;"	m	struct:malloc_tree_chunk	file:	access:public
+prev_foot	malloc.cpp	/^  size_t               prev_foot;  \/* Size of previous chunk (if free).  *\/$/;"	m	struct:malloc_chunk	file:	access:public
+pthread_init_lock	malloc.cpp	/^static int pthread_init_lock (MLOCK_T *lk) {$/;"	f	file:	signature:(MLOCK_T *lk)
+pthread_mutexattr_setkind_np	malloc.cpp	/^extern int pthread_mutexattr_setkind_np __P ((pthread_mutexattr_t *__attr,$/;"	p	file:	signature:(pthread_mutexattr_t *__attr, int __kind)
+pthread_mutexattr_settype	malloc.cpp	2016;"	d	file:
+recursive_acquire_lock	malloc.cpp	/^static FORCEINLINE int recursive_acquire_lock(MLOCK_T *lk) {$/;"	f	file:	signature:(MLOCK_T *lk)
+recursive_release_lock	malloc.cpp	/^static FORCEINLINE void recursive_release_lock(MLOCK_T *lk) {$/;"	f	file:	signature:(MLOCK_T *lk)
+recursive_try_lock	malloc.cpp	/^static FORCEINLINE int recursive_try_lock(MLOCK_T *lk) {$/;"	f	file:	signature:(MLOCK_T *lk)
+release_checks	malloc.cpp	/^  size_t     release_checks;$/;"	m	struct:malloc_state	file:	access:public
+release_unused_segments	malloc.cpp	/^static size_t release_unused_segments(mstate m) {$/;"	f	file:	signature:(mstate m)
+replace_dv	malloc.cpp	3631;"	d	file:
+request2size	malloc.cpp	2232;"	d	file:
+reset_on_error	malloc.cpp	/^static void reset_on_error(mstate m) {$/;"	f	file:	signature:(mstate m)
+reset_on_error	malloc.cpp	/^static void reset_on_error(mstate m);$/;"	p	file:	signature:(mstate m)
+same_or_left_bits	malloc.cpp	2933;"	d	file:
+sbinptr	malloc.cpp	/^typedef struct malloc_chunk* sbinptr;  \/* The type of bins of chunks *\/$/;"	t	typeref:struct:malloc_chunk	file:
+sbrk	malloc.cpp	/^extern void*     sbrk(ptrdiff_t);$/;"	p	file:	signature:(ptrdiff_t)
+seg	malloc.cpp	/^  msegment   seg;$/;"	m	struct:malloc_state	file:	access:public
+segment_holding	malloc.cpp	/^static msegmentptr segment_holding(mstate m, char* addr) {$/;"	f	file:	signature:(mstate m, char* addr)
+segment_holds	malloc.cpp	2694;"	d	file:
+set_flag4	malloc.cpp	2265;"	d	file:
+set_foot	malloc.cpp	2281;"	d	file:
+set_free_with_pinuse	malloc.cpp	2288;"	d	file:
+set_inuse	malloc.cpp	3051;"	d	file:
+set_inuse	malloc.cpp	3074;"	d	file:
+set_inuse_and_pinuse	malloc.cpp	3056;"	d	file:
+set_inuse_and_pinuse	malloc.cpp	3079;"	d	file:
+set_lock	malloc.cpp	2663;"	d	file:
+set_size_and_pinuse_of_free_chunk	malloc.cpp	2284;"	d	file:
+set_size_and_pinuse_of_inuse_chunk	malloc.cpp	3061;"	d	file:
+set_size_and_pinuse_of_inuse_chunk	malloc.cpp	3084;"	d	file:
+sflags	malloc.cpp	/^  flag_t       sflags;           \/* mmap and extern flag *\/$/;"	m	struct:malloc_segment	file:	access:public
+should_trim	malloc.cpp	2720;"	d	file:
+should_trim	malloc.cpp	2722;"	d	file:
+size	malloc.cpp	/^  size_t       size;             \/* allocated size *\/$/;"	m	struct:malloc_segment	file:	access:public
+sl	malloc.cpp	/^  int sl;$/;"	m	struct:malloc_recursive_lock	file:	access:public
+small_index	malloc.cpp	2825;"	d	file:
+small_index2size	malloc.cpp	2826;"	d	file:
+smallbin_at	malloc.cpp	2830;"	d	file:
+smallbins	malloc.cpp	/^  mchunkptr  smallbins[(NSMALLBINS+1)*2];$/;"	m	struct:malloc_state	file:	access:public
+smallmap	malloc.cpp	/^  binmap_t   smallmap;$/;"	m	struct:malloc_state	file:	access:public
+smallmap_is_marked	malloc.cpp	2920;"	d	file:
+smblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE smblks;   \/* always 0 *\/$/;"	m	struct:mallinfo	file:	access:public
+smblks	malloc.h	/^  MALLINFO_FIELD_TYPE smblks;   \/* always 0 *\/$/;"	m	struct:mallinfo	access:public
+spin_acquire_lock	malloc.cpp	/^static int spin_acquire_lock(int *sl) {$/;"	f	file:	signature:(int *sl)
+sys_alloc	malloc.cpp	/^static void* sys_alloc(mstate m, size_t nb) {$/;"	f	file:	signature:(mstate m, size_t nb)
+sys_trim	malloc.cpp	/^static int sys_trim(mstate m, size_t pad) {$/;"	f	file:	signature:(mstate m, size_t pad)
+tbinptr	malloc.cpp	/^typedef struct malloc_tree_chunk* tbinptr; \/* The type of bins of trees *\/$/;"	t	typeref:struct:malloc_tree_chunk	file:
+tchunk	malloc.cpp	/^typedef struct malloc_tree_chunk  tchunk;$/;"	t	typeref:struct:malloc_tree_chunk	file:
+tchunkptr	malloc.cpp	/^typedef struct malloc_tree_chunk* tchunkptr;$/;"	t	typeref:struct:malloc_tree_chunk	file:
+threadid	malloc.cpp	/^  THREAD_ID_T threadid;$/;"	m	struct:malloc_recursive_lock	file:	access:public
+tmalloc_large	malloc.cpp	/^static void* tmalloc_large(mstate m, size_t nb) {$/;"	f	file:	signature:(mstate m, size_t nb)
+tmalloc_small	malloc.cpp	/^static void* tmalloc_small(mstate m, size_t nb) {$/;"	f	file:	signature:(mstate m, size_t nb)
+top	malloc.cpp	/^  mchunkptr  top;$/;"	m	struct:malloc_state	file:	access:public
+topsize	malloc.cpp	/^  size_t     topsize;$/;"	m	struct:malloc_state	file:	access:public
+traverse_and_check	malloc.cpp	/^static size_t traverse_and_check(mstate m) {$/;"	f	file:	signature:(mstate m)
+traverse_and_check	malloc.cpp	/^static size_t traverse_and_check(mstate m);$/;"	p	file:	signature:(mstate m)
+treebin_at	malloc.cpp	2831;"	d	file:
+treebins	malloc.cpp	/^  tbinptr    treebins[NTREEBINS];$/;"	m	struct:malloc_state	file:	access:public
+treemap	malloc.cpp	/^  binmap_t   treemap;$/;"	m	struct:malloc_state	file:	access:public
+treemap_is_marked	malloc.cpp	2924;"	d	file:
+trim_check	malloc.cpp	/^  size_t     trim_check;$/;"	m	struct:malloc_state	file:	access:public
+trim_threshold	malloc.cpp	/^  size_t trim_threshold;$/;"	m	struct:malloc_params	file:	access:public
+try_realloc_chunk	malloc.cpp	/^static mchunkptr try_realloc_chunk(mstate m, mchunkptr p, size_t nb,$/;"	f	file:	signature:(mstate m, mchunkptr p, size_t nb, int can_move)
+unlink_chunk	malloc.cpp	3790;"	d	file:
+unlink_first_small_chunk	malloc.cpp	3612;"	d	file:
+unlink_large_chunk	malloc.cpp	3713;"	d	file:
+unlink_small_chunk	malloc.cpp	3586;"	d	file:
+uordblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE uordblks; \/* total allocated space *\/$/;"	m	struct:mallinfo	file:	access:public
+uordblks	malloc.h	/^  MALLINFO_FIELD_TYPE uordblks; \/* total allocated space *\/$/;"	m	struct:mallinfo	access:public
+use_lock	malloc.cpp	2644;"	d	file:
+use_mmap	malloc.cpp	2652;"	d	file:
+use_noncontiguous	malloc.cpp	2660;"	d	file:
+usmblks	malloc.cpp	/^  MALLINFO_FIELD_TYPE usmblks;  \/* maximum total allocated space *\/$/;"	m	struct:mallinfo	file:	access:public
+usmblks	malloc.h	/^  MALLINFO_FIELD_TYPE usmblks;  \/* maximum total allocated space *\/$/;"	m	struct:mallinfo	access:public
+win32direct_mmap	malloc.cpp	/^static FORCEINLINE void* win32direct_mmap(size_t size) {$/;"	f	file:	signature:(size_t size)
+win32mmap	malloc.cpp	/^static FORCEINLINE void* win32mmap(size_t size) {$/;"	f	file:	signature:(size_t size)
+win32munmap	malloc.cpp	/^static FORCEINLINE int win32munmap(void* ptr, size_t size) {$/;"	f	file:	signature:(void* ptr, size_t size)
+x86_cas_lock	malloc.cpp	/^static FORCEINLINE int x86_cas_lock(int *sl) {$/;"	f	file:	signature:(int *sl)
+x86_clear_lock	malloc.cpp	/^static FORCEINLINE void x86_clear_lock(int* sl) {$/;"	f	file:	signature:(int* sl)

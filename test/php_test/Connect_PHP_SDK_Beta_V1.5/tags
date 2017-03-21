@@ -1,0 +1,111 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+COOKIE_DOMAIN	comm/session.php	/^define("COOKIE_DOMAIN", false); $/;"	d
+QQConnect_urldecode	comm/utils.php	/^function QQConnect_urldecode($str)$/;"	f
+QQConnect_urlencode	comm/utils.php	/^function QQConnect_urlencode($str)$/;"	f
+QQDEBUG	comm/config.php	/^define("QQDEBUG", true);$/;"	d
+QQhexchars	comm/utils.php	/^$QQhexchars = "0123456789ABCDEF";$/;"	v
+Session	comm/session.php	/^class Session $/;"	c
+USER_SESSION	comm/session.php	/^define("USER_SESSION", false);$/;"	d
+access_str	oauth/get_access_token.php	/^$access_str = get_access_token($_SESSION["appid"], $_SESSION["appkey"], $_REQUEST["oauth_token"], $_SESSION["secret"], $_REQUEST["oauth_vericode"]);$/;"	v
+add_album	photo/add_album.php	/^function add_album($appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+add_blog	blog/add_blog.php	/^function add_blog($appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+add_feeds	feeds/add_share.php	/^function add_feeds($appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+arr	user/get_user_info.php	/^    $arr = array();$/;"	v
+arr	user/get_user_info.php	/^    $arr = json_decode($info, true);$/;"	v
+arr	user/get_user_info.php	/^$arr = get_user_info($_SESSION["appid"], $_SESSION["appkey"], $_SESSION["token"], $_SESSION["secret"], $_SESSION["openid"]);$/;"	v
+blocksize	comm/utils.php	/^        $blocksize	= 64;$/;"	v
+ch	comm/utils.php	/^    $ch = curl_init();$/;"	v
+close	comm/session.php	/^    function close() $/;"	f
+closeChildWindow	test_V1.4.html	/^            function closeChildWindow()$/;"	f
+dbSel	comm/session.php	/^        $dbSel = @mysql_select_db(self::db_name, $db_handle);$/;"	v
+db_handle	comm/session.php	/^        $db_handle = @mysql_connect(self::db_host, self::db_user, self::db_pwd);$/;"	v
+db_handle	comm/session.php	/^        $this->db_handle = $db_handle;$/;"	v
+db_handle	comm/session.php	/^    private $db_handle;$/;"	v
+destroy	comm/session.php	/^    function destroy($sessID) $/;"	f
+do_get	comm/utils.php	/^function do_get($url, $appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+do_multi_post	comm/utils.php	/^function do_multi_post($url, $appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+do_post	comm/utils.php	/^function do_post($url, $appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+filename	comm/utils.php	/^    foreach ($_FILES as $filename => $filevalue)$/;"	v
+gc	comm/session.php	/^    function gc($sessMaxLifeTime) $/;"	f
+get_access_token	oauth/get_access_token.php	/^function get_access_token($appid, $appkey, $request_token, $request_token_secret, $vericode)$/;"	f
+get_normalized_string	comm/utils.php	/^function get_normalized_string($params)$/;"	f
+get_request_token	oauth/get_request_token.php	/^function get_request_token($appid, $appkey)$/;"	f
+get_signature	comm/utils.php	/^function get_signature($str, $key)$/;"	f
+get_urlencode_string	comm/utils.php	/^function get_urlencode_string($params)$/;"	f
+get_user_info	user/get_user_info.php	/^function get_user_info($appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+global_arg	comm/utils.php	/^    $global_arg = $signature;$/;"	v
+global_arg	oauth/get_access_token.php	/^    $global_arg = $url;$/;"	v
+global_url	oauth/get_request_token.php	/^    $global_url = $url;$/;"	v
+hashfunc	comm/utils.php	/^        $hashfunc	= 'sha1';$/;"	v
+hmac	comm/utils.php	/^        $hmac 	= pack($/;"	v
+info	user/get_user_info.php	/^    $info   = do_get($url, $appid, $appkey, $access_token, $access_token_secret, $openid);$/;"	v
+ipad	comm/utils.php	/^        $ipad	= str_repeat(chr(0x36),$blocksize);$/;"	v
+is_valid_openid	comm/utils.php	/^function is_valid_openid($openid, $timestamp, $sig)$/;"	f
+key	comm/utils.php	/^            $key = pack('H*', $hashfunc($key));$/;"	v
+key	comm/utils.php	/^        $key	= str_pad($key,$blocksize,chr(0x00));$/;"	v
+key	comm/utils.php	/^    $key = $_SESSION["appkey"];$/;"	v
+key	comm/utils.php	/^    $key = $appkey."&".$access_token_secret;$/;"	v
+key	comm/utils.php	/^    foreach($params as $key => $val)$/;"	v
+key	oauth/get_access_token.php	/^    $key = $appkey."&".$request_token_secret;$/;"	v
+key	oauth/get_request_token.php	/^    $key = $appkey."&";$/;"	v
+len	comm/utils.php	/^    $len = strlen($str);$/;"	v
+lifeTime	comm/session.php	/^        $this->lifeTime = get_cfg_var("session.gc_maxlifetime");$/;"	v
+lifeTime	comm/session.php	/^    private $lifeTime;$/;"	v
+list_album	photo/list_album.php	/^function list_album($appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+newExp	comm/session.php	/^        $newExp = time() + $this->lifeTime;$/;"	v
+normalized	comm/utils.php	/^    $normalized = array();$/;"	v
+normalized_str	comm/utils.php	/^    $normalized_str = get_normalized_string($params);$/;"	v
+normalized_str	oauth/get_access_token.php	/^    $normalized_str = get_normalized_string($params);$/;"	v
+normalized_str	oauth/get_request_token.php	/^    $normalized_str = get_normalized_string($params);$/;"	v
+opad	comm/utils.php	/^        $opad	= str_repeat(chr(0x5c),$blocksize);$/;"	v
+open	comm/session.php	/^    function open($savePath, $sessName) $/;"	f
+params	comm/utils.php	/^    $params = $_GET;$/;"	v
+params	comm/utils.php	/^    $params = $_POST;$/;"	v
+params	oauth/get_access_token.php	/^    $params = array();$/;"	v
+params	oauth/get_request_token.php	/^    $params = array();$/;"	v
+postdata	comm/utils.php	/^    $postdata = get_urlencode_string($params);$/;"	v
+read	comm/session.php	/^    function read($sessID) $/;"	f
+redirect	oauth/redirect_to_login.php	/^    $redirect = "http:\/\/openapi.qzone.qq.com\/oauth\/qzoneoauth_authorize?oauth_consumer_key=$appid&";$/;"	v
+redirect_to_login	oauth/redirect_to_login.php	/^function redirect_to_login($appid, $appkey, $callback)$/;"	f
+request_token	oauth/redirect_to_login.php	/^    $request_token = get_request_token($appid, $appkey);$/;"	v
+res	comm/session.php	/^        $res = @mysql_query("SELECT * FROM ".self::db_table." $/;"	v
+res	comm/session.php	/^        $res = @mysql_query("SELECT session_data AS d FROM ".self::db_table." $/;"	v
+result	oauth/get_access_token.php	/^$result = array();$/;"	v
+result	oauth/redirect_to_login.php	/^    $result = array();$/;"	v
+ret	comm/utils.php	/^    $ret = curl_exec($ch);$/;"	v
+session	comm/session.php	/^    $session = new Session;$/;"	v
+sig	comm/utils.php	/^    return $sig == $signature; $/;"	v
+signature	comm/utils.php	/^        $signature = base64_encode($hmac);$/;"	v
+signature	comm/utils.php	/^        $signature = base64_encode(hash_hmac("sha1", $str, $key, true));$/;"	v
+signature	comm/utils.php	/^    $signature = "";$/;"	v
+signature	comm/utils.php	/^    $signature = get_signature($sigstr, $key); $/;"	v
+signature	comm/utils.php	/^    $signature = get_signature($sigstr, $key);$/;"	v
+signature	comm/utils.php	/^    $signature = get_signature($str, $key);$/;"	v
+signature	oauth/get_access_token.php	/^    $signature = get_signature($sigstr, $key);$/;"	v
+signature	oauth/get_request_token.php	/^    $signature = get_signature($sigstr, $key);$/;"	v
+sigstr	comm/utils.php	/^    $sigstr = "GET"."&".QQConnect_urlencode("$url")."&";$/;"	v
+sigstr	comm/utils.php	/^    $sigstr = "POST"."&"."$url"."&";$/;"	v
+sigstr	comm/utils.php	/^    $sigstr = "POST"."&".QQConnect_urlencode($url)."&";$/;"	v
+sigstr	oauth/get_access_token.php	/^	$sigstr = "GET"."&".QQConnect_urlencode("http:\/\/openapi.qzone.qq.com\/oauth\/qzoneoauth_access_token")."&";$/;"	v
+sigstr	oauth/get_request_token.php	/^	$sigstr = "GET"."&".QQConnect_urlencode("http:\/\/openapi.qzone.qq.com\/oauth\/qzoneoauth_request_token")."&";$/;"	v
+str	comm/utils.php	/^    $str = $openid.$timestamp;$/;"	v
+tmp	comm/utils.php	/^            $tmp = $str[$x+1].$str[$x+2];$/;"	v
+tmpfile	comm/utils.php	/^        $tmpfile = dirname($filevalue["tmp_name"])."\/".$filevalue["name"];$/;"	v
+toQzoneLogin	test_V1.4.html	/^            function toQzoneLogin()$/;"	f
+upload_pic	photo/upload_pic.php	/^function upload_pic($appid, $appkey, $access_token, $access_token_secret, $openid)$/;"	f
+url	blog/add_blog.php	/^    $url    = "http:\/\/openapi.qzone.qq.com\/blog\/add_one_blog";$/;"	v
+url	feeds/add_share.php	/^    $url    = "http:\/\/openapi.qzone.qq.com\/share\/add_share";$/;"	v
+url	oauth/get_access_token.php	/^    $url    = "http:\/\/openapi.qzone.qq.com\/oauth\/qzoneoauth_access_token?";$/;"	v
+url	oauth/get_request_token.php	/^    $url    = "http:\/\/openapi.qzone.qq.com\/oauth\/qzoneoauth_request_token?";$/;"	v
+url	photo/add_album.php	/^    $url    = "http:\/\/openapi.qzone.qq.com\/photo\/add_album";$/;"	v
+url	photo/list_album.php	/^    $url    = "http:\/\/openapi.qzone.qq.com\/photo\/list_album";$/;"	v
+url	photo/upload_pic.php	/^    $url    = "http:\/\/openapi.qzone.qq.com\/photo\/upload_pic";$/;"	v
+url	user/get_user_info.php	/^    $url    = "http:\/\/openapi.qzone.qq.com\/user\/get_user_info";$/;"	v
+urldecode	comm/utils.php	/^    $urldecode = "";$/;"	v
+urlencode	comm/utils.php	/^    $urlencode = "";$/;"	v
+write	comm/session.php	/^    function write($sessID, $sessData) $/;"	f

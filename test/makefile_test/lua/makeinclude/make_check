@@ -1,0 +1,32 @@
+#!/bin/bash
+
+patterns="/base_class|/innerlib|/application|/makeinclude|/outerlib|/sources"
+project_home=$(pwd | awk -F${patterns} '{print $1}')
+
+value=$(cat $project_home/makeinclude/.ischeck)
+if [ $value -eq 0 ];then
+	exit 0
+fi
+
+if [ $# -eq 0 ];then
+	pwdpath=$(pwd)
+	$project_home/makeinclude/check.sh $pwdpath \
+                                $project_home/makeinclude/funcs.txt 
+	if [ $? -ne 0 ];then
+		exit 1
+	fi
+	exit 0
+else
+	loop=0
+	while [ $# -gt 0 ]
+	do
+		pwdpath=$1
+		$project_home/makeinclude/check.sh $pwdpath \
+                            $project_home/makeinclude/funcs.txt
+		if [ $? -ne 0 ];then
+			exit 1
+		fi
+		shift
+	done
+	exit 0
+fi

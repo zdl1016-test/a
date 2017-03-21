@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CA1	test.cpp	/^class CA1$/;"	c	file:
+CA1::fun_ca1	test.cpp	/^    void fun_ca1()$/;"	f	class:CA1	access:public	signature:()
+MAX_NUM	test.cpp	3;"	d	file:
+__cyg_profile_func_enter	instrument.c	/^void __cyg_profile_func_enter( void *, void * ) $/;"	p	file:	signature:( void *, void * )
+__cyg_profile_func_enter	instrument.c	/^void __cyg_profile_func_enter( void *base_this, void *callsite )$/;"	f	signature:( void *base_this, void *callsite )
+__cyg_profile_func_exit	instrument.c	/^void __cyg_profile_func_exit( void *, void * )$/;"	p	file:	signature:( void *, void * )
+__cyg_profile_func_exit	instrument.c	/^void __cyg_profile_func_exit( void *base_this, void *callsite )$/;"	f	signature:( void *base_this, void *callsite )
+fp	instrument.c	/^static FILE *fp;$/;"	v	file:
+fun	test.cpp	/^void (*fun)() ;$/;"	v
+fun_1	test.cpp	/^void fun_1()$/;"	f	signature:()
+fun_2	test.cpp	/^void fun_2()$/;"	f	signature:()
+fun_3	test.cpp	/^void fun_3()$/;"	f	signature:()
+fun_ca1	test.cpp	/^    void fun_ca1()$/;"	f	class:CA1	access:public	signature:()
+g_count	test.cpp	/^int g_count = 10;$/;"	v
+main	test.cpp	/^int main()$/;"	f	signature:()
+main_constructor	instrument.c	/^void main_constructor( void )$/;"	f	signature:( void )
+main_constructor	instrument.c	/^void main_constructor( void )$/;"	p	file:	signature:( void )
+main_deconstructor	instrument.c	/^void main_deconstructor( void )$/;"	f	signature:( void )
+main_destructor	instrument.c	/^void main_destructor( void )$/;"	p	file:	signature:( void )

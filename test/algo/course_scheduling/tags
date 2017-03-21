@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CStudent	course.cpp	/^    CStudent()$/;"	f	class:CStudent	access:public	signature:()
+CStudent	course.cpp	/^class CStudent$/;"	c	file:
+CStudent::CStudent	course.cpp	/^    CStudent()$/;"	f	class:CStudent	access:public	signature:()
+CStudent::Reset	course.cpp	/^    void Reset()$/;"	f	class:CStudent	access:public	signature:()
+CStudent::m_courses	course.cpp	/^    vector<int> m_courses; \/\/ 本周的课程$/;"	m	class:CStudent	file:	access:public
+CStudent::m_free_times	course.cpp	/^    vector<int> m_free_times; \/\/ 上课时间$/;"	m	class:CStudent	file:	access:public
+CStudent::m_pos	course.cpp	/^    int m_pos; \/\/ 固定的上课校区$/;"	m	class:CStudent	file:	access:public
+CTeacher	course.cpp	/^    CTeacher()$/;"	f	class:CTeacher	access:public	signature:()
+CTeacher	course.cpp	/^class CTeacher$/;"	c	file:
+CTeacher::CTeacher	course.cpp	/^    CTeacher()$/;"	f	class:CTeacher	access:public	signature:()
+CTeacher::Reset	course.cpp	/^    void Reset()$/;"	f	class:CTeacher	access:public	signature:()
+CTeacher::m_course	course.cpp	/^    int m_course; \/\/ 教的科目类型$/;"	m	class:CTeacher	file:	access:public
+CTeacher::m_free_times	course.cpp	/^    vector<int> m_free_times; \/\/ 可上课时间$/;"	m	class:CTeacher	file:	access:public
+ENUM_COURSE_LISTENING	course.cpp	/^    ENUM_COURSE_LISTENING = 0,$/;"	e	enum:__anon1	file:
+ENUM_COURSE_READING	course.cpp	/^    ENUM_COURSE_READING = 2,$/;"	e	enum:__anon1	file:
+ENUM_COURSE_WRITING	course.cpp	/^    ENUM_COURSE_WRITING = 1,$/;"	e	enum:__anon1	file:
+ENUM_SCHOOL_BAOAN	course.cpp	/^    ENUM_SCHOOL_BAOAN = 4,$/;"	e	enum:__anon2	file:
+ENUM_SCHOOL_CBD	course.cpp	/^    ENUM_SCHOOL_CBD = 2,$/;"	e	enum:__anon2	file:
+ENUM_SCHOOL_NANSHAN	course.cpp	/^    ENUM_SCHOOL_NANSHAN = 0,$/;"	e	enum:__anon2	file:
+ENUM_SCHOOL_SCIENCE	course.cpp	/^    ENUM_SCHOOL_SCIENCE= 3,$/;"	e	enum:__anon2	file:
+ENUM_SCHOOL_XINHE	course.cpp	/^    ENUM_SCHOOL_XINHE = 1,$/;"	e	enum:__anon2	file:
+Reset	course.cpp	/^    void Reset()$/;"	f	class:CStudent	access:public	signature:()
+Reset	course.cpp	/^    void Reset()$/;"	f	class:CTeacher	access:public	signature:()
+init_mat	course.cpp	/^void init_mat(vector< vector<int> >& mat)$/;"	f	signature:(vector< vector<int> >& mat)
+m_course	course.cpp	/^    int m_course; \/\/ 教的科目类型$/;"	m	class:CTeacher	file:	access:public
+m_courses	course.cpp	/^    vector<int> m_courses; \/\/ 本周的课程$/;"	m	class:CStudent	file:	access:public
+m_free_times	course.cpp	/^    vector<int> m_free_times; \/\/ 上课时间$/;"	m	class:CStudent	file:	access:public
+m_free_times	course.cpp	/^    vector<int> m_free_times; \/\/ 可上课时间$/;"	m	class:CTeacher	file:	access:public
+m_pos	course.cpp	/^    int m_pos; \/\/ 固定的上课校区$/;"	m	class:CStudent	file:	access:public
+main	course.cpp	/^int main()$/;"	f	signature:()
+print_mat	course.cpp	/^void print_mat(vector< vector<int> >& mat)$/;"	f	signature:(vector< vector<int> >& mat)
