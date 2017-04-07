@@ -5,7 +5,7 @@
  *
  *    time Create
  *
- * @copyright: Shenzhen Tencent Co.Ltd
+ * @copyright: Shenzhen  Co.Ltd
  *
  */
 

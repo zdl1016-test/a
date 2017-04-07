@@ -59,7 +59,7 @@ int my_strlen(const char * str)
 }
 int main()
 {
-    char * str = "helloworldaaaaa";
+    char * str = "helloworldbbbba";
     int ret = 0;
 
     ret = my_strlen(str+1);

@@ -5,7 +5,7 @@
  *
  *    2012-05-21_11:41:00 Create
  *
- * @copyright: Shenzhen Tencent Co.Ltd
+ * @copyright: Shenzhen  Co.Ltd
  *
  */
 #ifndef _STAT_SIMPLE_H_

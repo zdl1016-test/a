@@ -5,7 +5,7 @@
  *
  *   2012-02-02_12:03:12 Create
  *
- * @copyright: Shenzhen Tencent Co.Ltd
+ * @copyright: Shenzhen  Co.Ltd
  *
  */
 #ifndef _CTIMER_H_
