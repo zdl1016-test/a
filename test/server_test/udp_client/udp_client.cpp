@@ -7,6 +7,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <unistd.h>
 
 #include "stat_simple.h"
 
@@ -16,7 +17,7 @@ int main(int argc, char* argv[])
 {
     if (argc < 3)
     {
-        printf("usage : %s srv_ip srv_port is_recv(defaut:0) is_show_recv(default:0) timeout_ms(100)\n", argv[0]);
+        printf("usage : %s srv_ip srv_port is_recv(defaut:0) is_show_recv(default:0) timeout_ms(100) interval_us(0)\n", argv[0]);
         printf("note : is_recv 是否收包; timeout_ms 收包时的超时控制 毫秒\n");
         return -1;
     }
@@ -43,6 +44,12 @@ int main(int argc, char* argv[])
         timeout_ms = atoi(argv[5]);
     }
 
+    int interval_us = 0;
+    if (argc >= 7)
+    {
+        interval_us = atoi(argv[6]);
+    }
+
     int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
     if(sockfd < 0)
     {
@@ -58,15 +65,21 @@ int main(int argc, char* argv[])
     inet_aton(srv_ip, &srv_addr.sin_addr);
     srv_addr.sin_port = htons(srv_port);
 
-    char send_buf[128] = {0};
-    snprintf(send_buf, sizeof(send_buf), "%s", "nemozhang");
-    char send_buf_len = strlen(send_buf);
+    char send_buf[1024] = {0};
+    //snprintf(send_buf, sizeof(send_buf), "%s", "nemozhang");
+    for (int i=0; i<sizeof(send_buf)-1; i++)
+    {
+        send_buf[i] = 'a' + i % 26;
+    }
+    int send_buf_len = strlen(send_buf);
+    printf("%s, \nlen:%d\n", send_buf, send_buf_len);
 
-    char recv_buf[128] = {0};
-    char recv_buf_len = sizeof(recv_buf) - 1; // 保留一个字节, 用来填充\0
+    char recv_buf[1024] = {0};
+    int recv_buf_len = sizeof(recv_buf) - 1; // 保留一个字节, 用来填充\0
     int  recv_len = 0;
 
-    printf("connect to srv_ip:%s, srv_port:%u\n", srv_ip, srv_port);
+    printf("connect to srv_ip:%s, srv_port:%u, is_recv:%d, is_show_recv:%d, timeout_ms:%d, interval_us:%d\n", 
+            srv_ip, srv_port, is_recv, is_show_recv, timeout_ms, interval_us);
 
     StatSimple stat("stat_udp_client", 100, StatSimple::ENUM_WORK_MODE_SVR);
     if (stat.Init())
@@ -87,6 +100,10 @@ int main(int argc, char* argv[])
     int flag = 0;
     while(1)
     {
+        if (interval_us > 0) {
+            usleep(interval_us);
+        }
+
         // sendto 不管服务器地址是否存在, 都不会阻塞
         int ret = sendto(sockfd, &send_buf[0], send_buf_len, flag, (sockaddr*)&srv_addr, sizeof(srv_addr));
         if (ret != send_buf_len)

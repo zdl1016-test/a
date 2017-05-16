@@ -22,7 +22,8 @@
 #include <sys/types.h>
 #include <sys/mman.h>
 #include <fcntl.h>           /* For O_* constants */
-#include <asm/atomic.h>
+//#include <asm/atomic.h>
+#include "atomic.h"
 #include <errno.h>
 
 using namespace std;
@@ -76,7 +77,7 @@ public:
         }
 
         string filename = string("/dev/shm/") + m_shm_name;
-        chmod(filename.c_str(), S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH);
+        //chmod(filename.c_str(), S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH);
 
         m_ptr = (char*)mmap(0, m_region_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
         if (m_ptr == MAP_FAILED)
